@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects · Bike Builders of Berkeley</title>
+  <meta name="description" content="Frames, components, tooling, and electronics designed and built by Bike Builders of Berkeley.">
+  <meta name="theme-color" content="#3c19ff">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-header="dark">
+  <div data-site-header></div>
+
+  <main id="main">
+    <!-- ===== Featured project ===== -->
+    <section class="container proj-hero">
+      <div class="reveal">
+        <h1>Project<br>Overview</h1>
+        <p>Designed and built by the Bike Builders of Berkeley mountain bike team in fall 2023. Our project is a steel full-suspension mountain bike. This welded frame features a unique linkage design that passes through the center of the frame with custom links and pivot hardware.</p>
+        <a class="btn btn--primary" href="project.html?id=mtb-v1">Learn More</a>
+      </div>
+      <div class="proj-hero__art reveal" aria-hidden="true">
+        <div class="frame a"><img src="assets/img/mtb-v2-render.png" alt=""></div>
+        <div class="frame b"><img src="assets/img/mtb-v1-render.jpg" alt="" style="object-fit:cover;padding:0"></div>
+      </div>
+    </section>
+
+    <!-- ===== All projects ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="proj-toolbar">
+          <div class="chips" data-project-chips role="group" aria-label="Filter projects by category"></div>
+          <label class="search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" stroke="currentColor" stroke-width="2" fill="none"/><path d="M15.5 15.5L21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <span class="sr-only">Search projects</span>
+            <input type="search" placeholder="Search projects" data-project-search>
+          </label>
+        </div>
+        <div class="proj-masonry" data-projects aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <div data-site-footer></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,1620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Figma Export</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body { background: #f9fafb; min-height: 100vh; display: flex; flex-direction: column; align-items: center; font-family: system-ui, -apple-system, sans-serif; overflow-x: hidden; color: #111827; }
+      .fig-container-fluid { width: 100%; max-width: 1280px; margin: 0 auto; padding: 1.5rem; }
+      @media (max-width: 768px) {
+        .fig-col-mobile { flex-direction: column !important; width: 100% !important; }
+        .fig-hide-mobile { display: none !important; }
+      }
+
+      .fig-home-page-1-2420 {
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        min-height: 100vh;
+        background-color: rgba(255,255,255,1);
+      }
+      .fig-background-1-2421 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 1512px;
+        height: 5645px;
+        background-color: rgba(11,31,135,1);
+      }
+      .fig-final-footer-1-2423 {
+        flex-shrink: 0;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        max-width: 1512px;
+        min-height: 338px;
+      }
+      .fig-rectangle-106-I1-2423;1342:1862 {
+        flex-shrink: 0;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        max-width: 1512px;
+        height: 338px;
+        background-color: rgba(60,25,255,1);
+      }
+      .fig-stay-in-the-loop-stay-in-the-loop-stay-in-the-loop-I1-2423;1342:1863 {
+        flex-shrink: 0;
+        position: absolute;
+        left: 24px;
+        top: 24px;
+        white-space: pre-wrap;
+        font-size: clamp(1.75rem, 3vw + 1rem, 64px);
+        line-height: 72px;
+        color: rgba(255,255,255,1);
+      }
+      .fig-group-187-I1-2423;1342:1878 {
+        flex-shrink: 0;
+        position: absolute;
+        left: 80px;
+        top: 263px;
+        width: 160px;
+        min-height: 51px;
+      }
+      .fig-logo-I1-2423;1342:1879 {
+        flex-shrink: 0;
+        position: relative;
+        width: 58px;
+        min-height: 50px;
+      }
+      .fig-group-186-I1-2423;1342:1879;1332:1122 {
+        flex-shrink: 0;
+        position: absolute;
+        left: -6px;
+        top: 9px;
+        width: 60px;
+        min-height: 44px;
+      }
+      .fig-vector-I1-2423;1342:1879;1332:1123 {
+        flex-shrink: 0;
+        overflow: visible;
+      }
+      .fig-vector-I1-2423;1342:1879;1332:1124 {
+        flex-shrink: 0;
+        overflow: visible;
+      }
+      .fig-vector-I1-2423;1342:1879;1332:1125 {
+        flex-shrink: 0;
+        overflow: visible;
+      }
+      .fig-group-186-I1-2423;1342:1880 {
+        flex-shrink: 0;
+        width: 92px;
+        min-height: 51px;
+      }
+      .fig-frame-89-I1-2423;1342:1881 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        gap: -6.0123772621154785px;
+        padding: 0px 0px 0px 0px;
+        width: 92px;
+        min-height: 51px;
+      }
+      .fig-bike-I1-2423;1342:1882 {
+        width: 100%;
+        align-self: stretch;
+        max-width: 100%;
+        white-space: pre-wrap;
+        font-size: 18.538164138793945px;
+        line-height: 21px;
+        color: rgba(255,255,255,1);
+      }
+      .fig-builders-I1-2423;1342:1883 {
+        width: 100%;
+        align-self: stretch;
+        max-width: 100%;
+        white-space: pre-wrap;
+        font-size: 18.538164138793945px;
+        line-height: 21px;
+        color: rgba(255,255,255,1);
+      }
+      .fig-of-berkeley-I1-2423;1342:1884 {
+        width: 100%;
+        align-self: stretch;
+        max-width: 100%;
+        white-space: pre-wrap;
+        font-size: 18.538164138793945px;
+        line-height: 21px;
+        color: rgba(255,255,255,1);
+      }
+      .fig-frame-142-I1-2423;1342:1899 {
+        flex-shrink: 0;
+        position: absolute;
+        left: 1046px;
+        top: 123px;
+        display: flex;
+        flex-direction: row;
+        gap: 56px;
+        padding: 0px 0px 0px 0px;
+        width: 386px;
+        max-width: 100%;
+        min-height: 92px;
+      }
+      .fig-frame-140-I1-2423;1342:1886 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        padding: 0px 0px 0px 0px;
+        width: 79px;
+        min-height: 69px;
+      }
+      .fig-about-us-I1-2423;1342:1887 {
+        width: 100%;
+        align-self: stretch;
+        max-width: 100%;
+        white-space: pre-wrap;
+        font-size: 18px;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-projects-I1-2423;1342:1888 {
+        width: 100%;
+        align-self: stretch;
+        max-width: 100%;
+        white-space: pre-wrap;
+        font-size: 18px;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-members-I1-2423;1342:1889 {
+        width: 100%;
+        align-self: stretch;
+        max-width: 100%;
+        white-space: pre-wrap;
+        font-size: 18px;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-frame-139-I1-2423;1342:1890 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        padding: 0px 0px 0px 0px;
+        width: 90px;
+        min-height: 69px;
+      }
+      .fig-sponsors-I1-2423;1342:1891 {
+        width: 100%;
+        align-self: stretch;
+        max-width: 100%;
+        white-space: pre-wrap;
+        font-size: 18px;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-contact-us-I1-2423;1342:1892 {
+        width: 100%;
+        align-self: stretch;
+        max-width: 100%;
+        white-space: pre-wrap;
+        font-size: 18px;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-apply-now-I1-2423;1342:1893 {
+        width: 100%;
+        align-self: stretch;
+        max-width: 100%;
+        white-space: pre-wrap;
+        font-size: 18px;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-frame-138-I1-2423;1342:1865 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        padding: 0px 0px 0px 0px;
+        width: 105px;
+        min-height: 92px;
+      }
+      .fig-frame-134-I1-2423;1342:1866 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        padding: 0px 0px 0px 0px;
+        width: 90px;
+        min-height: 23px;
+      }
+      .fig-linkedin-I1-2423;1342:1867 {
+        flex-shrink: 0;
+        white-space: pre-wrap;
+        font-size: 18px;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-vector-I1-2423;1342:1868 {
+        flex-shrink: 0;
+        overflow: visible;
+      }
+      .fig-frame-135-I1-2423;1342:1869 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        padding: 0px 0px 0px 0px;
+        width: 105px;
+        min-height: 23px;
+      }
+      .fig-instagram-I1-2423;1342:1870 {
+        flex-shrink: 0;
+        white-space: pre-wrap;
+        font-size: 18px;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-vector-I1-2423;1342:1871 {
+        flex-shrink: 0;
+        overflow: visible;
+      }
+      .fig-frame-136-I1-2423;1342:1872 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        padding: 0px 0px 0px 0px;
+        width: 104px;
+        min-height: 23px;
+      }
+      .fig-facebook-I1-2423;1342:1873 {
+        flex-shrink: 0;
+        white-space: pre-wrap;
+        font-size: 18px;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-vector-I1-2423;1342:1874 {
+        flex-shrink: 0;
+        overflow: visible;
+      }
+      .fig-frame-137-I1-2423;1342:1875 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        padding: 0px 0px 0px 0px;
+        width: 77px;
+        min-height: 23px;
+      }
+      .fig-github-I1-2423;1342:1876 {
+        flex-shrink: 0;
+        white-space: pre-wrap;
+        font-size: 18px;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-vector-I1-2423;1342:1877 {
+        flex-shrink: 0;
+        overflow: visible;
+      }
+      .fig-landing-1-2424 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 1963px;
+        min-height: 1201px;
+      }
+      .fig-title-1-2425 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+        padding: 0px 0px 0px 0px;
+        width: 100%;
+        max-width: 747px;
+        min-height: 283px;
+      }
+      .fig-bike-builders-of-berkeley-1-2426 {
+        flex-shrink: 0;
+        white-space: pre-wrap;
+        font-size: clamp(1.75rem, 3vw + 1rem, 96px);
+        line-height: 76px;
+        color: rgba(255,255,255,1);
+      }
+      .fig-frame-92-1-2427 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 0px 0px 0px 0px;
+        width: 100%;
+        max-width: 760px;
+        min-height: 33px;
+      }
+      @media (min-width: 768px) {
+        .fig-frame-92-1-2427 {
+          flex-direction: row;
+        }
+      }
+      .fig-frame-90-1-2428 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+        padding: 0px 0px 0px 0px;
+        width: 355px;
+        max-width: 100%;
+        min-height: 33px;
+      }
+      .fig-frame-23-1-2429 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 21px 8px 21px;
+        width: 121px;
+        min-height: 33px;
+        background-color: rgba(255,255,255,1);
+        border-radius: 50px;
+      }
+      .fig-our-projects-1-2430 {
+        flex-shrink: 0;
+        white-space: pre-wrap;
+        font-size: 14px;
+        line-height: normal;
+        color: rgba(11,31,135,1);
+      }
+      .fig-frame-21-1-2431 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 21px 8px 21px;
+        width: 218px;
+        min-height: 33px;
+        border: 1px solid rgba(255,255,255,1);
+        border-radius: 50px;
+      }
+      .fig-learn-more-about-sea-otter-1-2432 {
+        flex-shrink: 0;
+        white-space: pre-wrap;
+        font-size: 14px;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-vector-20-1-2433 {
+        flex-shrink: 0;
+        overflow: visible;
+      }
+      .fig-banners-1-2435 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 1720px;
+        min-height: 980px;
+      }
+      .fig-vector-22-1-2436 {
+        flex-shrink: 0;
+        overflow: visible;
+      }
+      .fig-engineering-business-community-biking-compsci-1-2437 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 1585px;
+        height: 674px;
+        background-color: rgba(255,255,255,1);
+      }
+      .fig-logo-1-2438 {
+        flex-shrink: 0;
+        position: relative;
+        width: 303px;
+        max-width: 100%;
+        min-height: 265px;
+      }
+      .fig-group-186-I1-2438;1332:1122 {
+        flex-shrink: 0;
+        position: absolute;
+        left: -33px;
+        top: 47px;
+        width: 318px;
+        max-width: 100%;
+        min-height: 238px;
+      }
+      .fig-vector-I1-2438;1332:1123 {
+        flex-shrink: 0;
+        overflow: visible;
+      }
+      .fig-vector-I1-2438;1332:1124 {
+        flex-shrink: 0;
+        overflow: visible;
+      }
+      .fig-vector-I1-2438;1332:1125 {
+        flex-shrink: 0;
+        overflow: visible;
+      }
+      .fig-top-blurb-1-2439 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 0px 0px 0px 0px;
+        width: 100%;
+        max-width: 1122px;
+        min-height: 543px;
+      }
+      .fig-frame-248-1-4074 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        padding: 0px 0px 0px 0px;
+        width: 100%;
+        max-width: 843px;
+        min-height: 166px;
+      }
+      .fig-design-build-learn-1-2440 {
+        width: 100%;
+        align-self: stretch;
+        width: 100%;
+        max-width: 843px;
+        white-space: pre-wrap;
+        font-size: clamp(1.75rem, 3vw + 1rem, 60px);
+        text-align: center;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-we-design-build-and-test-all-things-bikes-with-a-focus-on-creating-frames-from-scratch-lorem-ipsum-dolor-sit-amet-consectetur-1-2441 {
+        width: 100%;
+        align-self: stretch;
+        width: 100%;
+        max-width: 843px;
+        white-space: pre-wrap;
+        font-size: 24px;
+        text-align: center;
+        line-height: 1.5;
+        color: rgba(255,255,255,1);
+      }
+      .fig-frame-249-1-4075 {
+        width: 100%;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        padding: 0px 0px 0px 0px;
+        min-height: 337px;
+      }
+      @media (min-width: 768px) {
+        .fig-frame-249-1-4075 {
+          flex-direction: row;
+        }
+      }
+      .fig-rectangle-450-1-2442 {
+        flex-shrink: 0;
+        width: 549px;
+        max-width: 100%;
+        height: 337px;
+        object-fit: cover;
+      }
+      .fig-img2-1-2443 {
+        flex-shrink: 0;
+        width: 549px;
+        max-width: 100%;
+        height: 337px;
+        object-fit: cover;
+      }
+      .fig-who-we-are-1-2444 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 2224px;
+        min-height: 1495px;
+      }
+      .fig-rectangle-449-1-2445 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 1512px;
+        height: 1495px;
+        background-color: rgba(255,255,255,1);
+      }
+      .fig-frame-254-1-4128 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        padding: 0px 0px 0px 0px;
+        width: 100%;
+        max-width: 1111px;
+        min-height: 470px;
+      }
+      .fig-who-we-are-1-2446 {
+        width: 100%;
+        align-self: stretch;
+        width: 100%;
+        max-width: 1111px;
+        white-space: pre-wrap;
+        font-size: clamp(1.75rem, 3vw + 1rem, 60px);
+        text-align: center;
+        line-height: normal;
+        color: rgba(9,28,120,1);
+      }
+      .fig-frame-210-1-2448 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+        padding: 0px 0px 0px 0px;
+        width: 100%;
+        max-width: 1111px;
+        min-height: 352px;
+      }
+      @media (min-width: 768px) {
+        .fig-frame-210-1-2448 {
+          flex-direction: row;
+        }
+      }
+      .fig-frame-250-1-4124 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 0px 0px 0px 0px;
+        width: 458px;
+        max-width: 100%;
+        min-height: 296px;
+      }
+      .fig-1-bike-building-team-1-2450 {
+        width: 100%;
+        align-self: stretch;
+        width: 100%;
+        max-width: 458px;
+        white-space: pre-wrap;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 40px;
+        color: rgba(35,36,40,1);
+      }
+      .fig-founded-in-fall-2021-we-are-a-relatively-new-engineering-club-pioneering-the-bike-building-field-among-universities-lorem-ipsum-dolor-sit-amet-consectetur-non-amet-ultricies-faucibus-volutpat-duis-lorem-ipsum-dolor-sit-amet-consectetur-non-amet-ultricies-faucibus-volutpat-duis-lorem-ipsum-dolor-sit-amet-consectetur-1-2449 {
+        width: 100%;
+        align-self: stretch;
+        width: 100%;
+        max-width: 458px;
+        white-space: pre-wrap;
+        font-size: 20px;
+        line-height: 1.5;
+        color: rgba(35,36,40,1);
+      }
+      .fig-video-1-2451 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 573px;
+        min-height: 352px;
+      }
+      .fig-group-124-1-2452 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 573px;
+        min-height: 352px;
+      }
+      .fig-rectangle-126-1-2453 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 573px;
+        height: 352px;
+        object-fit: cover;
+      }
+      .fig-image-170-1-2454 {
+        flex-shrink: 0;
+        width: 113px;
+        height: 79px;
+        object-fit: cover;
+      }
+      .fig-frame-252-1-4126 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        padding: 0px 0px 0px 0px;
+        width: 100%;
+        max-width: 2224px;
+        min-height: 578px;
+      }
+      .fig-frame-251-1-4125 {
+        width: 100%;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+        padding: 0px 0px 0px 0px;
+        min-height: 521px;
+      }
+      .fig-member-spotlight-1-2460 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 2224px;
+        min-height: 413px;
+      }
+      .fig-member-spotlight-1-2461 {
+        flex-shrink: 0;
+        white-space: pre-wrap;
+        font-size: clamp(1.75rem, 3vw + 1rem, 32px);
+        line-height: normal;
+        color: rgba(35,36,40,1);
+      }
+      .fig-member-1-2462 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 2224px;
+        min-height: 347px;
+      }
+      .fig-member1-1-2463 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 712px;
+        min-height: 347px;
+      }
+      .fig-rectangle-185-1-2464 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 711px;
+        height: 347px;
+        background-color: rgba(11,31,135,1);
+      }
+      .fig-rectangle-186-1-2465 {
+        flex-shrink: 0;
+        width: 281px;
+        max-width: 100%;
+        height: 347px;
+        object-fit: cover;
+      }
+      .fig-ziven-just-finished-his-5-year-stint-at-cal-b-s-m-s-and-is-going-to-ride-the-great-divide-this-summer-on-a-bike-he-built-in-2-weeks-good-luck-ziven-with-your-career-and-your-ride-1-2466 {
+        flex-shrink: 0;
+        max-width: 100%;
+        white-space: pre-wrap;
+        font-size: 16px;
+        line-height: 1.5;
+        color: rgba(255,255,255,1);
+      }
+      .fig-founder-1-2467 {
+        flex-shrink: 0;
+        max-width: 100%;
+        white-space: pre-wrap;
+        font-size: 21.107208251953125px;
+        line-height: 1.5;
+        color: rgba(255,255,255,1);
+      }
+      .fig-ziven-posner-1-2468 {
+        flex-shrink: 0;
+        max-width: 100%;
+        white-space: pre-wrap;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 1.5;
+        color: rgba(255,255,255,1);
+      }
+      .fig-member2-1-2469 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 712px;
+        min-height: 347px;
+      }
+      .fig-rectangle-185-1-2470 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 711px;
+        height: 347px;
+        background-color: rgba(11,31,135,1);
+      }
+      .fig-rectangle-187-1-2471 {
+        flex-shrink: 0;
+        width: 281px;
+        max-width: 100%;
+        height: 347px;
+        object-fit: cover;
+      }
+      .fig-justin-is-built-different-not-only-does-he-study-mechanical-engineering-race-bikes-work-on-two-student-teams-but-he-does-all-of-them-better-than-most-people-can-do-one-everyone-who-knows-justin-aspires-to-have-just-one-of-his-skills-1-2472 {
+        flex-shrink: 0;
+        max-width: 100%;
+        white-space: pre-wrap;
+        font-size: 16px;
+        line-height: 1.5;
+        color: rgba(255,255,255,1);
+      }
+      .fig-gravel-bike-lead-1-2473 {
+        flex-shrink: 0;
+        max-width: 100%;
+        white-space: pre-wrap;
+        font-size: 21.107208251953125px;
+        line-height: 1.5;
+        color: rgba(255,255,255,1);
+      }
+      .fig-justin-peck-1-2474 {
+        flex-shrink: 0;
+        max-width: 100%;
+        white-space: pre-wrap;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 1.5;
+        color: rgba(255,255,255,1);
+      }
+      .fig-member3-1-2475 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 712px;
+        min-height: 347px;
+      }
+      .fig-rectangle-185-1-2476 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 711px;
+        height: 347px;
+        background-color: rgba(11,31,135,1);
+      }
+      .fig-rectangle-186-1-2477 {
+        flex-shrink: 0;
+        width: 281px;
+        max-width: 100%;
+        height: 347px;
+        object-fit: cover;
+      }
+      .fig-zach-is-a-sophmore-studying-mechanical-engineering-he-lead-our-go-fund-me-campaign-and-rides-his-road-bike-all-around-the-bay-not-only-does-he-balance-work-and-school-he-also-designs-and-machines-components-for-bike-builders-1-2478 {
+        flex-shrink: 0;
+        max-width: 100%;
+        white-space: pre-wrap;
+        font-size: 16px;
+        line-height: 1.5;
+        color: rgba(255,255,255,1);
+      }
+      .fig-mtb-engineer-1-2479 {
+        flex-shrink: 0;
+        max-width: 100%;
+        white-space: pre-wrap;
+        font-size: 21.107208251953125px;
+        line-height: 1.5;
+        color: rgba(255,255,255,1);
+      }
+      .fig-zachary-liu-1-2480 {
+        flex-shrink: 0;
+        max-width: 100%;
+        white-space: pre-wrap;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 1.5;
+        color: rgba(255,255,255,1);
+      }
+      .fig-we-are-a-team-of-undergraduate-students-at-uc-berkeley-everyone-plays-in-integral-role-in-building-a-bike-from-organizing-the-business-side-of-things-to-making-custom-components-our-community-is-open-to-everyone-1-2447 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 1090px;
+        white-space: pre-wrap;
+        font-size: 20px;
+        text-align: center;
+        line-height: 1.5;
+        color: rgba(35,36,40,1);
+      }
+      .fig-buttons-1-2455 {
+        flex-shrink: 0;
+        width: 232px;
+        min-height: 33px;
+      }
+      .fig-frame-24-1-4140 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 24px 8px 24px;
+        width: 96px;
+        min-height: 33px;
+        background-color: rgba(60,25,255,1);
+        border-radius: 50px;
+      }
+      .fig-join-us-1-4141 {
+        flex-shrink: 0;
+        white-space: pre-wrap;
+        font-size: 14px;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-frame-25-1-4143 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 24px 8px 24px;
+        width: 120px;
+        min-height: 33px;
+        background-color: rgba(229,224,255,1);
+        border-radius: 50px;
+      }
+      .fig-learn-more-1-4144 {
+        flex-shrink: 0;
+        white-space: pre-wrap;
+        font-size: 14px;
+        line-height: normal;
+        color: rgba(11,31,135,1);
+      }
+      .fig-banner-1-4199 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 1925px;
+        min-height: 1028px;
+      }
+      .fig-vector-22-1-4200 {
+        flex-shrink: 0;
+        overflow: visible;
+      }
+      .fig-engineering-business-community-biking-computer-science-design-1-4201 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 1774px;
+        height: 709px;
+        background-color: rgba(255,255,255,1);
+      }
+      .fig-frame-256-1-4130 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 0px 0px 0px 0px;
+        width: 100%;
+        max-width: 1351px;
+        min-height: 663px;
+      }
+      .fig-frame-253-1-4127 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        padding: 0px 0px 0px 0px;
+        width: 100%;
+        max-width: 843px;
+        min-height: 166px;
+      }
+      .fig-projects-1-2501 {
+        flex-shrink: 0;
+        white-space: pre-wrap;
+        font-size: clamp(1.75rem, 3vw + 1rem, 60px);
+        text-align: center;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-we-have-a-fleet-of-bike-projects-under-our-belt-with-more-coming-soon-check-out-what-we-re-working-on-1-2502 {
+        width: 100%;
+        align-self: stretch;
+        width: 100%;
+        max-width: 843px;
+        white-space: pre-wrap;
+        font-size: 24px;
+        text-align: center;
+        line-height: 1.5;
+        color: rgba(255,255,255,1);
+      }
+      .fig-group-154-1-2485 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 1005px;
+        min-height: 457px;
+      }
+      .fig-frame-145-1-2486 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 8.67172622680664px;
+        padding: 13.874762535095215px 13.874762535095215px 13.874762535095215px 13.874762535095215px;
+        width: 326px;
+        max-width: 100%;
+        min-height: 457px;
+        object-fit: cover;
+        box-shadow: inset 0px 0px 81.31671905517578px 0px rgba(0,0,0,0.25);
+      }
+      .fig-frame-208-1-2489 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 8.67172622680664px;
+        padding: 13.874762535095215px 13.874762535095215px 13.874762535095215px 13.874762535095215px;
+        width: 444px;
+        max-width: 100%;
+        min-height: 211px;
+        object-fit: cover;
+      }
+      .fig-frame-146-1-2492 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 8.67172622680664px;
+        padding: 13.874762535095215px 13.874762535095215px 13.874762535095215px 13.874762535095215px;
+        width: 307px;
+        max-width: 100%;
+        min-height: 229px;
+        object-fit: cover;
+      }
+      .fig-frame-148-1-2495 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 8.67172622680664px;
+        padding: 13.874762535095215px 13.874762535095215px 13.874762535095215px 13.874762535095215px;
+        width: 336px;
+        max-width: 100%;
+        min-height: 229px;
+        object-fit: cover;
+      }
+      .fig-frame-150-1-2498 {
+        flex-shrink: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 8.67172622680664px;
+        padding: 13.874762535095215px 13.874762535095215px 13.874762535095215px 13.874762535095215px;
+        width: 199px;
+        min-height: 211px;
+        object-fit: cover;
+      }
+      .fig-newsletter-1-2505 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 1513px;
+        min-height: 199px;
+      }
+      .fig-rectangle-126-1-2506 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 1513px;
+        height: 199px;
+        object-fit: cover;
+      }
+      .fig-newsletter-1-2507 {
+        flex-shrink: 0;
+        max-width: 100%;
+        white-space: pre-wrap;
+        font-size: clamp(1.75rem, 3vw + 1rem, 45px);
+        line-height: 1.5;
+        color: rgba(255,255,255,1);
+      }
+      .fig-subscribe-to-our-email-updates-for-new-info-merch-drops-and-more-1-2508 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 474px;
+        white-space: pre-wrap;
+        font-size: 24px;
+        line-height: 1.5;
+        color: rgba(255,255,255,1);
+      }
+      .fig-group-211-1-2509 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 573px;
+        min-height: 53px;
+      }
+      .fig-frame-83-1-2510 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10.479166984558105px;
+        padding: 10.479166984558105px 47.156253814697266px 10.479166984558105px 47.156253814697266px;
+        width: 154px;
+        min-height: 53px;
+        background-color: rgba(60,25,255,1);
+      }
+      .fig-sign-up-1-2511 {
+        flex-shrink: 0;
+        white-space: pre-wrap;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 40px;
+        color: rgba(255,255,255,1);
+      }
+      .fig-frame-84-1-2512 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10.479166984558105px;
+        padding: 10.479166984558105px 47.156253814697266px 10.479166984558105px 40px;
+        width: 419px;
+        max-width: 100%;
+        min-height: 53px;
+        background-color: rgba(255,255,255,1);
+      }
+      .fig-email-address-1-2513 {
+        flex-shrink: 0;
+        max-width: 100%;
+        white-space: pre-wrap;
+        font-size: 18px;
+        line-height: normal;
+        color: rgba(82,82,82,1);
+      }
+      .fig-final-nav-bar-1-2521 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 35px;
+        padding: 24px 80px 24px 80px;
+        width: 100%;
+        max-width: 1512px;
+        min-height: 81px;
+      }
+      .fig-frame-133-I1-2521;1332:1506 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 589px;
+        padding: 0px 0px 0px 0px;
+        width: 100%;
+        max-width: 1352px;
+        min-height: 33px;
+      }
+      @media (min-width: 768px) {
+        .fig-frame-133-I1-2521;1332:1506 {
+          flex-direction: row;
+        }
+      }
+      .fig-frame-83-I1-2521;1332:1507 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 0px 0px 0px 0px;
+        width: 100%;
+        max-width: 648px;
+        min-height: 27px;
+      }
+      @media (min-width: 768px) {
+        .fig-frame-83-I1-2521;1332:1507 {
+          flex-direction: row;
+        }
+      }
+      .fig-frame-86-I1-2521;1332:1508 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 9px;
+        padding: 0px 0px 0px 0px;
+        min-height: 27px;
+      }
+      @media (min-width: 768px) {
+        .fig-frame-86-I1-2521;1332:1508 {
+          width: 257px;
+          flex-shrink: 0;
+        }
+      }
+      .fig-union-I1-2521;1332:1509 {
+        flex-shrink: 0;
+        overflow: visible;
+      }
+      .fig-bike-builders-of-berkeley-I1-2521;1332:1513 {
+        flex-shrink: 0;
+        white-space: pre-wrap;
+        font-size: 21px;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-about-us-I1-2521;1332:1514 {
+        flex-shrink: 0;
+        white-space: pre-wrap;
+        font-size: 14px;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-projects-I1-2521;1332:1515 {
+        flex-shrink: 0;
+        white-space: pre-wrap;
+        font-size: 14px;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-members-I1-2521;1332:1516 {
+        flex-shrink: 0;
+        white-space: pre-wrap;
+        font-size: 14px;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-sponsors-I1-2521;1336:1770 {
+        flex-shrink: 0;
+        white-space: pre-wrap;
+        font-size: 14px;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-frame-85-I1-2521;1332:1517 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 21px;
+        padding: 0px 0px 0px 0px;
+        width: 257px;
+        min-height: 33px;
+      }
+      .fig-frame-25-I1-2521;1332:1518 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        padding: 8px 24px 8px 24px;
+        width: 119px;
+        min-height: 33px;
+        border: 1px solid rgba(255,255,255,1);
+        border-radius: 50px;
+      }
+      .fig-contact-us-I1-2521;1332:1519 {
+        flex-shrink: 0;
+        white-space: pre-wrap;
+        font-size: 14px;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-frame-120-I1-2521;1332:1520 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        padding: 8px 24px 8px 24px;
+        width: 117px;
+        min-height: 33px;
+        background-color: rgba(255,255,255,1);
+        border-radius: 50px;
+      }
+      .fig-apply-now-I1-2521;1332:1521 {
+        flex-shrink: 0;
+        white-space: pre-wrap;
+        font-size: 14px;
+        line-height: normal;
+        color: rgba(11,31,135,1);
+      }
+      .fig-frame-261-1-4179 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 90px 0px 90px 0px;
+        width: 100%;
+        max-width: 1951px;
+        min-height: 573px;
+        background-color: rgba(255,255,255,1);
+      }
+      .fig-frame-259-1-4180 {
+        width: 100%;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        padding: 0px 0px 0px 0px;
+        min-height: 393px;
+      }
+      .fig-frame-258-1-4181 {
+        width: 100%;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+        padding: 0px 0px 0px 0px;
+        min-height: 303px;
+      }
+      .fig-frame-257-1-4182 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        padding: 0px 0px 0px 0px;
+        width: 100%;
+        max-width: 882px;
+        min-height: 130px;
+      }
+      .fig-sponsors-1-4183 {
+        width: 100%;
+        align-self: stretch;
+        width: 100%;
+        max-width: 882px;
+        white-space: pre-wrap;
+        font-size: clamp(1.75rem, 3vw + 1rem, 60px);
+        text-align: center;
+        line-height: normal;
+        color: rgba(9,28,120,1);
+      }
+      .fig-we-are-grateful-for-the-people-and-companies-that-make-our-journey-possible-1-4184 {
+        width: 100%;
+        align-self: stretch;
+        width: 100%;
+        max-width: 882px;
+        white-space: pre-wrap;
+        font-size: 24px;
+        text-align: center;
+        line-height: 1.5;
+        color: rgba(0,0,0,1);
+      }
+      .fig-group-141-1-4185 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 1951px;
+        min-height: 125px;
+      }
+      .fig-rectangle-121-1-4186 {
+        flex-shrink: 0;
+        width: 359px;
+        max-width: 100%;
+        height: 122px;
+        object-fit: cover;
+      }
+      .fig-rectangle-122-1-4187 {
+        flex-shrink: 0;
+        width: 359px;
+        max-width: 100%;
+        height: 122px;
+        object-fit: cover;
+      }
+      .fig-rectangle-123-1-4188 {
+        flex-shrink: 0;
+        width: 359px;
+        max-width: 100%;
+        height: 122px;
+        object-fit: cover;
+      }
+      .fig-rectangle-124-1-4189 {
+        flex-shrink: 0;
+        width: 359px;
+        max-width: 100%;
+        height: 122px;
+        object-fit: cover;
+      }
+      .fig-rectangle-191-1-4190 {
+        flex-shrink: 0;
+        width: 359px;
+        max-width: 100%;
+        height: 122px;
+        object-fit: cover;
+      }
+      .fig-frame-82-1-4191 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 15px 15px 15px 15px;
+        width: 204px;
+        min-height: 50px;
+        background-color: rgba(60,25,255,1);
+        border-radius: 30px;
+      }
+      .fig-sponsor-us-1-4192 {
+        flex-shrink: 0;
+        max-width: 100%;
+        white-space: pre-wrap;
+        font-size: 20px;
+        text-align: center;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-dotted-lines-1-4122 {
+        flex-shrink: 0;
+        overflow: visible;
+      }
+  </style>
+</head>
+<body>
+  <div class="fig-home-page-1-2420">
+    <div class="fig-background-1-2421"></div>
+    <footer class="fig-final-footer-1-2423">
+      <button type="button" class="fig-rectangle-106-I1-2423;1342:1862"></button>
+      <h1 class="fig-stay-in-the-loop-stay-in-the-loop-stay-in-the-loop-I1-2423;1342:1863">STAY IN THE LOOP • STAY IN THE LOOP • STAY IN THE LOOP • </h1>
+      <div class="fig-group-187-I1-2423;1342:1878">
+        <div class="fig-logo-I1-2423;1342:1879">
+          <div class="fig-group-186-I1-2423;1342:1879;1332:1122">
+            <svg class="fig-vector-I1-2423;1342:1879;1332:1123" aria-hidden="true" width="28" height="43" viewBox="0 0 28 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.9929 39.9176L10.5026 30.3706L2.22457 24.328L12.6681 12.9181L18.5593 19.3332L25.7196 18.2155M16.3239 5.01263C16.4227 5.64564 16.7689 6.21347 17.2864 6.5912C17.8039 6.96894 18.4502 7.12563 19.0832 7.02682C19.7162 6.92801 20.2841 6.58178 20.6618 6.0643C21.0396 5.54682 21.1962 4.90049 21.0974 4.26748C20.9986 3.63447 20.6524 3.06664 20.1349 2.68891C19.6174 2.31117 18.9711 2.15448 18.3381 2.25329C17.7051 2.3521 17.1372 2.69833 16.7595 3.21581C16.3818 3.73328 16.2251 4.37962 16.3239 5.01263Z" stroke="white" stroke-width="4.44912" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+            <svg class="fig-vector-I1-2423;1342:1879;1332:1124" aria-hidden="true" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.3765 8.21716L19.9751 8.69452C20.0775 8.71413 20.1698 8.76919 20.2357 8.85005C20.3016 8.93091 20.3369 9.0324 20.3355 9.1367L20.2877 11.5624C20.285 11.6659 20.2461 11.7652 20.1778 11.843C20.1096 11.9209 20.0163 11.9725 19.914 11.9888L17.2955 12.3965C17.1343 12.9158 16.916 13.4156 16.6446 13.8868L18.1455 16.06C18.2048 16.1464 18.2316 16.251 18.2212 16.3553C18.2108 16.4595 18.1638 16.5568 18.0887 16.6297L16.3393 18.3103C16.2645 18.3817 16.1671 18.4248 16.0638 18.432C15.9606 18.4392 15.8581 18.4102 15.7741 18.3499L13.6395 16.7882C13.1558 17.0451 12.6475 17.2465 12.1144 17.3925L11.603 19.9802C11.5823 20.0817 11.5268 20.1728 11.4461 20.2377C11.3653 20.3026 11.2645 20.3372 11.1609 20.3356L8.73523 20.2878C8.63113 20.2852 8.53126 20.2461 8.45307 20.1773C8.37489 20.1085 8.32338 20.0145 8.30756 19.9115L7.92734 17.3176C7.40327 17.1534 6.89853 16.933 6.42192 16.6601L4.24436 18.1217C4.15814 18.1793 4.05448 18.2049 3.95135 18.194C3.84822 18.1832 3.75214 18.1366 3.67979 18.0623L1.998 16.3117C1.92638 16.236 1.88368 16.1375 1.87738 16.0335C1.87108 15.9295 1.90158 15.8266 1.96354 15.7428L3.52309 13.65C3.26648 13.1605 3.06397 12.6444 2.91916 12.1109L0.35541 11.6038C0.254114 11.5832 0.163185 11.5279 0.0983086 11.4474C0.0334318 11.3669 -0.00132452 11.2664 3.52332e-05 11.163L0.0477839 8.73734C0.0520271 8.52179 0.211608 8.341 0.42406 8.30966L3.0065 7.93176C3.17167 7.40225 3.39301 6.89795 3.67051 6.41886L2.21146 4.24388C2.15434 4.15764 2.12913 4.05417 2.14019 3.95132C2.15125 3.84848 2.19787 3.75273 2.27202 3.6806L4.02007 2.00004C4.17522 1.85087 4.41654 1.83533 4.58905 1.9643L6.68931 3.52781C7.17606 3.27575 7.68862 3.07702 8.21807 2.93509L8.69112 0.36179C8.7105 0.258881 8.76565 0.166138 8.8468 0.0999553C8.92795 0.0337726 9.02989 -0.00158701 9.1346 0.000126598L11.5602 0.0478753C11.7758 0.0521185 11.9553 0.210407 11.988 0.421615L12.3921 3.02613C12.9165 3.19036 13.4166 3.41035 13.8924 3.6861L16.0592 2.19263C16.1455 2.13334 16.2501 2.10654 16.3544 2.11695C16.4587 2.12736 16.5559 2.17431 16.6288 2.24951L18.3094 3.99756C18.4586 4.15272 18.4742 4.3915 18.3477 4.56406L16.7835 6.70235C17.0361 7.18512 17.2346 7.69007 17.3765 8.21716ZM7.07986 10.1075C7.07188 10.5129 7.14384 10.916 7.29162 11.2936C7.43941 11.6713 7.66014 12.0161 7.9412 12.3085C8.22226 12.6008 8.55815 12.8349 8.92969 12.9975C9.30124 13.16 9.70115 13.2478 10.1066 13.2558C10.5121 13.2637 10.9151 13.1918 11.2928 13.044C11.6704 12.8962 12.0153 12.6755 12.3076 12.3944C12.6 12.1134 12.8341 11.7775 12.9966 11.4059C13.1592 11.0344 13.2469 10.6345 13.2549 10.229C13.271 9.41015 12.9612 8.61842 12.3936 8.02799C11.826 7.43757 11.047 7.09682 10.2282 7.0807C9.40931 7.06458 8.61758 7.37441 8.02715 7.94204C7.43673 8.50967 7.09598 9.28859 7.07986 10.1075Z" fill="white"/>
+</svg>
+            <svg class="fig-vector-I1-2423;1342:1879;1332:1125" aria-hidden="true" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.9984 8.83859L20.5963 9.31593C20.6992 9.33497 20.792 9.38995 20.858 9.47106C20.9241 9.55217 20.9592 9.65412 20.957 9.75871L20.9093 12.1838C20.9072 12.2875 20.8686 12.3872 20.8002 12.4653C20.7318 12.5434 20.6381 12.5949 20.5355 12.6107L17.9162 13.0178C17.7553 13.5397 17.5385 14.0365 17.2658 14.5083L18.7668 16.681C18.8267 16.7673 18.8538 16.8721 18.8433 16.9765C18.8328 17.081 18.7854 17.1783 18.7096 17.2509L16.9609 18.9321C16.8862 19.0042 16.7884 19.0477 16.6848 19.0548C16.5812 19.0619 16.4784 19.0323 16.3945 18.971L14.2604 17.4096C13.776 17.6662 13.2647 17.8685 12.7358 18.0128L12.2248 20.6019C12.2047 20.7037 12.1492 20.7952 12.0682 20.8602C11.9873 20.9252 11.886 20.9595 11.7822 20.9571L9.35846 20.9094C9.25422 20.9075 9.15407 20.8686 9.07587 20.7996C8.99767 20.7307 8.94652 20.6362 8.93155 20.533L8.55097 17.9399C8.02601 17.7766 7.52076 17.5556 7.04448 17.281L4.86706 18.7441C4.78084 18.802 4.67697 18.8276 4.57373 18.8164C4.47049 18.8052 4.37451 18.7579 4.30269 18.6829L2.62012 16.9342C2.54869 16.8584 2.50598 16.7601 2.49937 16.6562C2.49277 16.5523 2.52269 16.4493 2.58396 16.3652L4.14463 14.2716C3.88616 13.7826 3.68303 13.2662 3.53901 12.7321L0.976854 12.2257C0.875232 12.2056 0.783936 12.1504 0.718973 12.0697C0.654011 11.989 0.619529 11.888 0.621575 11.7844L0.669312 9.35935C0.673572 9.14295 0.832731 8.96206 1.04712 8.93111L3.62669 8.55297C3.79315 8.02405 4.01505 7.51968 4.2924 7.03985L2.83334 4.86521C2.77581 4.77912 2.75042 4.67553 2.7616 4.5726C2.77278 4.46966 2.81982 4.37394 2.89448 4.3022L4.64455 2.62235C4.71977 2.54995 4.81823 2.50659 4.92242 2.49997C5.02661 2.49335 5.12977 2.5239 5.21354 2.5862L7.3138 4.14971C7.79957 3.89588 8.30904 3.69844 8.84221 3.5574L9.31505 0.982405C9.33408 0.87954 9.38906 0.786792 9.47017 0.720725C9.55128 0.654658 9.65323 0.619575 9.75782 0.621742L12.1829 0.669479C12.3979 0.673712 12.5775 0.831493 12.6112 1.04323L13.0145 3.649C13.539 3.81177 14.0398 4.03135 14.517 4.30774L16.6814 2.81465C16.7675 2.75462 16.8722 2.72727 16.9767 2.73751C17.0811 2.74775 17.1785 2.79491 17.2513 2.87052L18.9326 4.61926C19.0045 4.69414 19.0477 4.79198 19.0545 4.89557C19.0614 4.99916 19.0315 5.10186 18.9701 5.18557L17.4059 7.3237C17.6579 7.80673 17.8555 8.31124 17.9985 8.83723L17.9984 8.83859ZM7.69979 10.729C7.68367 11.5479 7.99353 12.3397 8.5612 12.9302C9.12887 13.5207 9.90786 13.8615 10.7268 13.8776C11.5457 13.8937 12.3375 13.5838 12.928 13.0162C13.5185 12.4485 13.8592 11.6695 13.8754 10.8506C13.8915 10.0316 13.5816 9.23984 13.014 8.64937C12.4463 8.0589 11.6673 7.71812 10.8484 7.702C10.0294 7.68588 9.23763 7.99574 8.64716 8.56341C8.05669 9.13109 7.71591 9.91007 7.69979 10.729Z" stroke="white" stroke-width="1.24297"/>
+</svg>
+          </div>
+        </div>
+        <div class="fig-group-186-I1-2423;1342:1880">
+          <div class="fig-frame-89-I1-2423;1342:1881">
+            <p class="fig-bike-I1-2423;1342:1882">Bike</p>
+            <p class="fig-builders-I1-2423;1342:1883">Builders</p>
+            <p class="fig-of-berkeley-I1-2423;1342:1884">of Berkeley</p>
+          </div>
+        </div>
+      </div>
+      <div class="fig-frame-142-I1-2423;1342:1899">
+        <div class="fig-frame-140-I1-2423;1342:1886">
+          <p class="fig-about-us-I1-2423;1342:1887">About Us</p>
+          <p class="fig-projects-I1-2423;1342:1888">Projects</p>
+          <p class="fig-members-I1-2423;1342:1889">Members</p>
+        </div>
+        <div class="fig-frame-139-I1-2423;1342:1890">
+          <p class="fig-sponsors-I1-2423;1342:1891">Sponsors</p>
+          <p class="fig-contact-us-I1-2423;1342:1892">Contact Us</p>
+          <p class="fig-apply-now-I1-2423;1342:1893">Apply Now</p>
+        </div>
+        <div class="fig-frame-138-I1-2423;1342:1865">
+          <div class="fig-frame-134-I1-2423;1342:1866">
+            <p class="fig-linkedin-I1-2423;1342:1867">LinkedIn</p>
+            <svg class="fig-vector-I1-2423;1342:1868" aria-hidden="true" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.99338 2.00189C5.72791 2.00189 5.47332 1.89644 5.2856 1.70872C5.09789 1.52101 4.99243 1.26641 4.99243 1.00095C4.99243 0.735479 5.09789 0.480884 5.2856 0.29317C5.47332 0.105456 5.72791 0 5.99338 0H11.9991C12.2645 0 12.5191 0.105456 12.7068 0.29317C12.8945 0.480884 13 0.735479 13 1.00095V7.00662C13 7.27209 12.8945 7.52669 12.7068 7.7144C12.5191 7.90211 12.2645 8.00757 11.9991 8.00757C11.7336 8.00757 11.479 7.90211 11.2913 7.7144C11.1036 7.52669 10.9981 7.27209 10.9981 7.00662V3.41723L1.69631 12.719C1.50753 12.9014 1.25469 13.0022 0.992249 13C0.729804 12.9977 0.478754 12.8924 0.29317 12.7068C0.107586 12.5212 0.00231841 12.2702 3.78385e-05 12.0078C-0.00224274 11.7453 0.0986468 11.4925 0.280977 11.3037L9.58277 2.00189H5.99338Z" fill="white"/>
+</svg>
+          </div>
+          <div class="fig-frame-135-I1-2423;1342:1869">
+            <p class="fig-instagram-I1-2423;1342:1870">Instagram</p>
+            <svg class="fig-vector-I1-2423;1342:1871" aria-hidden="true" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.99338 2.00189C5.72791 2.00189 5.47332 1.89644 5.2856 1.70872C5.09789 1.52101 4.99243 1.26641 4.99243 1.00095C4.99243 0.735479 5.09789 0.480884 5.2856 0.29317C5.47332 0.105456 5.72791 0 5.99338 0H11.9991C12.2645 0 12.5191 0.105456 12.7068 0.29317C12.8945 0.480884 13 0.735479 13 1.00095V7.00662C13 7.27209 12.8945 7.52669 12.7068 7.7144C12.5191 7.90211 12.2645 8.00757 11.9991 8.00757C11.7336 8.00757 11.479 7.90211 11.2913 7.7144C11.1036 7.52669 10.9981 7.27209 10.9981 7.00662V3.41723L1.69631 12.719C1.50753 12.9014 1.25469 13.0022 0.992249 13C0.729804 12.9977 0.478754 12.8924 0.29317 12.7068C0.107586 12.5212 0.00231841 12.2702 3.78385e-05 12.0078C-0.00224274 11.7453 0.0986468 11.4925 0.280977 11.3037L9.58277 2.00189H5.99338Z" fill="white"/>
+</svg>
+          </div>
+          <div class="fig-frame-136-I1-2423;1342:1872">
+            <p class="fig-facebook-I1-2423;1342:1873">Facebook</p>
+            <svg class="fig-vector-I1-2423;1342:1874" aria-hidden="true" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.99338 2.00189C5.72791 2.00189 5.47332 1.89644 5.2856 1.70872C5.09789 1.52101 4.99243 1.26641 4.99243 1.00095C4.99243 0.735479 5.09789 0.480884 5.2856 0.29317C5.47332 0.105456 5.72791 0 5.99338 0H11.9991C12.2645 0 12.5191 0.105456 12.7068 0.29317C12.8945 0.480884 13 0.735479 13 1.00095V7.00662C13 7.27209 12.8945 7.52669 12.7068 7.7144C12.5191 7.90211 12.2645 8.00757 11.9991 8.00757C11.7336 8.00757 11.479 7.90211 11.2913 7.7144C11.1036 7.52669 10.9981 7.27209 10.9981 7.00662V3.41723L1.69631 12.719C1.50753 12.9014 1.25469 13.0022 0.992249 13C0.729804 12.9977 0.478754 12.8924 0.29317 12.7068C0.107586 12.5212 0.00231841 12.2702 3.78385e-05 12.0078C-0.00224274 11.7453 0.0986468 11.4925 0.280977 11.3037L9.58277 2.00189H5.99338Z" fill="white"/>
+</svg>
+          </div>
+          <div class="fig-frame-137-I1-2423;1342:1875">
+            <p class="fig-github-I1-2423;1342:1876">Github</p>
+            <svg class="fig-vector-I1-2423;1342:1877" aria-hidden="true" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.99338 2.00189C5.72791 2.00189 5.47332 1.89644 5.2856 1.70872C5.09789 1.52101 4.99243 1.26641 4.99243 1.00095C4.99243 0.735479 5.09789 0.480884 5.2856 0.29317C5.47332 0.105456 5.72791 0 5.99338 0H11.9991C12.2645 0 12.5191 0.105456 12.7068 0.29317C12.8945 0.480884 13 0.735479 13 1.00095V7.00662C13 7.27209 12.8945 7.52669 12.7068 7.7144C12.5191 7.90211 12.2645 8.00757 11.9991 8.00757C11.7336 8.00757 11.479 7.90211 11.2913 7.7144C11.1036 7.52669 10.9981 7.27209 10.9981 7.00662V3.41723L1.69631 12.719C1.50753 12.9014 1.25469 13.0022 0.992249 13C0.729804 12.9977 0.478754 12.8924 0.29317 12.7068C0.107586 12.5212 0.00231841 12.2702 3.78385e-05 12.0078C-0.00224274 11.7453 0.0986468 11.4925 0.280977 11.3037L9.58277 2.00189H5.99338Z" fill="white"/>
+</svg>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="fig-landing-1-2424">
+      <div class="fig-title-1-2425">
+        <h1 class="fig-bike-builders-of-berkeley-1-2426">Bike
+Builders
+of Berkeley</h1>
+        <div class="fig-frame-92-1-2427">
+          <div class="fig-frame-90-1-2428">
+            <div class="fig-frame-23-1-2429">
+              <p class="fig-our-projects-1-2430">Our Projects</p>
+            </div>
+            <div class="fig-frame-21-1-2431">
+              <p class="fig-learn-more-about-sea-otter-1-2432">Learn More about Sea Otter</p>
+            </div>
+          </div>
+          <svg class="fig-vector-20-1-2433" aria-hidden="true" width="395" height="3" viewBox="0 0 395 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 1L394 1.9375" stroke="white" stroke-width="2" stroke-linecap="round"/>
+</svg>
+        </div>
+      </div>
+      <div class="fig-banners-1-2435">
+        <div class="fig-scroll-wrapper" style="width: 100%; overflow-x: auto;">
+    <div style="min-width: 600px; width: 100%;">
+<svg class="fig-vector-22-1-2436" aria-hidden="true" width="100%" height="auto" viewBox="0 0 990 279" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M962 -18.9999C838.493 161.884 632.093 311.274 327.244 215.921C187.707 172.276 67.549 164.498 -34.1649 179.008" stroke="#3C19FF" stroke-width="66"/>
+</svg>
+        
+    </div>
+  </div>
+        <div class="fig-engineering-business-community-biking-compsci-1-2437"></div>
+      </div>
+      <div class="fig-logo-1-2438">
+        <div class="fig-group-186-I1-2438;1332:1122">
+          <svg class="fig-vector-I1-2438;1332:1123" aria-hidden="true" width="140" height="227" viewBox="0 0 140 227" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M79.485 214.036L61.6946 166.489L12.6916 144.171L54.3349 74.3861L91.4512 101.151L127.111 87.8084M64.7656 29.8307C65.9451 32.9832 68.3287 35.5381 71.392 36.9332C74.4553 38.3283 77.9473 38.4494 81.0999 37.2698C84.2525 36.0902 86.8074 33.7066 88.2025 30.6433C89.5976 27.58 89.7186 24.088 88.5391 20.9355C87.3595 17.7829 84.9759 15.228 81.9126 13.8329C78.8493 12.4378 75.3573 12.3167 72.2047 13.4963C69.0521 14.6759 66.4973 17.0595 65.1022 20.1228C63.7071 23.1861 63.586 26.6781 64.7656 29.8307Z" stroke="white" stroke-width="25.3831" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+          <svg class="fig-vector-I1-2438;1332:1124" aria-hidden="true" width="108" height="108" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M88.6571 35.9104L102.535 35.6118C103.083 35.6041 103.616 35.7896 104.041 36.1358C104.466 36.482 104.755 36.9668 104.858 37.5051L107.184 50.0375C107.28 50.5731 107.185 51.1252 106.916 51.5983C106.648 52.0714 106.222 52.4357 105.713 52.6282L92.6711 57.502C92.3921 60.3451 91.7987 63.1485 90.9018 65.8609L100.929 75.4527C101.326 75.8345 101.575 76.3442 101.632 76.8917C101.689 77.4393 101.55 77.9893 101.241 78.4445L94.0208 88.9468C93.7114 89.3938 93.2557 89.7187 92.7323 89.8653C92.2088 90.0119 91.6507 89.9711 91.1541 89.7499L78.5146 83.9771C76.298 85.8116 73.8954 87.387 71.307 88.7032L71.419 102.561C71.4203 103.106 71.2313 103.633 70.8847 104.053C70.538 104.472 70.0556 104.757 69.5209 104.859L56.9884 107.185C56.45 107.282 55.8946 107.186 55.4193 106.915C54.9441 106.644 54.5793 106.215 54.3887 105.702L49.6822 92.7573C46.8114 92.4679 43.9803 91.8686 41.2386 90.9698L31.5828 100.799C31.2003 101.187 30.694 101.429 30.1518 101.482C29.6097 101.536 29.0659 101.398 28.6148 101.093L18.1047 93.8672C17.6559 93.5536 17.3318 93.0921 17.1891 92.5635C17.0464 92.0349 17.0942 91.473 17.3242 90.9761L23.1306 78.554C21.2911 76.3068 19.7019 73.8658 18.3911 71.2743L4.66103 71.3828C4.11795 71.3842 3.59141 71.196 3.17225 70.8507C2.75309 70.5053 2.4676 70.0246 2.36501 69.4913L0.0390745 56.9588C-0.167621 55.8451 0.461876 54.7456 1.52188 54.3591L14.4099 49.6766C14.6985 46.7768 15.3028 43.9471 16.2228 41.1876L6.40893 31.5426C6.02359 31.1594 5.78418 30.6536 5.73204 30.1127C5.6799 29.5718 5.81831 29.0296 6.12337 28.5799L13.3368 18.0788C13.977 17.1467 15.2023 16.8109 16.2267 17.2917L28.6918 23.1105C30.9292 21.2974 33.3561 19.7314 35.93 18.4397L35.6361 4.69655C35.6267 4.14645 35.8121 3.61075 36.1595 3.18415C36.507 2.75756 36.994 2.46753 37.5346 2.36534L50.0671 0.0394004C51.1808 -0.167295 52.2725 0.456867 52.6643 1.50911L57.5051 14.4829C60.3779 14.772 63.1845 15.3738 65.9249 16.2884L75.4913 6.30612C75.873 5.90946 76.3828 5.66063 76.9303 5.60366C77.4779 5.54669 78.0279 5.68525 78.4831 5.99483L88.9842 13.2082C89.9162 13.8485 90.2496 15.0606 89.782 16.0826L83.9996 28.7442C85.8115 30.9606 87.3684 33.3485 88.6571 35.9104ZM37.6771 56.5538C38.0659 58.6486 38.8635 60.6464 40.0244 62.433C41.1852 64.2197 42.6867 65.7601 44.4429 66.9665C46.1991 68.1729 48.1757 69.0215 50.2599 69.464C52.3441 69.9065 54.495 69.9341 56.5899 69.5453C58.6848 69.1565 60.6826 68.3589 62.4692 67.1981C64.2558 66.0372 65.7963 64.5358 67.0027 62.7796C68.209 61.0233 69.0577 59.0467 69.5002 56.9625C69.9426 54.8783 69.9703 52.7274 69.5815 50.6325C68.7963 46.4017 66.3626 42.6562 62.8157 40.2198C59.2689 37.7834 54.8995 36.8558 50.6687 37.641C46.4379 38.4262 42.6923 40.8599 40.2559 44.4067C37.8195 47.9536 36.8919 52.323 37.6771 56.5538Z" fill="white"/>
+</svg>
+          <svg class="fig-vector-I1-2438;1332:1125" aria-hidden="true" width="115" height="115" viewBox="0 0 115 115" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M92.2051 39.4562L106.079 39.1583C106.629 39.1472 107.164 39.3318 107.59 39.6791C108.016 40.0264 108.305 40.5139 108.405 41.0544L110.73 53.5837C110.829 54.1199 110.736 54.6739 110.467 55.1483C110.198 55.6226 109.771 55.9869 109.26 56.177L96.2126 61.049C95.9378 63.9047 95.3489 66.691 94.446 69.4079L104.474 78.997C104.873 79.3774 105.124 79.8878 105.18 80.4364C105.237 80.9851 105.096 81.5359 104.783 81.99L97.567 92.4953C97.2591 92.9456 96.8021 93.2728 96.2765 93.4193C95.7509 93.5658 95.1906 93.5221 94.6941 93.2959L82.0569 87.5235C79.8363 89.3576 77.4197 90.9406 74.8513 92.2438L74.9668 106.109C74.971 106.654 74.7827 107.184 74.4349 107.604C74.0871 108.024 73.6022 108.308 73.0656 108.406L60.5432 110.73C60.0047 110.831 59.4481 110.737 58.9726 110.465C58.4971 110.193 58.1337 109.761 57.9473 109.246L53.2397 96.3054C50.3653 96.0218 47.5311 95.4205 44.7892 94.5124L35.1358 104.35C34.7535 104.739 34.2461 104.981 33.703 105.033C33.1599 105.084 32.6159 104.943 32.1668 104.633L21.6546 97.4182C21.2068 97.1041 20.8827 96.6435 20.7386 96.1158C20.5945 95.5882 20.6393 95.0267 20.8653 94.5286L26.6766 82.1011C24.8281 79.8586 23.2354 77.4169 21.9281 74.8213L8.20694 74.9318C7.66269 74.936 7.13432 74.7485 6.71449 74.4021C6.29465 74.0557 6.01015 73.5726 5.91087 73.0375L3.5855 60.5081C3.37799 59.39 4.00522 58.2905 5.0756 57.9039L17.9486 53.2233C18.2444 50.3251 18.8515 47.4945 19.77 44.7314L9.95645 35.088C9.56917 34.706 9.32867 34.1999 9.27706 33.6584C9.22545 33.1168 9.36604 32.5744 9.67419 32.1261L16.8987 21.6266C17.209 21.1743 17.6697 20.8467 18.1988 20.7022C18.7279 20.5577 19.2911 20.6055 19.7883 20.8373L32.2533 26.6561C34.4839 24.8349 36.8962 23.2788 39.4902 21.9878L39.1933 8.23616C39.1822 7.68666 39.3668 7.1511 39.7142 6.72515C40.0615 6.29919 40.5489 6.01057 41.0894 5.91084L53.6188 3.58547C54.7299 3.37926 55.8211 4.0008 56.2191 5.05461L61.0571 18.0357C63.9285 18.3172 66.7384 18.9162 69.4867 19.8326L79.0417 9.8547C79.4211 9.45453 79.9308 9.20281 80.4791 9.14476C81.0275 9.08671 81.5786 9.22614 82.0334 9.538L92.5386 16.7542C92.988 17.0633 93.3141 17.521 93.4592 18.0467C93.6044 18.5725 93.5595 19.1326 93.3323 19.6285L87.5498 32.2892C89.359 34.5076 90.9104 36.8942 92.2038 39.4493L92.2051 39.4562ZM41.2148 60.1024C42.0001 64.3335 44.434 68.0794 47.9811 70.516C51.5283 72.9526 55.8981 73.8803 60.1292 73.095C64.3603 72.3098 68.1062 69.8759 70.5428 66.3287C72.9794 62.7816 73.9071 58.4118 73.1218 54.1807C72.3365 49.9496 69.9026 46.2037 66.3555 43.7671C62.8084 41.3305 58.4386 40.4028 54.2075 41.1881C49.9763 41.9733 46.2304 44.4073 43.7939 47.9544C41.3573 51.5015 40.4296 55.8713 41.2148 60.1024Z" stroke="white" stroke-width="7.09142"/>
+</svg>
+        </div>
+      </div>
+    </div>
+    <div class="fig-top-blurb-1-2439">
+      <div class="fig-frame-248-1-4074">
+        <h1 class="fig-design-build-learn-1-2440">Design, Build, Learn</h1>
+        <h2 class="fig-we-design-build-and-test-all-things-bikes-with-a-focus-on-creating-frames-from-scratch-lorem-ipsum-dolor-sit-amet-consectetur-1-2441">We design, build, and test all things bikes with a focus on creating frames from scratch. Lorem ipsum dolor sit amet consectetur.</h2>
+      </div>
+      <div class="fig-frame-249-1-4075">
+        <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=549&auto=format&fit=crop&q=80" width="549" height="337" class="fig-rectangle-450-1-2442" alt="Rectangle 450" />
+        <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=549&auto=format&fit=crop&q=80" width="549" height="337" class="fig-img2-1-2443" alt="img2" />
+      </div>
+    </div>
+    <div class="fig-who-we-are-1-2444">
+      <button type="button" class="fig-rectangle-449-1-2445"></button>
+      <div class="fig-frame-254-1-4128">
+        <h1 class="fig-who-we-are-1-2446">Who We Are</h1>
+        <div class="fig-frame-210-1-2448">
+          <div class="fig-frame-250-1-4124">
+            <h2 class="fig-1-bike-building-team-1-2450">#1 Bike Building Team</h2>
+            <h3 class="fig-founded-in-fall-2021-we-are-a-relatively-new-engineering-club-pioneering-the-bike-building-field-among-universities-lorem-ipsum-dolor-sit-amet-consectetur-non-amet-ultricies-faucibus-volutpat-duis-lorem-ipsum-dolor-sit-amet-consectetur-non-amet-ultricies-faucibus-volutpat-duis-lorem-ipsum-dolor-sit-amet-consectetur-1-2449">Founded in Fall 2021, we are a relatively new engineering club pioneering the bike building field among universities. Lorem ipsum dolor sit amet consectetur. Non amet ultricies faucibus volutpat duis. Lorem ipsum dolor sit amet consectetur.
+
+Non amet ultricies faucibus volutpat duis. Lorem ipsum dolor sit amet consectetur.</h3>
+          </div>
+          <div class="fig-video-1-2451">
+            <div class="fig-group-124-1-2452">
+              <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=573&auto=format&fit=crop&q=80" width="573" height="352" class="fig-rectangle-126-1-2453" alt="Rectangle 126" />
+              <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=113&auto=format&fit=crop&q=80" width="113" height="79" class="fig-image-170-1-2454" alt="image 170" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fig-frame-252-1-4126">
+        <div class="fig-frame-251-1-4125">
+          <div class="fig-member-spotlight-1-2460">
+            <h1 class="fig-member-spotlight-1-2461">Member Spotlight</h1>
+            <div class="fig-member-1-2462">
+              <div class="fig-member1-1-2463">
+                <button type="button" class="fig-rectangle-185-1-2464"></button>
+                <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=281&auto=format&fit=crop&q=80" width="281" height="347" class="fig-rectangle-186-1-2465" alt="Rectangle 186" />
+                <p class="fig-ziven-just-finished-his-5-year-stint-at-cal-b-s-m-s-and-is-going-to-ride-the-great-divide-this-summer-on-a-bike-he-built-in-2-weeks-good-luck-ziven-with-your-career-and-your-ride-1-2466">Ziven just finished his 5 year stint at Cal (B.S. & M.S) and is going to ride the Great Divide this Summer on a bike he built in 2 weeks. Good luck Ziven, with your career and your ride!</p>
+                <h3 class="fig-founder-1-2467">Founder</h3>
+                <h2 class="fig-ziven-posner-1-2468">Ziven Posner</h2>
+              </div>
+              <div class="fig-member2-1-2469">
+                <button type="button" class="fig-rectangle-185-1-2470"></button>
+                <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=281&auto=format&fit=crop&q=80" width="281" height="347" class="fig-rectangle-187-1-2471" alt="Rectangle 187" />
+                <p class="fig-justin-is-built-different-not-only-does-he-study-mechanical-engineering-race-bikes-work-on-two-student-teams-but-he-does-all-of-them-better-than-most-people-can-do-one-everyone-who-knows-justin-aspires-to-have-just-one-of-his-skills-1-2472">Justin is built different. Not only does he study Mechanical Engineering, race bikes, work on two student teams, but he does all of them better than most people can do one. Everyone who knows Justin aspires to have just one of his skills.</p>
+                <h3 class="fig-gravel-bike-lead-1-2473">Gravel Bike Lead</h3>
+                <h2 class="fig-justin-peck-1-2474">Justin Peck</h2>
+              </div>
+              <div class="fig-member3-1-2475">
+                <button type="button" class="fig-rectangle-185-1-2476"></button>
+                <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=281&auto=format&fit=crop&q=80" width="281" height="347" class="fig-rectangle-186-1-2477" alt="Rectangle 186" />
+                <p class="fig-zach-is-a-sophmore-studying-mechanical-engineering-he-lead-our-go-fund-me-campaign-and-rides-his-road-bike-all-around-the-bay-not-only-does-he-balance-work-and-school-he-also-designs-and-machines-components-for-bike-builders-1-2478">Zach is a Sophmore studying Mechanical Engineering. He lead our Go-Fund me campaign and rides his road bike all around the bay. Not only does he balance work and school, he also designs and machines components for Bike Builders</p>
+                <h3 class="fig-mtb-engineer-1-2479">MTB Engineer</h3>
+                <h2 class="fig-zachary-liu-1-2480">Zachary Liu</h2>
+              </div>
+            </div>
+          </div>
+          <h3 class="fig-we-are-a-team-of-undergraduate-students-at-uc-berkeley-everyone-plays-in-integral-role-in-building-a-bike-from-organizing-the-business-side-of-things-to-making-custom-components-our-community-is-open-to-everyone-1-2447">We are a team of undergraduate students at UC Berkeley. Everyone plays in integral role in building a bike, from organizing the business side of things to making custom components. Our community is open to everyone!</h3>
+        </div>
+        <button type="button" class="fig-buttons-1-2455">
+          <div class="fig-frame-24-1-4140">
+            <p class="fig-join-us-1-4141">Join Us</p>
+          </div>
+          <div class="fig-frame-25-1-4143">
+            <p class="fig-learn-more-1-4144">Learn More</p>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div class="fig-banner-1-4199">
+      <div class="fig-scroll-wrapper" style="width: 100%; overflow-x: auto;">
+    <div style="min-width: 600px; width: 100%;">
+<svg class="fig-vector-22-1-4200" aria-hidden="true" width="100%" height="auto" viewBox="0 0 1512 642" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M-90.5114 623.511L-62.312 641.31C17.2511 511.628 302.297 284.46 793.709 482.598L805.362 451.993L817.014 421.387C294.272 210.617 -23.5894 450.67 -118.711 605.711L-90.5114 623.511ZM805.362 451.993L793.709 482.598C1058.65 589.423 1272.55 535.127 1430.51 422.851C1586.76 311.799 1687.48 144.921 1732.92 24.7277L1702.06 12.3638L1671.19 -9.5179e-05C1629.02 111.539 1534.93 266.703 1391.5 368.646C1249.79 469.364 1059.15 519.016 817.014 421.387L805.362 451.993Z" fill="#3C19FF"/>
+</svg>
+      
+    </div>
+  </div>
+      <div class="fig-engineering-business-community-biking-computer-science-design-1-4201"></div>
+    </div>
+    <div class="fig-frame-256-1-4130">
+      <div class="fig-frame-253-1-4127">
+        <h1 class="fig-projects-1-2501">Projects</h1>
+        <h2 class="fig-we-have-a-fleet-of-bike-projects-under-our-belt-with-more-coming-soon-check-out-what-we-re-working-on-1-2502">We have a fleet of bike projects under our belt, with more coming soon. Check out what we’re working on!</h2>
+      </div>
+      <div class="fig-group-154-1-2485">
+        <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=326&auto=format&fit=crop&q=80" width="326" height="457" class="fig-frame-145-1-2486" alt="Frame 145" />
+        <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=444&auto=format&fit=crop&q=80" width="444" height="211" class="fig-frame-208-1-2489" alt="Frame 208" />
+        <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=307&auto=format&fit=crop&q=80" width="307" height="229" class="fig-frame-146-1-2492" alt="Frame 146" />
+        <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=336&auto=format&fit=crop&q=80" width="336" height="229" class="fig-frame-148-1-2495" alt="Frame 148" />
+        <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=199&auto=format&fit=crop&q=80" width="199" height="211" class="fig-frame-150-1-2498" alt="Frame 150" />
+      </div>
+    </div>
+    <div class="fig-newsletter-1-2505">
+      <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=1513&auto=format&fit=crop&q=80" width="1513" height="199" class="fig-rectangle-126-1-2506" alt="Rectangle 126" />
+      <h1 class="fig-newsletter-1-2507">Newsletter</h1>
+      <h2 class="fig-subscribe-to-our-email-updates-for-new-info-merch-drops-and-more-1-2508">Subscribe to our email updates for new info, merch drops, and more!</h2>
+      <div class="fig-group-211-1-2509">
+        <div class="fig-frame-83-1-2510">
+          <p class="fig-sign-up-1-2511">Sign Up</p>
+        </div>
+        <div class="fig-frame-84-1-2512">
+          <p class="fig-email-address-1-2513">Email Address</p>
+        </div>
+      </div>
+    </div>
+    <nav class="fig-final-nav-bar-1-2521">
+      <div class="fig-frame-133-I1-2521;1332:1506">
+        <div class="fig-frame-83-I1-2521;1332:1507">
+          <div class="fig-frame-86-I1-2521;1332:1508">
+            <svg class="fig-union-I1-2521;1332:1509" aria-hidden="true" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.04494 14.4264C5.13883 14.4283 5.21712 14.4975 5.23146 14.5895L5.40822 15.7262C5.63694 15.7978 5.85502 15.894 6.06252 16.0143L7.00783 15.3629C7.0455 15.337 7.09127 15.3252 7.13674 15.3297C7.18223 15.3342 7.22501 15.3545 7.25685 15.3873L7.99025 16.15C8.05525 16.2176 8.06178 16.3218 8.00685 16.3971L7.32424 17.3307C7.43445 17.5413 7.52114 17.7618 7.58302 17.9918L8.71681 18.1998C8.76153 18.2084 8.80231 18.2329 8.83107 18.2682C8.85959 18.3034 8.87467 18.3478 8.87404 18.3932L8.85353 19.4518C8.85225 19.4967 8.83528 19.54 8.80568 19.5738C8.77596 19.6078 8.73497 19.6301 8.69045 19.6373L7.54787 19.815C7.47755 20.0415 7.38203 20.2599 7.26369 20.4654L7.91896 21.4137C7.94477 21.4513 7.95564 21.4972 7.95119 21.5426C7.94665 21.5881 7.92639 21.6309 7.89357 21.6627L7.1299 22.3961C7.09727 22.4272 7.05473 22.4457 7.00978 22.4488C6.96494 22.4519 6.92037 22.4398 6.88381 22.4137L5.95217 21.732C5.7411 21.8441 5.51877 21.932 5.28615 21.9957L5.06349 23.1246C5.05451 23.1688 5.03023 23.2086 4.99513 23.2369C4.9599 23.2652 4.91533 23.2806 4.87013 23.2799L3.81154 23.2594C3.76626 23.2582 3.72251 23.2405 3.68849 23.2105C3.65467 23.1806 3.63197 23.1399 3.62502 23.0953L3.459 21.9625C3.23062 21.8909 3.01048 21.7953 2.80275 21.6764L1.85256 22.3141C1.81501 22.3392 1.76954 22.35 1.72463 22.3453C1.67962 22.3406 1.63706 22.3201 1.60549 22.2877L0.872087 21.524C0.840923 21.4911 0.822185 21.4482 0.819353 21.4029C0.816613 21.3577 0.829625 21.3125 0.856462 21.276L1.53713 20.3629C1.42516 20.1493 1.33665 19.9238 1.27345 19.691L0.15529 19.4693C0.111086 19.4603 0.0712966 19.4361 0.0429853 19.401C0.0147413 19.3659 -0.000576068 19.322 1.65762e-05 19.277L0.0205244 18.2184C0.0224855 18.1244 0.0929286 18.0455 0.185563 18.0318L1.31154 17.8668C1.38362 17.6358 1.4805 17.4157 1.60158 17.2066L0.96486 16.2574C0.940161 16.22 0.928921 16.1751 0.93361 16.1305C0.938418 16.0857 0.95907 16.0437 0.991228 16.0123L1.75392 15.2789C1.82163 15.2138 1.92767 15.207 2.00295 15.2633L2.91896 15.9449C3.13132 15.835 3.35498 15.7481 3.58595 15.6861L3.79299 14.5641C3.80141 14.5193 3.82516 14.4787 3.86037 14.4498C3.89578 14.4209 3.94065 14.4051 3.98634 14.4059L5.04494 14.4264ZM20.8067 11.0162C21.0142 11.0206 21.1911 11.1557 21.2569 11.3443L21.2783 11.4283V11.4293L21.4258 12.3893C21.5536 12.4365 21.6782 12.4923 21.7998 12.5543L22.5957 12.0055C22.6906 11.9397 22.806 11.9092 22.9209 11.9205L23.0059 11.9371C23.0881 11.9604 23.1635 12.0048 23.2236 12.067L23.958 12.8307C24.0176 12.8927 24.0588 12.9698 24.0791 13.0523L24.0928 13.1363L24.0908 13.2213C24.0816 13.3058 24.0499 13.3873 23.999 13.4566L23.9981 13.4557L23.4209 14.2447C23.4768 14.3667 23.5265 14.4913 23.5684 14.6188L24.5244 14.7945C24.6095 14.8103 24.689 14.8491 24.7539 14.9049L24.8145 14.9664L24.8633 15.0377C24.9046 15.1124 24.9256 15.1975 24.9238 15.2838L24.9024 16.3424C24.9 16.4567 24.8575 16.5668 24.7822 16.6529C24.7068 16.739 24.6033 16.7966 24.4903 16.8141L23.5225 16.9635C23.4762 17.089 23.4228 17.2114 23.3623 17.3307L23.916 18.1314H23.9151C23.9809 18.2265 24.0105 18.3416 23.999 18.4566C23.9875 18.5717 23.9349 18.6783 23.8516 18.7584L23.0889 19.4928C23.0065 19.5721 22.8993 19.6206 22.7852 19.6285C22.6709 19.6363 22.5564 19.6043 22.4639 19.5367V19.5357L21.6768 18.9596C21.5528 19.0171 21.4257 19.0672 21.2959 19.11L21.1074 20.066L21.1065 20.067C21.0841 20.1792 21.0238 20.2805 20.9346 20.3522C20.8454 20.4237 20.7334 20.4619 20.6192 20.4596L19.5625 20.4381C19.4472 20.4359 19.3355 20.3933 19.249 20.317C19.1629 20.241 19.1066 20.1367 19.0899 20.023L18.9492 19.068C18.8213 19.0206 18.6959 18.9658 18.5742 18.9039L17.7715 19.4439C17.6765 19.5076 17.562 19.5353 17.4483 19.523C17.3343 19.5107 17.2287 19.4583 17.1494 19.3756V19.3766L16.4131 18.6109C16.335 18.5281 16.2877 18.4208 16.2803 18.3072C16.2731 18.1935 16.3062 18.0801 16.3731 17.9879L16.375 17.985L16.9483 17.2154C16.8903 17.0899 16.8398 16.9611 16.7969 16.8297L15.8526 16.6441V16.6432C15.7406 16.6209 15.64 16.5602 15.5684 16.4713C15.4967 16.3823 15.4578 16.2701 15.46 16.1559L15.4805 15.0982C15.4852 14.8602 15.6617 14.6588 15.8985 14.6246L16.8457 14.4859C16.8939 14.3567 16.95 14.2308 17.0127 14.108L16.4756 13.3072V13.3063C16.4121 13.2112 16.3832 13.0966 16.3955 12.983C16.4079 12.8695 16.4597 12.7634 16.542 12.6842H16.543L17.3067 11.9508C17.3896 11.8712 17.4985 11.8233 17.6133 11.816L17.6992 11.8189C17.7557 11.8254 17.8105 11.8414 17.8613 11.8668L17.9346 11.9117L18.708 12.4859C18.8306 12.43 18.9564 12.3809 19.085 12.3395L19.2588 11.3941L19.2822 11.3121C19.3123 11.2319 19.3635 11.1608 19.4307 11.1061L19.502 11.0572C19.5767 11.0158 19.6616 10.9939 19.7481 10.9957L20.8067 11.0162ZM4.46388 17.4957C4.10654 17.4887 3.7606 17.624 3.50295 17.8717C3.24546 18.1193 3.09702 18.4589 3.08986 18.816C3.08638 18.993 3.11716 19.1698 3.18166 19.3346C3.24615 19.4993 3.34325 19.6494 3.46584 19.777C3.58839 19.9044 3.73453 20.0068 3.8965 20.0777C4.05856 20.1486 4.23332 20.1865 4.41017 20.19C4.58699 20.1935 4.76305 20.1626 4.92775 20.0982C5.09255 20.0338 5.24353 19.9367 5.37111 19.8141C5.49851 19.6915 5.60102 19.5454 5.67189 19.3834C5.7428 19.2213 5.78069 19.0466 5.7842 18.8697C5.79123 18.5124 5.65592 18.1664 5.40822 17.9088C5.16063 17.6514 4.82096 17.5028 4.46388 17.4957ZM19.6319 12.6246L19.5977 12.8082L19.417 12.857C19.2059 12.9129 19.0046 12.9911 18.8125 13.0914L18.6485 13.1764L18.499 13.066L17.6524 12.4352L17.0117 13.0494L17.6006 13.9273L17.7031 14.0807L17.6113 14.2389C17.5012 14.4294 17.4138 14.6304 17.3477 14.8404L17.291 15.0162L17.1094 15.0436L16.0694 15.1949L16.0518 16.0826L17.085 16.2867L17.2647 16.3219L17.3125 16.4986C17.3696 16.7105 17.4502 16.916 17.5528 17.11L17.6397 17.274L17.5283 17.4234L16.8985 18.2662L17.5137 18.9068L18.3936 18.316L18.5459 18.2135L18.7041 18.3063C18.8457 18.3879 18.9945 18.4572 19.1475 18.5143L19.3028 18.567L19.4795 18.6217L19.5069 18.8053L19.6592 19.8512L20.5459 19.8688L20.752 18.8229L20.7881 18.6441L20.9639 18.5953C21.1737 18.5381 21.3772 18.4579 21.5694 18.3561L21.7324 18.2701L21.8809 18.3795L22.7422 19.0094L23.3819 18.3941L22.7754 17.5172L22.6699 17.3639L22.7627 17.2027C22.8706 17.0161 22.9568 16.8194 23.0205 16.6129L23.0752 16.4371L23.2569 16.4088L24.3154 16.2447L24.333 15.358L23.2852 15.1656L23.0391 15.1207L23.043 14.9156C22.9872 14.7202 22.9124 14.5325 22.8184 14.3522L22.7334 14.1891L22.8418 14.0416L23.4736 13.1773L22.8604 12.5387L21.9854 13.1422L21.832 13.2477L21.6709 13.1539C21.4819 13.0444 21.2837 12.9576 21.0762 12.8932L20.9004 12.8385L20.8721 12.6568L20.709 11.6051L19.8233 11.5875L19.6319 12.6246ZM12.3613 4.9332C12.6648 4.93032 12.9532 5.05893 13.1514 5.28672L15.3447 7.81211L17.8965 7.39121C18.4706 7.29665 19.0046 7.68578 19.0899 8.26133C19.1749 8.83718 18.7784 9.38125 18.2041 9.47617L15.0801 9.9918C14.7234 10.0506 14.3632 9.92177 14.1279 9.65098L12.3447 7.59824L9.32228 11.0875L12.0586 13.1988C12.2701 13.3623 12.4098 13.6021 12.4492 13.8688L13.0996 18.2721C13.1846 18.848 12.7882 19.3921 12.2139 19.4869C11.6396 19.5815 11.1047 19.1916 11.0195 18.6158L10.4307 14.6256L7.14845 12.0953C6.92089 11.9196 6.77653 11.6558 6.75002 11.3668C6.7236 11.0777 6.81747 10.7882 7.00881 10.567L11.5664 5.30332L11.6465 5.22031C11.8407 5.03932 12.0959 4.93595 12.3613 4.9332ZM20.2236 14.0855C20.659 14.0942 21.0732 14.2765 21.375 14.5904C21.6767 14.9044 21.8416 15.3251 21.833 15.7604C21.8244 16.1957 21.643 16.6099 21.3291 16.9117C21.0153 17.2134 20.5944 17.3782 20.1592 17.3697C19.7238 17.3611 19.3096 17.1797 19.0078 16.8658C18.7061 16.5519 18.5404 16.1312 18.5488 15.6959C18.5574 15.2606 18.739 14.8464 19.0528 14.5445C19.3667 14.2427 19.7882 14.077 20.2236 14.0855ZM20.2119 14.6744C19.9329 14.669 19.6632 14.7751 19.4619 14.9684C19.2606 15.162 19.1442 15.4283 19.1387 15.7076C19.1333 15.9867 19.2391 16.2564 19.4326 16.4576C19.6261 16.6587 19.891 16.7752 20.1699 16.7809C20.4492 16.7864 20.7205 16.6805 20.9219 16.4869C21.1229 16.2934 21.2386 16.0276 21.2442 15.7486C21.2496 15.4695 21.1446 15.199 20.9512 14.9977C20.7576 14.7963 20.4912 14.6799 20.2119 14.6744ZM14.8887 0.00351723C15.386 -0.0257288 15.8717 0.128391 16.2617 0.429298C16.7055 0.771715 16.9918 1.27744 17.0733 1.82871C17.1545 2.37981 17.0269 2.95259 16.7031 3.42149C16.3778 3.89257 15.8788 4.22185 15.3086 4.31602C14.7383 4.41013 14.1666 4.25767 13.7207 3.91367C13.2773 3.57134 12.9907 3.06622 12.9092 2.51524C12.8279 1.96406 12.9555 1.39048 13.2793 0.921486C13.6047 0.450347 14.1047 0.122132 14.6748 0.0279313L14.8887 0.00351723ZM14.9903 2.17246C14.9907 2.17486 14.9917 2.17706 14.9922 2.1793C14.9922 2.17685 14.9935 2.17404 14.9932 2.17149C14.9927 2.16872 14.9899 2.16624 14.9893 2.16367C14.9894 2.16632 14.9898 2.16972 14.9903 2.17246Z" fill="white"/>
+</svg>
+            <h3 class="fig-bike-builders-of-berkeley-I1-2521;1332:1513">Bike Builders of Berkeley</h3>
+          </div>
+          <p class="fig-about-us-I1-2521;1332:1514">About Us</p>
+          <p class="fig-projects-I1-2521;1332:1515">Projects</p>
+          <p class="fig-members-I1-2521;1332:1516">Members</p>
+          <p class="fig-sponsors-I1-2521;1336:1770">Sponsors</p>
+        </div>
+        <div class="fig-frame-85-I1-2521;1332:1517">
+          <div class="fig-frame-25-I1-2521;1332:1518">
+            <p class="fig-contact-us-I1-2521;1332:1519">Contact Us</p>
+          </div>
+          <div class="fig-frame-120-I1-2521;1332:1520">
+            <p class="fig-apply-now-I1-2521;1332:1521">Apply Now</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="fig-frame-261-1-4179">
+      <div class="fig-frame-259-1-4180">
+        <div class="fig-frame-258-1-4181">
+          <div class="fig-frame-257-1-4182">
+            <h1 class="fig-sponsors-1-4183">Sponsors</h1>
+            <h2 class="fig-we-are-grateful-for-the-people-and-companies-that-make-our-journey-possible-1-4184">We are grateful for the people and companies that make our journey possible!</h2>
+          </div>
+          <div class="fig-group-141-1-4185">
+            <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=359&auto=format&fit=crop&q=80" width="359" height="122" class="fig-rectangle-121-1-4186" alt="Rectangle 121" />
+            <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=359&auto=format&fit=crop&q=80" width="359" height="122" class="fig-rectangle-122-1-4187" alt="Rectangle 122" />
+            <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=359&auto=format&fit=crop&q=80" width="359" height="122" class="fig-rectangle-123-1-4188" alt="Rectangle 123" />
+            <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=359&auto=format&fit=crop&q=80" width="359" height="122" class="fig-rectangle-124-1-4189" alt="Rectangle 124" />
+            <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=359&auto=format&fit=crop&q=80" width="359" height="122" class="fig-rectangle-191-1-4190" alt="Rectangle 191" />
+          </div>
+        </div>
+        <div class="fig-frame-82-1-4191">
+          <h3 class="fig-sponsor-us-1-4192">Sponsor Us</h3>
+        </div>
+      </div>
+    </div>
+    <div class="fig-scroll-wrapper" style="width: 100%; overflow-x: auto;">
+    <div style="min-width: 600px; width: 100%;">
+<svg class="fig-dotted-lines-1-4122" aria-hidden="true" width="100%" height="auto" viewBox="0 0 1512 315" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M-23.559 172.804C23.7491 292.196 758.329 414.597 1074.71 136.301C1386.05 -137.559 1692.42 93.4228 1806.69 243.146" stroke="white" stroke-width="18" stroke-dasharray="50 50"/>
+</svg>
+    
+    </div>
+  </div>
+  </div>
+</body>
+</html>

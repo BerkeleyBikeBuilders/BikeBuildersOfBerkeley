@@ -1,0 +1,1506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Figma Export</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body { background: #f9fafb; min-height: 100vh; display: flex; flex-direction: column; align-items: center; font-family: system-ui, -apple-system, sans-serif; overflow-x: hidden; color: #111827; }
+      .fig-container-fluid { width: 100%; max-width: 1280px; margin: 0 auto; padding: 1.5rem; }
+      @media (max-width: 768px) {
+        .fig-col-mobile { flex-direction: column !important; width: 100% !important; }
+        .fig-hide-mobile { display: none !important; }
+      }
+
+      .fig-sponsors-page-1-2847 {
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        min-height: 100vh;
+      }
+      .fig-rectangle-430-1-2848 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 1512px;
+        height: 3860px;
+        background-color: rgba(255,255,255,1);
+      }
+      .fig-rectangle-196-1-2849 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 1516px;
+        height: 856px;
+        background-color: rgba(11,31,135,1);
+      }
+      .fig-vector-24-1-2850 {
+        flex-shrink: 0;
+        overflow: visible;
+      }
+      .fig-rectangle-196-1-2851 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 1516px;
+        height: 699px;
+        background-color: rgba(11,31,135,1);
+      }
+      .fig-group-239-1-2852 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 974px;
+        min-height: 744px;
+      }
+      .fig-sram-5-logo-png-transparent-3-1-2853 {
+        flex-shrink: 0;
+        width: 280px;
+        max-width: 100%;
+        height: 280px;
+        object-fit: cover;
+      }
+      .fig-frame-227-1-2854 {
+        flex-shrink: 0;
+        position: relative;
+        width: 381px;
+        max-width: 100%;
+        min-height: 260px;
+      }
+      .fig-rectangle-444-1-2855 {
+        flex-shrink: 0;
+        position: absolute;
+        left: 0px;
+        top: 30px;
+        width: 471px;
+        max-width: 100%;
+        height: 240px;
+        border: 1px solid rgba(0,0,0,1);
+        border-radius: 43px;
+      }
+      .fig-logo-4a2acc14e3f285ae0d75a4f45953f5d9-2-1-2856 {
+        flex-shrink: 0;
+        position: absolute;
+        left: 65px;
+        top: 90px;
+        width: 341px;
+        max-width: 100%;
+        height: 121px;
+        object-fit: cover;
+      }
+      .fig-rectangle-445-1-2857 {
+        flex-shrink: 0;
+        width: 462px;
+        max-width: 100%;
+        height: 208px;
+        border: 1px solid rgba(0,0,0,1);
+        border-radius: 43px;
+      }
+      .fig-frame-229-1-2858 {
+        flex-shrink: 0;
+        position: relative;
+        width: 405px;
+        max-width: 100%;
+        min-height: 217px;
+      }
+      .fig-group-220-1-2859 {
+        flex-shrink: 0;
+        position: absolute;
+        left: 92px;
+        top: 6px;
+        width: 471px;
+        max-width: 100%;
+        min-height: 240px;
+      }
+      .fig-rectangle-443-1-2860 {
+        flex-shrink: 0;
+        width: 471px;
+        max-width: 100%;
+        height: 240px;
+        border: 1px solid rgba(0,0,0,1);
+        border-radius: 43px;
+      }
+      .fig-fsa-logo-black-2-1-2861 {
+        flex-shrink: 0;
+        position: absolute;
+        left: 129px;
+        top: 80px;
+        width: 397px;
+        max-width: 100%;
+        height: 91px;
+        object-fit: cover;
+      }
+      .fig-rectangle-444-1-2862 {
+        flex-shrink: 0;
+        width: 462px;
+        max-width: 100%;
+        height: 208px;
+        border: 1px solid rgba(0,0,0,1);
+        border-radius: 43px;
+      }
+      .fig-frame-230-1-2863 {
+        flex-shrink: 0;
+        position: relative;
+        width: 314px;
+        max-width: 100%;
+        min-height: 208px;
+      }
+      .fig-group-221-1-2864 {
+        flex-shrink: 0;
+        position: absolute;
+        left: 14px;
+        top: 0px;
+        width: 291px;
+        max-width: 100%;
+        min-height: 240px;
+      }
+      .fig-rectangle-436-1-2865 {
+        flex-shrink: 0;
+        width: 291px;
+        max-width: 100%;
+        height: 240px;
+        border: 1px solid rgba(0,0,0,1);
+        border-radius: 43px;
+      }
+      .fig-frame-232-1-2866 {
+        flex-shrink: 0;
+        position: relative;
+        width: 305px;
+        max-width: 100%;
+        min-height: 208px;
+      }
+      .fig-group-223-1-2867 {
+        flex-shrink: 0;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 312px;
+        max-width: 100%;
+        min-height: 240px;
+      }
+      .fig-rectangle-438-1-2868 {
+        flex-shrink: 0;
+        width: 312px;
+        max-width: 100%;
+        height: 240px;
+        border: 1px solid rgba(0,0,0,1);
+        border-radius: 43px;
+      }
+      .fig-hippo-wood-3-1-2869 {
+        flex-shrink: 0;
+        position: absolute;
+        left: 53px;
+        top: 30px;
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+      }
+      .fig-frame-236-1-2870 {
+        flex-shrink: 0;
+        position: relative;
+        width: 305px;
+        max-width: 100%;
+        min-height: 208px;
+      }
+      .fig-group-223-1-2871 {
+        flex-shrink: 0;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 312px;
+        max-width: 100%;
+        min-height: 240px;
+      }
+      .fig-rectangle-438-1-2872 {
+        flex-shrink: 0;
+        width: 312px;
+        max-width: 100%;
+        height: 240px;
+        border: 1px solid rgba(0,0,0,1);
+        border-radius: 43px;
+      }
+      .fig-logo-1-1-2873 {
+        flex-shrink: 0;
+        position: absolute;
+        left: 44px;
+        top: 6px;
+        width: 223px;
+        height: 227px;
+        object-fit: cover;
+      }
+      .fig-bfs-logo-web-large-1-1-2874 {
+        flex-shrink: 0;
+        width: 333px;
+        max-width: 100%;
+        height: 167px;
+        object-fit: cover;
+      }
+      .fig-download-1-1-2875 {
+        flex-shrink: 0;
+        width: 321px;
+        max-width: 100%;
+        height: 158px;
+        object-fit: cover;
+      }
+      .fig-group-228-1-2876 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 865px;
+        min-height: 237px;
+      }
+      .fig-group-227-1-2877 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 865px;
+        min-height: 237px;
+      }
+      .fig-group-215-1-2878 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 865px;
+        min-height: 237px;
+      }
+      .fig-group-213-1-2879 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 865px;
+        min-height: 237px;
+      }
+      .fig-group-212-1-2880 {
+        flex-shrink: 0;
+        width: 152px;
+        min-height: 171px;
+      }
+      .fig-bike-logo-1-2881 {
+        flex-shrink: 0;
+        overflow: visible;
+      }
+      .fig-group-212-1-2882 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 865px;
+        min-height: 194px;
+      }
+      .fig-vector-337-1-2883 {
+        flex-shrink: 0;
+        overflow: visible;
+      }
+      .fig-group-198-1-2884 {
+        flex-shrink: 0;
+        width: 116px;
+        min-height: 33px;
+      }
+      .fig-frame-26-1-2885 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 24px 8px 24px;
+        width: 116px;
+        min-height: 33px;
+        border: 1px solid rgba(255,255,255,1);
+        border-radius: 50px;
+      }
+      .fig-2025-2026-1-2886 {
+        flex-shrink: 0;
+        white-space: pre-wrap;
+        font-size: 14px;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-vector-1-2887 {
+        flex-shrink: 0;
+        overflow: visible;
+      }
+      .fig-vector-1-2888 {
+        flex-shrink: 0;
+        overflow: visible;
+      }
+      .fig-final-footer-1-2889 {
+        flex-shrink: 0;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        max-width: 1512px;
+        min-height: 338px;
+      }
+      .fig-rectangle-106-I1-2889;60:109 {
+        flex-shrink: 0;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        max-width: 1512px;
+        height: 338px;
+        background-color: rgba(60,25,255,1);
+      }
+      .fig-stay-in-the-loop-stay-in-the-loop-stay-in-the-loop-I1-2889;60:110 {
+        flex-shrink: 0;
+        position: absolute;
+        left: 24px;
+        top: 24px;
+        white-space: pre-wrap;
+        font-size: clamp(1.75rem, 3vw + 1rem, 64px);
+        line-height: 72px;
+        color: rgba(255,255,255,1);
+      }
+      .fig-group-187-I1-2889;60:111 {
+        flex-shrink: 0;
+        position: absolute;
+        left: 80px;
+        top: 263px;
+        width: 160px;
+        min-height: 51px;
+      }
+      .fig-logo-I1-2889;60:112 {
+        flex-shrink: 0;
+        position: relative;
+        width: 58px;
+        min-height: 50px;
+      }
+      .fig-group-186-I1-2889;60:112;60:86 {
+        flex-shrink: 0;
+        position: absolute;
+        left: -6px;
+        top: 9px;
+        width: 60px;
+        min-height: 44px;
+      }
+      .fig-vector-I1-2889;60:112;60:87 {
+        flex-shrink: 0;
+        overflow: visible;
+      }
+      .fig-vector-I1-2889;60:112;60:88 {
+        flex-shrink: 0;
+        overflow: visible;
+      }
+      .fig-vector-I1-2889;60:112;60:89 {
+        flex-shrink: 0;
+        overflow: visible;
+      }
+      .fig-group-186-I1-2889;60:113 {
+        flex-shrink: 0;
+        width: 92px;
+        min-height: 51px;
+      }
+      .fig-frame-89-I1-2889;60:114 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        gap: -6.0123772621154785px;
+        padding: 0px 0px 0px 0px;
+        width: 92px;
+        min-height: 51px;
+      }
+      .fig-bike-I1-2889;60:115 {
+        width: 100%;
+        align-self: stretch;
+        max-width: 100%;
+        white-space: pre-wrap;
+        font-size: 18.538164138793945px;
+        line-height: 21px;
+        color: rgba(255,255,255,1);
+      }
+      .fig-builders-I1-2889;60:116 {
+        width: 100%;
+        align-self: stretch;
+        max-width: 100%;
+        white-space: pre-wrap;
+        font-size: 18.538164138793945px;
+        line-height: 21px;
+        color: rgba(255,255,255,1);
+      }
+      .fig-of-berkeley-I1-2889;60:117 {
+        width: 100%;
+        align-self: stretch;
+        max-width: 100%;
+        white-space: pre-wrap;
+        font-size: 18.538164138793945px;
+        line-height: 21px;
+        color: rgba(255,255,255,1);
+      }
+      .fig-frame-142-I1-2889;60:118 {
+        flex-shrink: 0;
+        position: absolute;
+        left: 1046px;
+        top: 123px;
+        display: flex;
+        flex-direction: row;
+        gap: 56px;
+        padding: 0px 0px 0px 0px;
+        width: 386px;
+        max-width: 100%;
+        min-height: 92px;
+      }
+      .fig-frame-140-I1-2889;60:119 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        padding: 0px 0px 0px 0px;
+        width: 79px;
+        min-height: 69px;
+      }
+      .fig-about-us-I1-2889;60:120 {
+        width: 100%;
+        align-self: stretch;
+        max-width: 100%;
+        white-space: pre-wrap;
+        font-size: 18px;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-projects-I1-2889;60:121 {
+        width: 100%;
+        align-self: stretch;
+        max-width: 100%;
+        white-space: pre-wrap;
+        font-size: 18px;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-members-I1-2889;60:122 {
+        width: 100%;
+        align-self: stretch;
+        max-width: 100%;
+        white-space: pre-wrap;
+        font-size: 18px;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-frame-139-I1-2889;60:123 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        padding: 0px 0px 0px 0px;
+        width: 90px;
+        min-height: 69px;
+      }
+      .fig-sponsors-I1-2889;60:124 {
+        width: 100%;
+        align-self: stretch;
+        max-width: 100%;
+        white-space: pre-wrap;
+        font-size: 18px;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-contact-us-I1-2889;60:125 {
+        width: 100%;
+        align-self: stretch;
+        max-width: 100%;
+        white-space: pre-wrap;
+        font-size: 18px;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-apply-now-I1-2889;60:126 {
+        width: 100%;
+        align-self: stretch;
+        max-width: 100%;
+        white-space: pre-wrap;
+        font-size: 18px;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-frame-138-I1-2889;60:127 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        padding: 0px 0px 0px 0px;
+        width: 105px;
+        min-height: 92px;
+      }
+      .fig-frame-134-I1-2889;60:128 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        padding: 0px 0px 0px 0px;
+        width: 90px;
+        min-height: 23px;
+      }
+      .fig-linkedin-I1-2889;60:129 {
+        flex-shrink: 0;
+        white-space: pre-wrap;
+        font-size: 18px;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-vector-I1-2889;60:130 {
+        flex-shrink: 0;
+        overflow: visible;
+      }
+      .fig-frame-135-I1-2889;60:131 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        padding: 0px 0px 0px 0px;
+        width: 105px;
+        min-height: 23px;
+      }
+      .fig-instagram-I1-2889;60:132 {
+        flex-shrink: 0;
+        white-space: pre-wrap;
+        font-size: 18px;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-vector-I1-2889;60:133 {
+        flex-shrink: 0;
+        overflow: visible;
+      }
+      .fig-frame-136-I1-2889;60:134 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        padding: 0px 0px 0px 0px;
+        width: 104px;
+        min-height: 23px;
+      }
+      .fig-facebook-I1-2889;60:135 {
+        flex-shrink: 0;
+        white-space: pre-wrap;
+        font-size: 18px;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-vector-I1-2889;60:136 {
+        flex-shrink: 0;
+        overflow: visible;
+      }
+      .fig-frame-137-I1-2889;60:137 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        padding: 0px 0px 0px 0px;
+        width: 77px;
+        min-height: 23px;
+      }
+      .fig-github-I1-2889;60:138 {
+        flex-shrink: 0;
+        white-space: pre-wrap;
+        font-size: 18px;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-vector-I1-2889;60:139 {
+        flex-shrink: 0;
+        overflow: visible;
+      }
+      .fig-group-206-1-2890 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 767px;
+        min-height: 227px;
+      }
+      .fig-group-205-1-2891 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 767px;
+        min-height: 227px;
+      }
+      .fig-sponsors-1-2892 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 767px;
+        white-space: pre-wrap;
+        font-size: clamp(1.75rem, 3vw + 1rem, 64px);
+        line-height: 72px;
+        color: rgba(255,255,255,1);
+      }
+      .fig-we-are-eternally-grateful-for-the-people-and-companies-that-support-us-in-our-quest-if-you-would-like-to-sponsor-us-we-would-be-happy-to-add-you-to-the-list-on-our-page-put-your-logo-on-our-jersey-and-or-put-your-logo-on-our-frame-s-1-2893 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 721px;
+        white-space: pre-wrap;
+        font-size: 20px;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-group-211-1-2894 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 715px;
+        min-height: 287px;
+      }
+      .fig-please-refer-to-our-gofundme-for-any-cash-sponsorships-for-any-other-types-of-donations-from-tools-and-components-to-mentorships-please-email-us-contact-bikebuilders-berkeley-edu-1-2895 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 707px;
+        white-space: pre-wrap;
+        font-size: 20px;
+        line-height: normal;
+      }
+      .fig-group-210-1-2896 {
+        flex-shrink: 0;
+        width: 557px;
+        max-width: 100%;
+        min-height: 53px;
+      }
+      .fig-frame-203-1-2897 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 10px 10px 10px;
+        width: 557px;
+        max-width: 100%;
+        min-height: 53px;
+      }
+      .fig-frame-92-1-2898 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        padding: 0px 0px 0px 0px;
+        width: 537px;
+        max-width: 100%;
+        min-height: 33px;
+      }
+      @media (min-width: 768px) {
+        .fig-frame-92-1-2898 {
+          flex-direction: row;
+        }
+      }
+      .fig-frame-120-1-4215 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        padding: 8px 24px 8px 24px;
+        min-height: 33px;
+        background-color: rgba(229,224,255,1);
+        border-radius: 50px;
+      }
+      @media (min-width: 768px) {
+        .fig-frame-120-1-4215 {
+          width: 192px;
+          flex-shrink: 0;
+        }
+      }
+      .fig-donations-appreciated-1-4216 {
+        flex-shrink: 0;
+        white-space: pre-wrap;
+        font-size: 14px;
+        line-height: normal;
+        color: rgba(11,31,135,1);
+      }
+      .fig-vector-20-1-2902 {
+        flex-shrink: 0;
+        overflow: visible;
+      }
+      .fig-img-4763-1-1-2903 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 606px;
+        height: 405px;
+        object-fit: cover;
+      }
+      .fig-group-217-1-2904 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 1512px;
+        min-height: 81px;
+      }
+      .fig-final-nav-bar-1-2905 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 35px;
+        padding: 24px 80px 24px 80px;
+        width: 100%;
+        max-width: 1512px;
+        min-height: 81px;
+      }
+      .fig-frame-133-I1-2905;60:91 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 589px;
+        padding: 0px 0px 0px 0px;
+        width: 100%;
+        max-width: 1352px;
+        min-height: 33px;
+      }
+      @media (min-width: 768px) {
+        .fig-frame-133-I1-2905;60:91 {
+          flex-direction: row;
+        }
+      }
+      .fig-frame-83-I1-2905;60:92 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 0px 0px 0px 0px;
+        width: 100%;
+        max-width: 639px;
+        min-height: 27px;
+      }
+      @media (min-width: 768px) {
+        .fig-frame-83-I1-2905;60:92 {
+          flex-direction: row;
+        }
+      }
+      .fig-frame-86-I1-2905;60:93 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 9px;
+        padding: 0px 0px 0px 0px;
+        min-height: 27px;
+      }
+      @media (min-width: 768px) {
+        .fig-frame-86-I1-2905;60:93 {
+          width: 248px;
+          flex-shrink: 0;
+        }
+      }
+      .fig-union-I1-2905;60:94 {
+        flex-shrink: 0;
+        overflow: visible;
+      }
+      .fig-bike-builder-of-berkeley-I1-2905;60:98 {
+        flex-shrink: 0;
+        white-space: pre-wrap;
+        font-size: 21px;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-about-us-I1-2905;60:99 {
+        flex-shrink: 0;
+        white-space: pre-wrap;
+        font-size: 14px;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-projects-I1-2905;60:100 {
+        flex-shrink: 0;
+        white-space: pre-wrap;
+        font-size: 14px;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-members-I1-2905;60:101 {
+        flex-shrink: 0;
+        white-space: pre-wrap;
+        font-size: 14px;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-sponsors-I1-2905;60:102 {
+        flex-shrink: 0;
+        white-space: pre-wrap;
+        font-size: 14px;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-frame-85-I1-2905;60:103 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 21px;
+        padding: 0px 0px 0px 0px;
+        width: 257px;
+        min-height: 33px;
+      }
+      .fig-frame-25-I1-2905;60:104 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        padding: 8px 24px 8px 24px;
+        width: 119px;
+        min-height: 33px;
+        border: 1px solid rgba(255,255,255,1);
+        border-radius: 50px;
+      }
+      .fig-contact-us-I1-2905;60:105 {
+        flex-shrink: 0;
+        white-space: pre-wrap;
+        font-size: 14px;
+        line-height: normal;
+        color: rgba(255,255,255,1);
+      }
+      .fig-frame-120-I1-2905;60:106 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        padding: 8px 24px 8px 24px;
+        width: 117px;
+        min-height: 33px;
+        background-color: rgba(229,224,255,1);
+        border-radius: 50px;
+      }
+      .fig-apply-now-I1-2905;60:107 {
+        flex-shrink: 0;
+        white-space: pre-wrap;
+        font-size: 14px;
+        line-height: normal;
+        color: rgba(11,31,135,1);
+      }
+      .fig-group-234-1-2906 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 1345px;
+        min-height: 726px;
+      }
+      .fig-group-216-1-2907 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 1339px;
+        min-height: 152px;
+      }
+      .fig-sea-otter-classic-is-an-annual-bike-exhibition-where-industry-professionals-and-organizations-like-bbb-participate-to-show-off-bike-related-projects-and-products-and-hold-bike-races-several-university-teams-are-attending-the-expo-alongside-us-including-cal-poly-uc-irvine-university-of-victoria-and-penn-state-one-of-our-goals-for-sea-otter-2026-is-to-showcase-our-completed-mtb-with-bike-building-teams-from-other-universities-and-race-it-in-one-of-the-courses-1-2908 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 1339px;
+        white-space: pre-wrap;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 32px;
+        color: rgba(0,0,0,1);
+      }
+      .fig-frame-217-1-2909 {
+        flex-shrink: 0;
+        position: relative;
+        width: 100%;
+        max-width: 1177px;
+        min-height: 64px;
+      }
+      .fig-notable-participating-companies-and-bike-brands-include-specialized-marin-canyon-brompton-cannondale-continental-bosch-and-mips-for-more-information-on-sea-otter-classic-visit-the-website-seaotterclassic-com-1-2910 {
+        flex-shrink: 0;
+        position: absolute;
+        left: -20px;
+        top: 0px;
+        width: 100%;
+        max-width: 1177px;
+        white-space: pre-wrap;
+        font-size: 18px;
+        text-align: center;
+        font-weight: 500;
+        line-height: 32px;
+      }
+      .fig-group-216-1-2911 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 1167px;
+        min-height: 45px;
+      }
+      .fig-sea-otter-classic-collegiate-bike-building-showcase-1-2912 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 1167px;
+        white-space: pre-wrap;
+        font-size: clamp(1.75rem, 3vw + 1rem, 48px);
+        line-height: 60px;
+        color: rgba(0,0,0,1);
+      }
+      .fig-group-237-1-2913 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 1340px;
+        min-height: 323px;
+      }
+      .fig-seaotter1-1-2914 {
+        flex-shrink: 0;
+        width: 430px;
+        max-width: 100%;
+        height: 322px;
+        object-fit: cover;
+      }
+      .fig-img-0473-2-1-1-2915 {
+        flex-shrink: 0;
+        width: 431px;
+        max-width: 100%;
+        height: 323px;
+        object-fit: cover;
+      }
+      .fig-img-0520-2-1-1-2916 {
+        flex-shrink: 0;
+        width: 430px;
+        max-width: 100%;
+        height: 322px;
+        object-fit: cover;
+      }
+      .fig-group-236-1-2917 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 2082px;
+        min-height: 1466px;
+      }
+      .fig-banners-1-2918 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 1855px;
+        min-height: 1058px;
+      }
+      .fig-vector-1-2919 {
+        flex-shrink: 0;
+        overflow: visible;
+      }
+      .fig-banners-1-2920 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 1891px;
+        min-height: 1078px;
+      }
+      .fig-engineering-business-community-biking-compsci-engineering-business-community-biking-compsci-1-2921 {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 1746px;
+        height: 742px;
+        background-color: rgba(255,255,255,1);
+      }
+      .fig-group-192-1-2922 {
+        flex-shrink: 0;
+        width: 291px;
+        max-width: 100%;
+        min-height: 119px;
+      }
+      .fig-frame-191-1-2923 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        gap: -11px;
+        padding: 0px 0px 0px 0px;
+        width: 291px;
+        max-width: 100%;
+        min-height: 119px;
+      }
+      .fig-current-1-2924 {
+        width: 100%;
+        align-self: stretch;
+        max-width: 100%;
+        white-space: pre-wrap;
+        font-size: clamp(1.75rem, 3vw + 1rem, 55px);
+        line-height: 60px;
+        color: rgba(255,255,255,1);
+      }
+      .fig-sponsors-1-2925 {
+        width: 100%;
+        align-self: stretch;
+        max-width: 100%;
+        white-space: pre-wrap;
+        font-size: clamp(1.75rem, 3vw + 1rem, 55px);
+        line-height: 60px;
+        color: rgba(255,255,255,1);
+      }
+      .fig-rectangle-443-1-2926 {
+        flex-shrink: 0;
+        width: 389px;
+        max-width: 100%;
+        height: 240px;
+        background-color: rgba(255,255,255,1);
+        border-radius: 43px;
+      }
+      .fig-rectangle-444-1-2927 {
+        flex-shrink: 0;
+        width: 389px;
+        max-width: 100%;
+        height: 240px;
+        background-color: rgba(255,255,255,1);
+        border-radius: 43px;
+      }
+      .fig-pnw-logo-files-1-1-2928 {
+        flex-shrink: 0;
+        width: 251px;
+        height: 212px;
+        object-fit: cover;
+      }
+      .fig-group-214-1-2929 {
+        flex-shrink: 0;
+        width: 116px;
+        min-height: 212px;
+      }
+      .fig-group-197-1-2930 {
+        flex-shrink: 0;
+        width: 116px;
+        min-height: 33px;
+      }
+      .fig-frame-26-1-2931 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 24px 8px 24px;
+        width: 116px;
+        min-height: 33px;
+        border: 1px solid rgba(0,0,0,1);
+        border-radius: 50px;
+      }
+      .fig-2024-2025-1-2932 {
+        flex-shrink: 0;
+        white-space: pre-wrap;
+        font-size: 14px;
+        line-height: normal;
+        color: rgba(0,0,0,1);
+      }
+      .fig-frame-25-1-2933 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 24px 8px 24px;
+        width: 116px;
+        min-height: 33px;
+        border: 1px solid rgba(0,0,0,1);
+        border-radius: 50px;
+      }
+      .fig-2023-2024-1-2934 {
+        flex-shrink: 0;
+        white-space: pre-wrap;
+        font-size: 14px;
+        line-height: normal;
+        color: rgba(0,0,0,1);
+      }
+      .fig-frame-26-1-2935 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 24px 8px 24px;
+        width: 116px;
+        min-height: 33px;
+        border: 1px solid rgba(0,0,0,1);
+        border-radius: 50px;
+      }
+      .fig-2022-2023-1-2936 {
+        flex-shrink: 0;
+        white-space: pre-wrap;
+        font-size: 14px;
+        line-height: normal;
+        color: rgba(0,0,0,1);
+      }
+      .fig-sram-5-logo-png-transparent-1-1-2937 {
+        flex-shrink: 0;
+        width: 380px;
+        max-width: 100%;
+        height: 380px;
+        object-fit: cover;
+      }
+      .fig-vector-1-2938 {
+        flex-shrink: 0;
+        overflow: visible;
+      }
+      .fig-vector-1-2939 {
+        flex-shrink: 0;
+        overflow: visible;
+      }
+      .fig-frame-192-1-2940 {
+        width: 100%;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        gap: -11px;
+        padding: 0px 0px 0px 0px;
+        min-height: 123px;
+      }
+      .fig-past-1-2941 {
+        width: 100%;
+        align-self: stretch;
+        max-width: 100%;
+        white-space: pre-wrap;
+        font-size: clamp(1.75rem, 3vw + 1rem, 55px);
+        line-height: 60px;
+        color: rgba(0,0,0,1);
+      }
+      .fig-sponsors-1-2942 {
+        width: 100%;
+        align-self: stretch;
+        max-width: 100%;
+        white-space: pre-wrap;
+        font-size: clamp(1.75rem, 3vw + 1rem, 55px);
+        line-height: 60px;
+        color: rgba(0,0,0,1);
+      }
+      .fig-frame-90-1-2943 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+        padding: 0px 0px 0px 0px;
+        width: 84px;
+        min-height: 33px;
+      }
+      .fig-frame-21-1-2944 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 21px 8px 21px;
+        width: 84px;
+        min-height: 33px;
+        background-color: rgba(229,224,255,1);
+        border-radius: 50px;
+      }
+      .fig-sram-1-2945 {
+        flex-shrink: 0;
+        white-space: pre-wrap;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: normal;
+        color: rgba(0,0,0,1);
+      }
+      .fig-frame-239-1-2946 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+        padding: 0px 0px 0px 0px;
+        width: 165px;
+        min-height: 33px;
+      }
+      .fig-frame-21-1-2947 {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 21px 8px 21px;
+        width: 165px;
+        min-height: 33px;
+        background-color: rgba(229,224,255,1);
+        border-radius: 50px;
+      }
+      .fig-pnw-components-1-2948 {
+        flex-shrink: 0;
+        white-space: pre-wrap;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: normal;
+        color: rgba(0,0,0,1);
+      }
+  </style>
+</head>
+<body>
+  <div class="fig-sponsors-page-1-2847">
+    <button type="button" class="fig-rectangle-430-1-2848"></button>
+    <button type="button" class="fig-rectangle-196-1-2849"></button>
+    <div class="fig-scroll-wrapper" style="width: 100%; overflow-x: auto;">
+    <div style="min-width: 600px; width: 100%;">
+<svg class="fig-vector-24-1-2850" aria-hidden="true" width="100%" height="auto" viewBox="0 0 918 698" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1616.51 15.5027C1542.22 155.104 1279.08 392.305 820.823 224.301C362.571 56.2975 103.612 463.169 31.4146 687.606" stroke="#E5E0FF" stroke-width="66"/>
+</svg>
+    
+    </div>
+  </div>
+    <button type="button" class="fig-rectangle-196-1-2851"></button>
+    <div class="fig-group-239-1-2852">
+      <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=280&auto=format&fit=crop&q=80" width="280" height="280" class="fig-sram-5-logo-png-transparent-3-1-2853" alt="sram-5-logo-png-transparent 3" />
+      <div class="fig-frame-227-1-2854">
+        <button type="button" class="fig-rectangle-444-1-2855"></button>
+        <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=341&auto=format&fit=crop&q=80" width="341" height="121" class="fig-logo-4a2acc14e3f285ae0d75a4f45953f5d9-2-1-2856" alt="logo-4a2acc14e3f285ae0d75a4f45953f5d9 2" />
+      </div>
+      <button type="button" class="fig-rectangle-445-1-2857"></button>
+      <div class="fig-frame-229-1-2858">
+        <div class="fig-group-220-1-2859">
+          <button type="button" class="fig-rectangle-443-1-2860"></button>
+        </div>
+        <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=397&auto=format&fit=crop&q=80" width="397" height="91" class="fig-fsa-logo-black-2-1-2861" alt="fsa_logo-black 2" />
+      </div>
+      <button type="button" class="fig-rectangle-444-1-2862"></button>
+      <div class="fig-frame-230-1-2863">
+        <div class="fig-group-221-1-2864">
+          <button type="button" class="fig-rectangle-436-1-2865"></button>
+        </div>
+      </div>
+      <div class="fig-frame-232-1-2866">
+        <div class="fig-group-223-1-2867">
+          <button type="button" class="fig-rectangle-438-1-2868"></button>
+        </div>
+        <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=180&auto=format&fit=crop&q=80" width="180" height="180" class="fig-hippo-wood-3-1-2869" alt="hippo wood 3" />
+      </div>
+      <div class="fig-frame-236-1-2870">
+        <div class="fig-group-223-1-2871">
+          <button type="button" class="fig-rectangle-438-1-2872"></button>
+        </div>
+        <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=223&auto=format&fit=crop&q=80" width="223" height="227" class="fig-logo-1-1-2873" alt="logo 1" />
+      </div>
+      <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=333&auto=format&fit=crop&q=80" width="333" height="167" class="fig-bfs-logo-web-large-1-1-2874" alt="bfs+logo+web+large 1" />
+      <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=321&auto=format&fit=crop&q=80" width="321" height="158" class="fig-download-1-1-2875" alt="download 1" />
+    </div>
+    <div class="fig-group-228-1-2876">
+      <div class="fig-group-227-1-2877">
+        <div class="fig-group-215-1-2878">
+          <div class="fig-group-213-1-2879">
+            <div class="fig-group-212-1-2880">
+              <svg class="fig-bike-logo-1-2881" aria-hidden="true" width="156" height="138" viewBox="0 0 156 138" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-outside-1_1_2881" maskUnits="userSpaceOnUse" x="-10.951" y="-28.2095" width="206.122" height="212.488" fill="black">
+<rect fill="white" x="-10.951" y="-28.2095" width="206.122" height="212.488"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M39.2774 77.3834C39.8343 77.5187 40.1845 78.0545 40.1138 78.6505L39.2454 86.0012C40.4871 86.7511 41.6244 87.6397 42.6574 88.6664L49.3867 85.8282C49.6548 85.7158 49.9464 85.7025 50.2096 85.7907C50.4728 85.879 50.6908 86.0632 50.825 86.3106L53.9043 92.0527C54.1776 92.5624 54.0422 93.2243 53.5866 93.6234L47.9474 98.5696C48.2483 100.034 48.392 101.528 48.3724 103.05L54.7723 105.846C55.0241 105.959 55.2237 106.162 55.3354 106.421C55.447 106.68 55.4641 106.978 55.3835 107.262L53.4729 113.864C53.3894 114.146 53.2149 114.395 52.9802 114.569C52.7456 114.742 52.4653 114.83 52.1877 114.816L45.084 114.426C44.2827 115.753 43.3472 116.994 42.2951 118.126L44.5941 124.928C44.6845 125.198 44.6772 125.499 44.5734 125.778C44.4696 126.057 44.2758 126.296 44.0268 126.452L38.2443 130.041C37.9972 130.193 37.7121 130.255 37.4386 130.216C37.1652 130.176 36.9202 130.038 36.7463 129.825L32.3507 124.331C30.9048 124.756 29.4355 125.015 27.943 125.108L24.7081 131.887C24.5797 132.152 24.3686 132.369 24.111 132.501C23.8535 132.632 23.5658 132.668 23.298 132.604L17.0308 131.081C16.7623 131.014 16.5313 130.85 16.3789 130.617C16.2265 130.384 16.1621 130.098 16.1968 129.807L17.1193 122.499C15.8786 121.75 14.7293 120.858 13.692 119.838L6.95791 122.583C6.6915 122.691 6.40326 122.702 6.14333 122.613C5.88339 122.524 5.6682 122.341 5.53491 122.097L2.45458 116.347C2.32425 116.099 2.28608 115.805 2.34633 115.517C2.4066 115.229 2.56154 114.965 2.78419 114.772L8.37763 109.947C8.07147 108.462 7.9253 106.935 7.94194 105.394L1.65423 102.536C1.40629 102.422 1.21074 102.218 1.10146 101.961C0.992173 101.704 0.975937 101.409 1.05559 101.127L2.96613 94.5253C3.13591 93.9386 3.68383 93.5361 4.2589 93.5724L11.2466 94.0216C12.0658 92.6692 13.0125 91.4178 14.0864 90.2677L11.8975 83.4856C11.8126 83.2172 11.8231 82.92 11.9275 82.6453C12.032 82.3706 12.2236 82.1356 12.4693 81.981L18.249 78.3909C18.762 78.0723 19.4006 78.1683 19.7538 78.6199L24.059 84.0987C25.5093 83.6892 26.9873 83.4405 28.4674 83.3565L31.5917 76.5945C31.7178 76.3244 31.9298 76.1028 32.1894 75.9685C32.4489 75.8342 32.7398 75.7962 33.0105 75.861L39.2774 77.3834ZM30.637 95.8407C28.5214 95.3266 26.2358 95.719 24.2837 96.9315C22.3317 98.144 20.8729 100.078 20.2279 102.307C19.9086 103.41 19.7987 104.553 19.9045 105.67C20.0103 106.787 20.3295 107.856 20.8445 108.817C21.3594 109.777 22.06 110.61 22.9056 111.267C23.7512 111.925 24.7256 112.394 25.7732 112.649C26.8207 112.903 27.9212 112.938 29.0112 112.751C30.1011 112.563 31.1596 112.158 32.1261 111.558C33.0926 110.958 33.9482 110.174 34.6441 109.252C35.34 108.33 35.8629 107.287 36.1822 106.183C36.8272 103.954 36.6053 101.612 35.5654 99.6729C34.5254 97.7334 32.7527 96.3548 30.637 95.8407Z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M128.465 96.3557C131.043 96.9822 133.204 98.6619 134.471 101.025C135.738 103.389 136.008 106.243 135.222 108.959C134.436 111.675 132.658 114.031 130.279 115.509C127.901 116.986 125.116 117.465 122.538 116.838C119.96 116.212 117.799 114.531 116.532 112.168C115.264 109.804 114.994 106.951 115.78 104.235C116.566 101.519 118.344 99.1621 120.723 97.6845C123.101 96.207 125.887 95.7292 128.465 96.3557ZM127.402 100.029C125.748 99.627 123.962 99.9337 122.436 100.881C120.911 101.829 119.771 103.34 119.267 105.082C118.762 106.824 118.936 108.654 119.749 110.17C120.561 111.686 121.947 112.763 123.6 113.165C125.254 113.567 127.04 113.26 128.565 112.312C130.091 111.365 131.232 109.854 131.736 108.112C132.24 106.37 132.066 104.539 131.253 103.024C130.441 101.508 129.055 100.431 127.402 100.029Z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M137.112 77.9006C138.474 78.2317 139.343 79.5113 139.24 80.9566L139.228 81.0969L139.227 81.101L139.227 81.1052L138.49 87.3189C139.17 87.7823 139.819 88.288 140.438 88.8353L146.101 86.4444C146.777 86.1576 147.513 86.1216 148.178 86.3432C148.804 86.5519 149.328 86.976 149.67 87.5462L149.736 87.6619L152.817 93.4086C153.129 93.9921 153.238 94.6786 153.129 95.3607L153.104 95.4964L153.073 95.6322C152.907 96.3049 152.534 96.9184 152.01 97.3774L147.238 101.563C147.365 102.399 147.445 103.243 147.479 104.095L152.877 106.455L152.879 106.455C153.48 106.719 153.964 107.188 154.255 107.787L154.311 107.909L154.361 108.033C154.598 108.659 154.621 109.365 154.426 110.04L152.515 116.641C152.308 117.356 151.868 117.989 151.274 118.43C150.679 118.871 149.966 119.091 149.263 119.051L143.256 118.721C142.768 119.448 142.242 120.146 141.68 120.814L143.618 126.545C143.85 127.229 143.833 127.993 143.57 128.7C143.307 129.406 142.814 130.009 142.182 130.401L136.404 133.99C135.778 134.38 135.054 134.54 134.36 134.438C133.666 134.337 133.045 133.983 132.608 133.438L132.607 133.436L128.893 128.794C128.058 128.992 127.215 129.139 126.37 129.236L123.633 134.977C123.31 135.652 122.775 136.205 122.121 136.537C121.47 136.868 120.742 136.958 120.066 136.793L113.803 135.272C113.121 135.107 112.535 134.691 112.149 134.1C111.763 133.51 111.603 132.782 111.696 132.046L112.472 125.888C111.788 125.422 111.134 124.913 110.513 124.364L104.825 126.686C104.151 126.961 103.419 126.988 102.762 126.76C102.104 126.533 101.561 126.066 101.228 125.443L98.1472 119.702L98.1384 119.686C97.8124 119.063 97.7154 118.326 97.8646 117.603C98.0137 116.881 98.3996 116.217 98.9551 115.728L98.9628 115.72L98.9714 115.713L103.682 111.651C103.548 110.788 103.465 109.914 103.431 109.034L98.1261 106.625C97.4956 106.338 96.9978 105.823 96.7211 105.17C96.4445 104.518 96.4058 103.77 96.6121 103.056L98.5223 96.4558C98.9517 94.9721 100.334 93.9488 101.8 94.0442L107.681 94.4206C108.187 93.6731 108.731 92.9552 109.313 92.2674L107.465 86.5443L107.426 86.4123C107.25 85.7677 107.289 85.0651 107.537 84.4131L107.59 84.2835C107.864 83.6438 108.33 83.0993 108.915 82.7359L114.7 79.1489C115.329 78.7585 116.056 78.6015 116.752 78.7069C117.406 78.8058 117.993 79.13 118.422 79.6254L118.506 79.7267L122.136 84.3463C122.963 84.1566 123.796 84.0159 124.634 83.9251L127.264 78.2321L127.265 78.2299C127.581 77.5462 128.116 76.9846 128.772 76.6455C129.428 76.3067 130.163 76.2127 130.846 76.3789L137.112 77.9006ZM126.897 87.5336L125.742 87.595C124.387 87.6672 123.053 87.8918 121.738 88.2684L120.617 88.5893L115.94 82.6383L111.096 85.642L113.472 93.0028L112.657 93.8781C111.678 94.9277 110.815 96.0663 110.066 97.2962L109.439 98.3264L101.853 97.8406L100.253 103.37L107.075 106.469L107.06 107.639C107.043 109.041 107.177 110.43 107.46 111.781L107.7 112.925L101.615 118.172L104.199 122.985L111.509 120.002L112.301 120.785C113.184 121.658 114.158 122.427 115.208 123.08L115.419 123.209L116.38 123.787L115.38 131.723L120.626 132.998L124.132 125.644L125.261 125.575C126.607 125.493 127.951 125.257 129.267 124.872L130.383 124.546L135.153 130.507L139.996 127.498L137.497 120.108L138.325 119.22C139.282 118.193 140.124 117.075 140.853 115.864L141.472 114.834L149.184 115.258L150.783 109.732L143.478 106.54L143.851 105.251C143.848 103.956 143.72 102.683 143.465 101.432L143.235 100.304L149.35 94.9404L146.772 90.133L139.459 93.2206L138.655 92.4229C137.714 91.4875 136.68 90.6817 135.552 90.0047L134.598 89.4326L135.544 81.4511L130.295 80.1756L126.897 87.5336Z"/>
+<path d="M97.0997 28.687C98.9139 29.0676 100.411 30.2562 101.207 31.9463L110.004 50.6402L125.907 51.3595C129.487 51.5214 132.012 54.668 131.547 58.3872C131.081 62.1063 127.801 64.9899 124.221 64.8279L104.747 63.9471C102.524 63.8465 100.604 62.5696 99.6605 60.5642L92.5047 45.3573L68.625 63.2388L81.3474 80.0538C82.3332 81.3566 82.7629 83.0443 82.5469 84.7688L78.9864 113.206C78.5208 116.925 75.2407 119.809 71.6607 119.647C68.0808 119.484 65.5563 116.339 66.0219 112.62L69.2461 86.8681L53.9777 66.688C52.9179 65.2873 52.5048 63.4469 52.8356 61.6002C53.1665 59.7534 54.212 58.0636 55.7259 56.9299L91.7429 29.9608L91.8932 29.8514C93.4542 28.7428 95.3422 28.3184 97.0997 28.687Z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M119.488 1.02673C122.905 1.27533 125.916 2.95443 127.925 5.60966C129.989 8.33801 130.841 11.8776 130.395 15.4377C129.949 18.9976 128.226 22.4204 125.506 24.9323C122.773 27.4558 119.243 28.8547 115.689 28.6939C112.134 28.5331 108.993 26.8326 106.919 24.0917C104.855 21.3634 104.002 17.824 104.448 14.264C104.894 10.7039 106.618 7.28058 109.339 4.76866C112.072 2.24534 115.601 0.846651 119.155 1.00738L119.488 1.02673ZM117.437 14.7346C117.427 14.77 117.418 14.8087 117.413 14.8503C117.408 14.8918 117.407 14.9305 117.408 14.9663C117.417 14.931 117.426 14.8925 117.431 14.851C117.436 14.8094 117.438 14.7705 117.437 14.7346Z"/>
+</mask>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M39.2774 77.3834C39.8343 77.5187 40.1845 78.0545 40.1138 78.6505L39.2454 86.0012C40.4871 86.7511 41.6244 87.6397 42.6574 88.6664L49.3867 85.8282C49.6548 85.7158 49.9464 85.7025 50.2096 85.7907C50.4728 85.879 50.6908 86.0632 50.825 86.3106L53.9043 92.0527C54.1776 92.5624 54.0422 93.2243 53.5866 93.6234L47.9474 98.5696C48.2483 100.034 48.392 101.528 48.3724 103.05L54.7723 105.846C55.0241 105.959 55.2237 106.162 55.3354 106.421C55.447 106.68 55.4641 106.978 55.3835 107.262L53.4729 113.864C53.3894 114.146 53.2149 114.395 52.9802 114.569C52.7456 114.742 52.4653 114.83 52.1877 114.816L45.084 114.426C44.2827 115.753 43.3472 116.994 42.2951 118.126L44.5941 124.928C44.6845 125.198 44.6772 125.499 44.5734 125.778C44.4696 126.057 44.2758 126.296 44.0268 126.452L38.2443 130.041C37.9972 130.193 37.7121 130.255 37.4386 130.216C37.1652 130.176 36.9202 130.038 36.7463 129.825L32.3507 124.331C30.9048 124.756 29.4355 125.015 27.943 125.108L24.7081 131.887C24.5797 132.152 24.3686 132.369 24.111 132.501C23.8535 132.632 23.5658 132.668 23.298 132.604L17.0308 131.081C16.7623 131.014 16.5313 130.85 16.3789 130.617C16.2265 130.384 16.1621 130.098 16.1968 129.807L17.1193 122.499C15.8786 121.75 14.7293 120.858 13.692 119.838L6.95791 122.583C6.6915 122.691 6.40326 122.702 6.14333 122.613C5.88339 122.524 5.6682 122.341 5.53491 122.097L2.45458 116.347C2.32425 116.099 2.28608 115.805 2.34633 115.517C2.4066 115.229 2.56154 114.965 2.78419 114.772L8.37763 109.947C8.07147 108.462 7.9253 106.935 7.94194 105.394L1.65423 102.536C1.40629 102.422 1.21074 102.218 1.10146 101.961C0.992173 101.704 0.975937 101.409 1.05559 101.127L2.96613 94.5253C3.13591 93.9386 3.68383 93.5361 4.2589 93.5724L11.2466 94.0216C12.0658 92.6692 13.0125 91.4178 14.0864 90.2677L11.8975 83.4856C11.8126 83.2172 11.8231 82.92 11.9275 82.6453C12.032 82.3706 12.2236 82.1356 12.4693 81.981L18.249 78.3909C18.762 78.0723 19.4006 78.1683 19.7538 78.6199L24.059 84.0987C25.5093 83.6892 26.9873 83.4405 28.4674 83.3565L31.5917 76.5945C31.7178 76.3244 31.9298 76.1028 32.1894 75.9685C32.4489 75.8342 32.7398 75.7962 33.0105 75.861L39.2774 77.3834ZM30.637 95.8407C28.5214 95.3266 26.2358 95.719 24.2837 96.9315C22.3317 98.144 20.8729 100.078 20.2279 102.307C19.9086 103.41 19.7987 104.553 19.9045 105.67C20.0103 106.787 20.3295 107.856 20.8445 108.817C21.3594 109.777 22.06 110.61 22.9056 111.267C23.7512 111.925 24.7256 112.394 25.7732 112.649C26.8207 112.903 27.9212 112.938 29.0112 112.751C30.1011 112.563 31.1596 112.158 32.1261 111.558C33.0926 110.958 33.9482 110.174 34.6441 109.252C35.34 108.33 35.8629 107.287 36.1822 106.183C36.8272 103.954 36.6053 101.612 35.5654 99.6729C34.5254 97.7334 32.7527 96.3548 30.637 95.8407Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M128.465 96.3557C131.043 96.9822 133.204 98.6619 134.471 101.025C135.738 103.389 136.008 106.243 135.222 108.959C134.436 111.675 132.658 114.031 130.279 115.509C127.901 116.986 125.116 117.465 122.538 116.838C119.96 116.212 117.799 114.531 116.532 112.168C115.264 109.804 114.994 106.951 115.78 104.235C116.566 101.519 118.344 99.1621 120.723 97.6845C123.101 96.207 125.887 95.7292 128.465 96.3557ZM127.402 100.029C125.748 99.627 123.962 99.9337 122.436 100.881C120.911 101.829 119.771 103.34 119.267 105.082C118.762 106.824 118.936 108.654 119.749 110.17C120.561 111.686 121.947 112.763 123.6 113.165C125.254 113.567 127.04 113.26 128.565 112.312C130.091 111.365 131.232 109.854 131.736 108.112C132.24 106.37 132.066 104.539 131.253 103.024C130.441 101.508 129.055 100.431 127.402 100.029Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M137.112 77.9006C138.474 78.2317 139.343 79.5113 139.24 80.9566L139.228 81.0969L139.227 81.101L139.227 81.1052L138.49 87.3189C139.17 87.7823 139.819 88.288 140.438 88.8353L146.101 86.4444C146.777 86.1576 147.513 86.1216 148.178 86.3432C148.804 86.5519 149.328 86.976 149.67 87.5462L149.736 87.6619L152.817 93.4086C153.129 93.9921 153.238 94.6786 153.129 95.3607L153.104 95.4964L153.073 95.6322C152.907 96.3049 152.534 96.9184 152.01 97.3774L147.238 101.563C147.365 102.399 147.445 103.243 147.479 104.095L152.877 106.455L152.879 106.455C153.48 106.719 153.964 107.188 154.255 107.787L154.311 107.909L154.361 108.033C154.598 108.659 154.621 109.365 154.426 110.04L152.515 116.641C152.308 117.356 151.868 117.989 151.274 118.43C150.679 118.871 149.966 119.091 149.263 119.051L143.256 118.721C142.768 119.448 142.242 120.146 141.68 120.814L143.618 126.545C143.85 127.229 143.833 127.993 143.57 128.7C143.307 129.406 142.814 130.009 142.182 130.401L136.404 133.99C135.778 134.38 135.054 134.54 134.36 134.438C133.666 134.337 133.045 133.983 132.608 133.438L132.607 133.436L128.893 128.794C128.058 128.992 127.215 129.139 126.37 129.236L123.633 134.977C123.31 135.652 122.775 136.205 122.121 136.537C121.47 136.868 120.742 136.958 120.066 136.793L113.803 135.272C113.121 135.107 112.535 134.691 112.149 134.1C111.763 133.51 111.603 132.782 111.696 132.046L112.472 125.888C111.788 125.422 111.134 124.913 110.513 124.364L104.825 126.686C104.151 126.961 103.419 126.988 102.762 126.76C102.104 126.533 101.561 126.066 101.228 125.443L98.1472 119.702L98.1384 119.686C97.8124 119.063 97.7154 118.326 97.8646 117.603C98.0137 116.881 98.3996 116.217 98.9551 115.728L98.9628 115.72L98.9714 115.713L103.682 111.651C103.548 110.788 103.465 109.914 103.431 109.034L98.1261 106.625C97.4956 106.338 96.9978 105.823 96.7211 105.17C96.4445 104.518 96.4058 103.77 96.6121 103.056L98.5223 96.4558C98.9517 94.9721 100.334 93.9488 101.8 94.0442L107.681 94.4206C108.187 93.6731 108.731 92.9552 109.313 92.2674L107.465 86.5443L107.426 86.4123C107.25 85.7677 107.289 85.0651 107.537 84.4131L107.59 84.2835C107.864 83.6438 108.33 83.0993 108.915 82.7359L114.7 79.1489C115.329 78.7585 116.056 78.6015 116.752 78.7069C117.406 78.8058 117.993 79.13 118.422 79.6254L118.506 79.7267L122.136 84.3463C122.963 84.1566 123.796 84.0159 124.634 83.9251L127.264 78.2321L127.265 78.2299C127.581 77.5462 128.116 76.9846 128.772 76.6455C129.428 76.3067 130.163 76.2127 130.846 76.3789L137.112 77.9006ZM126.897 87.5336L125.742 87.595C124.387 87.6672 123.053 87.8918 121.738 88.2684L120.617 88.5893L115.94 82.6383L111.096 85.642L113.472 93.0028L112.657 93.8781C111.678 94.9277 110.815 96.0663 110.066 97.2962L109.439 98.3264L101.853 97.8406L100.253 103.37L107.075 106.469L107.06 107.639C107.043 109.041 107.177 110.43 107.46 111.781L107.7 112.925L101.615 118.172L104.199 122.985L111.509 120.002L112.301 120.785C113.184 121.658 114.158 122.427 115.208 123.08L115.419 123.209L116.38 123.787L115.38 131.723L120.626 132.998L124.132 125.644L125.261 125.575C126.607 125.493 127.951 125.257 129.267 124.872L130.383 124.546L135.153 130.507L139.996 127.498L137.497 120.108L138.325 119.22C139.282 118.193 140.124 117.075 140.853 115.864L141.472 114.834L149.184 115.258L150.783 109.732L143.478 106.54L143.851 105.251C143.848 103.956 143.72 102.683 143.465 101.432L143.235 100.304L149.35 94.9404L146.772 90.133L139.459 93.2206L138.655 92.4229C137.714 91.4875 136.68 90.6817 135.552 90.0047L134.598 89.4326L135.544 81.4511L130.295 80.1756L126.897 87.5336Z" fill="black"/>
+<path d="M97.0997 28.687C98.9139 29.0676 100.411 30.2562 101.207 31.9463L110.004 50.6402L125.907 51.3595C129.487 51.5214 132.012 54.668 131.547 58.3872C131.081 62.1063 127.801 64.9899 124.221 64.8279L104.747 63.9471C102.524 63.8465 100.604 62.5696 99.6605 60.5642L92.5047 45.3573L68.625 63.2388L81.3474 80.0538C82.3332 81.3566 82.7629 83.0443 82.5469 84.7688L78.9864 113.206C78.5208 116.925 75.2407 119.809 71.6607 119.647C68.0808 119.484 65.5563 116.339 66.0219 112.62L69.2461 86.8681L53.9777 66.688C52.9179 65.2873 52.5048 63.4469 52.8356 61.6002C53.1665 59.7534 54.212 58.0636 55.7259 56.9299L91.7429 29.9608L91.8932 29.8514C93.4542 28.7428 95.3422 28.3184 97.0997 28.687Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M119.488 1.02673C122.905 1.27533 125.916 2.95443 127.925 5.60966C129.989 8.33801 130.841 11.8776 130.395 15.4377C129.949 18.9976 128.226 22.4204 125.506 24.9323C122.773 27.4558 119.243 28.8547 115.689 28.6939C112.134 28.5331 108.993 26.8326 106.919 24.0917C104.855 21.3634 104.002 17.824 104.448 14.264C104.894 10.7039 106.618 7.28058 109.339 4.76866C112.072 2.24534 115.601 0.846651 119.155 1.00738L119.488 1.02673ZM117.437 14.7346C117.427 14.77 117.418 14.8087 117.413 14.8503C117.408 14.8918 117.407 14.9305 117.408 14.9663C117.417 14.931 117.426 14.8925 117.431 14.851C117.436 14.8094 117.438 14.7705 117.437 14.7346Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M39.2774 77.3834C39.8343 77.5187 40.1845 78.0545 40.1138 78.6505L39.2454 86.0012C40.4871 86.7511 41.6244 87.6397 42.6574 88.6664L49.3867 85.8282C49.6548 85.7158 49.9464 85.7025 50.2096 85.7907C50.4728 85.879 50.6908 86.0632 50.825 86.3106L53.9043 92.0527C54.1776 92.5624 54.0422 93.2243 53.5866 93.6234L47.9474 98.5696C48.2483 100.034 48.392 101.528 48.3724 103.05L54.7723 105.846C55.0241 105.959 55.2237 106.162 55.3354 106.421C55.447 106.68 55.4641 106.978 55.3835 107.262L53.4729 113.864C53.3894 114.146 53.2149 114.395 52.9802 114.569C52.7456 114.742 52.4653 114.83 52.1877 114.816L45.084 114.426C44.2827 115.753 43.3472 116.994 42.2951 118.126L44.5941 124.928C44.6845 125.198 44.6772 125.499 44.5734 125.778C44.4696 126.057 44.2758 126.296 44.0268 126.452L38.2443 130.041C37.9972 130.193 37.7121 130.255 37.4386 130.216C37.1652 130.176 36.9202 130.038 36.7463 129.825L32.3507 124.331C30.9048 124.756 29.4355 125.015 27.943 125.108L24.7081 131.887C24.5797 132.152 24.3686 132.369 24.111 132.501C23.8535 132.632 23.5658 132.668 23.298 132.604L17.0308 131.081C16.7623 131.014 16.5313 130.85 16.3789 130.617C16.2265 130.384 16.1621 130.098 16.1968 129.807L17.1193 122.499C15.8786 121.75 14.7293 120.858 13.692 119.838L6.95791 122.583C6.6915 122.691 6.40326 122.702 6.14333 122.613C5.88339 122.524 5.6682 122.341 5.53491 122.097L2.45458 116.347C2.32425 116.099 2.28608 115.805 2.34633 115.517C2.4066 115.229 2.56154 114.965 2.78419 114.772L8.37763 109.947C8.07147 108.462 7.9253 106.935 7.94194 105.394L1.65423 102.536C1.40629 102.422 1.21074 102.218 1.10146 101.961C0.992173 101.704 0.975937 101.409 1.05559 101.127L2.96613 94.5253C3.13591 93.9386 3.68383 93.5361 4.2589 93.5724L11.2466 94.0216C12.0658 92.6692 13.0125 91.4178 14.0864 90.2677L11.8975 83.4856C11.8126 83.2172 11.8231 82.92 11.9275 82.6453C12.032 82.3706 12.2236 82.1356 12.4693 81.981L18.249 78.3909C18.762 78.0723 19.4006 78.1683 19.7538 78.6199L24.059 84.0987C25.5093 83.6892 26.9873 83.4405 28.4674 83.3565L31.5917 76.5945C31.7178 76.3244 31.9298 76.1028 32.1894 75.9685C32.4489 75.8342 32.7398 75.7962 33.0105 75.861L39.2774 77.3834ZM30.637 95.8407C28.5214 95.3266 26.2358 95.719 24.2837 96.9315C22.3317 98.144 20.8729 100.078 20.2279 102.307C19.9086 103.41 19.7987 104.553 19.9045 105.67C20.0103 106.787 20.3295 107.856 20.8445 108.817C21.3594 109.777 22.06 110.61 22.9056 111.267C23.7512 111.925 24.7256 112.394 25.7732 112.649C26.8207 112.903 27.9212 112.938 29.0112 112.751C30.1011 112.563 31.1596 112.158 32.1261 111.558C33.0926 110.958 33.9482 110.174 34.6441 109.252C35.34 108.33 35.8629 107.287 36.1822 106.183C36.8272 103.954 36.6053 101.612 35.5654 99.6729C34.5254 97.7334 32.7527 96.3548 30.637 95.8407Z" stroke="black" stroke-width="2" stroke-linejoin="round" mask="url(#path-1-outside-1_1_2881)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M128.465 96.3557C131.043 96.9822 133.204 98.6619 134.471 101.025C135.738 103.389 136.008 106.243 135.222 108.959C134.436 111.675 132.658 114.031 130.279 115.509C127.901 116.986 125.116 117.465 122.538 116.838C119.96 116.212 117.799 114.531 116.532 112.168C115.264 109.804 114.994 106.951 115.78 104.235C116.566 101.519 118.344 99.1621 120.723 97.6845C123.101 96.207 125.887 95.7292 128.465 96.3557ZM127.402 100.029C125.748 99.627 123.962 99.9337 122.436 100.881C120.911 101.829 119.771 103.34 119.267 105.082C118.762 106.824 118.936 108.654 119.749 110.17C120.561 111.686 121.947 112.763 123.6 113.165C125.254 113.567 127.04 113.26 128.565 112.312C130.091 111.365 131.232 109.854 131.736 108.112C132.24 106.37 132.066 104.539 131.253 103.024C130.441 101.508 129.055 100.431 127.402 100.029Z" stroke="black" stroke-width="2" stroke-linejoin="round" mask="url(#path-1-outside-1_1_2881)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M137.112 77.9006C138.474 78.2317 139.343 79.5113 139.24 80.9566L139.228 81.0969L139.227 81.101L139.227 81.1052L138.49 87.3189C139.17 87.7823 139.819 88.288 140.438 88.8353L146.101 86.4444C146.777 86.1576 147.513 86.1216 148.178 86.3432C148.804 86.5519 149.328 86.976 149.67 87.5462L149.736 87.6619L152.817 93.4086C153.129 93.9921 153.238 94.6786 153.129 95.3607L153.104 95.4964L153.073 95.6322C152.907 96.3049 152.534 96.9184 152.01 97.3774L147.238 101.563C147.365 102.399 147.445 103.243 147.479 104.095L152.877 106.455L152.879 106.455C153.48 106.719 153.964 107.188 154.255 107.787L154.311 107.909L154.361 108.033C154.598 108.659 154.621 109.365 154.426 110.04L152.515 116.641C152.308 117.356 151.868 117.989 151.274 118.43C150.679 118.871 149.966 119.091 149.263 119.051L143.256 118.721C142.768 119.448 142.242 120.146 141.68 120.814L143.618 126.545C143.85 127.229 143.833 127.993 143.57 128.7C143.307 129.406 142.814 130.009 142.182 130.401L136.404 133.99C135.778 134.38 135.054 134.54 134.36 134.438C133.666 134.337 133.045 133.983 132.608 133.438L132.607 133.436L128.893 128.794C128.058 128.992 127.215 129.139 126.37 129.236L123.633 134.977C123.31 135.652 122.775 136.205 122.121 136.537C121.47 136.868 120.742 136.958 120.066 136.793L113.803 135.272C113.121 135.107 112.535 134.691 112.149 134.1C111.763 133.51 111.603 132.782 111.696 132.046L112.472 125.888C111.788 125.422 111.134 124.913 110.513 124.364L104.825 126.686C104.151 126.961 103.419 126.988 102.762 126.76C102.104 126.533 101.561 126.066 101.228 125.443L98.1472 119.702L98.1384 119.686C97.8124 119.063 97.7154 118.326 97.8646 117.603C98.0137 116.881 98.3996 116.217 98.9551 115.728L98.9628 115.72L98.9714 115.713L103.682 111.651C103.548 110.788 103.465 109.914 103.431 109.034L98.1261 106.625C97.4956 106.338 96.9978 105.823 96.7211 105.17C96.4445 104.518 96.4058 103.77 96.6121 103.056L98.5223 96.4558C98.9517 94.9721 100.334 93.9488 101.8 94.0442L107.681 94.4206C108.187 93.6731 108.731 92.9552 109.313 92.2674L107.465 86.5443L107.426 86.4123C107.25 85.7677 107.289 85.0651 107.537 84.4131L107.59 84.2835C107.864 83.6438 108.33 83.0993 108.915 82.7359L114.7 79.1489C115.329 78.7585 116.056 78.6015 116.752 78.7069C117.406 78.8058 117.993 79.13 118.422 79.6254L118.506 79.7267L122.136 84.3463C122.963 84.1566 123.796 84.0159 124.634 83.9251L127.264 78.2321L127.265 78.2299C127.581 77.5462 128.116 76.9846 128.772 76.6455C129.428 76.3067 130.163 76.2127 130.846 76.3789L137.112 77.9006ZM126.897 87.5336L125.742 87.595C124.387 87.6672 123.053 87.8918 121.738 88.2684L120.617 88.5893L115.94 82.6383L111.096 85.642L113.472 93.0028L112.657 93.8781C111.678 94.9277 110.815 96.0663 110.066 97.2962L109.439 98.3264L101.853 97.8406L100.253 103.37L107.075 106.469L107.06 107.639C107.043 109.041 107.177 110.43 107.46 111.781L107.7 112.925L101.615 118.172L104.199 122.985L111.509 120.002L112.301 120.785C113.184 121.658 114.158 122.427 115.208 123.08L115.419 123.209L116.38 123.787L115.38 131.723L120.626 132.998L124.132 125.644L125.261 125.575C126.607 125.493 127.951 125.257 129.267 124.872L130.383 124.546L135.153 130.507L139.996 127.498L137.497 120.108L138.325 119.22C139.282 118.193 140.124 117.075 140.853 115.864L141.472 114.834L149.184 115.258L150.783 109.732L143.478 106.54L143.851 105.251C143.848 103.956 143.72 102.683 143.465 101.432L143.235 100.304L149.35 94.9404L146.772 90.133L139.459 93.2206L138.655 92.4229C137.714 91.4875 136.68 90.6817 135.552 90.0047L134.598 89.4326L135.544 81.4511L130.295 80.1756L126.897 87.5336Z" stroke="black" stroke-width="2" stroke-linejoin="round" mask="url(#path-1-outside-1_1_2881)"/>
+<path d="M97.0997 28.687C98.9139 29.0676 100.411 30.2562 101.207 31.9463L110.004 50.6402L125.907 51.3595C129.487 51.5214 132.012 54.668 131.547 58.3872C131.081 62.1063 127.801 64.9899 124.221 64.8279L104.747 63.9471C102.524 63.8465 100.604 62.5696 99.6605 60.5642L92.5047 45.3573L68.625 63.2388L81.3474 80.0538C82.3332 81.3566 82.7629 83.0443 82.5469 84.7688L78.9864 113.206C78.5208 116.925 75.2407 119.809 71.6607 119.647C68.0808 119.484 65.5563 116.339 66.0219 112.62L69.2461 86.8681L53.9777 66.688C52.9179 65.2873 52.5048 63.4469 52.8356 61.6002C53.1665 59.7534 54.212 58.0636 55.7259 56.9299L91.7429 29.9608L91.8932 29.8514C93.4542 28.7428 95.3422 28.3184 97.0997 28.687Z" stroke="black" stroke-width="2" stroke-linejoin="round" mask="url(#path-1-outside-1_1_2881)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M119.488 1.02673C122.905 1.27533 125.916 2.95443 127.925 5.60966C129.989 8.33801 130.841 11.8776 130.395 15.4377C129.949 18.9976 128.226 22.4204 125.506 24.9323C122.773 27.4558 119.243 28.8547 115.689 28.6939C112.134 28.5331 108.993 26.8326 106.919 24.0917C104.855 21.3634 104.002 17.824 104.448 14.264C104.894 10.7039 106.618 7.28058 109.339 4.76866C112.072 2.24534 115.601 0.846651 119.155 1.00738L119.488 1.02673ZM117.437 14.7346C117.427 14.77 117.418 14.8087 117.413 14.8503C117.408 14.8918 117.407 14.9305 117.408 14.9663C117.417 14.931 117.426 14.8925 117.431 14.851C117.436 14.8094 117.438 14.7705 117.437 14.7346Z" stroke="black" stroke-width="2" stroke-linejoin="round" mask="url(#path-1-outside-1_1_2881)"/>
+</svg>
+            </div>
+            <div class="fig-group-212-1-2882">
+              <div class="fig-scroll-wrapper" style="width: 100%; overflow-x: auto;">
+    <div style="min-width: 600px; width: 100%;">
+<svg class="fig-vector-337-1-2883" aria-hidden="true" width="100%" height="auto" viewBox="0 0 812 327" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M408.041 143.558L407.413 141.127V141.127L408.041 143.558ZM0.18486 3.43026C-0.334971 2.14372 0.277676 0.687203 1.55323 0.177043C2.82879 -0.333116 4.28425 0.296273 4.80408 1.58282L2.4945 2.50655L0.18486 3.43026ZM809.13 325.051L806.98 326.302C804.055 321.282 801.11 316.359 798.144 311.534L800.263 310.232L802.382 308.93C805.369 313.79 808.334 318.747 811.279 323.8L809.13 325.051ZM781.428 281.307L779.384 282.723C772.694 273.047 765.894 263.836 758.973 255.091L760.919 253.543L762.866 251.994C769.859 260.831 776.724 270.13 783.472 279.89L781.428 281.307ZM738.491 227.293L736.672 228.991C728.716 220.398 720.598 212.375 712.301 204.92L713.953 203.059L715.606 201.198C724.025 208.763 732.254 216.896 740.309 225.596L738.491 227.293ZM687.172 181.406L685.73 183.436C676.363 176.673 666.768 170.566 656.925 165.115L658.113 162.923L659.301 160.731C669.325 166.283 679.09 172.498 688.615 179.376L687.172 181.406ZM627.043 148.205L626.145 150.534C615.648 146.362 604.872 142.858 593.795 140.022L594.389 137.594L594.983 135.166C606.265 138.054 617.245 141.624 627.942 145.876L627.043 148.205ZM560.7 131.135L560.401 133.62C549.402 132.182 538.115 131.335 526.521 131.081L526.552 128.576L526.583 126.07C538.348 126.328 549.814 127.188 560.999 128.65L560.7 131.135ZM492.315 129.47L492.516 131.97C481.509 132.76 470.238 134.034 458.689 135.793L458.293 133.315L457.896 130.837C469.567 129.06 480.968 127.771 492.114 126.97L492.315 129.47ZM424.683 139.618L425.241 142.066C419.777 143.274 414.253 144.582 408.669 145.989L408.041 143.558L407.413 141.127C413.042 139.709 418.612 138.39 424.125 137.17L424.683 139.618ZM408.041 143.558L408.669 145.989C403.131 147.385 397.601 148.737 392.081 150.039L391.489 147.599L390.897 145.159C396.392 143.863 401.898 142.517 407.413 141.127L408.041 143.558ZM358.187 154.847L358.691 157.306C347.386 159.545 336.148 161.531 325.002 163.217L324.608 160.739L324.213 158.261C335.279 156.587 346.443 154.615 357.682 152.389L358.187 154.847ZM290.765 164.919L291.02 167.414C279.477 168.497 268.063 169.196 256.805 169.456L256.724 166.951L256.643 164.445C267.774 164.188 279.072 163.497 290.51 162.424L290.765 164.919ZM222.6 166.301L222.464 168.802C210.841 168.054 199.429 166.744 188.263 164.808L188.665 162.339L189.066 159.869C200.041 161.772 211.276 163.062 222.736 163.8L222.6 166.301ZM155.418 154.4L154.703 156.794C143.64 153.365 132.886 149.182 122.481 144.173L123.542 141.915L124.602 139.657C134.771 144.553 145.293 148.646 156.132 152.006L155.418 154.4ZM93.9312 124.647L92.5242 126.703C83.2033 120.215 74.2527 112.895 65.7082 104.678L67.4238 102.876L69.1393 101.073C77.4921 109.106 86.2365 116.257 95.3381 122.591L93.9312 124.647ZM44.4713 77.2777L42.5099 78.8068C35.668 69.9896 29.1727 60.4283 23.0474 50.0803L25.1878 48.8144L27.3282 47.5485C33.3502 57.7219 39.7268 67.1065 46.4326 75.7485L44.4713 77.2777ZM9.30042 18.3225L7.03651 19.3522C4.67791 14.2024 2.39337 8.89626 0.18486 3.43026L2.4945 2.50655L4.80408 1.58282C6.98459 6.97946 9.23869 12.2148 11.5644 17.2927L9.30042 18.3225Z" fill="black"/>
+</svg>
+              
+    </div>
+  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fig-group-198-1-2884">
+      <div class="fig-frame-26-1-2885">
+        <p class="fig-2025-2026-1-2886">2025-2026</p>
+      </div>
+    </div>
+    <svg class="fig-vector-1-2887" aria-hidden="true" width="156" height="156" viewBox="0 0 156 156" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M134.875 77.4326L153.206 86.1272C153.927 86.4758 154.503 87.0673 154.831 87.7978C155.16 88.5284 155.221 89.3513 155.003 90.1222L149.838 108.022C149.613 108.784 149.127 109.444 148.467 109.886C147.806 110.329 147.011 110.526 146.22 110.445L125.986 108.276C123.761 111.808 121.15 115.083 118.202 118.041L125.027 137.14C125.296 137.898 125.287 138.727 125.003 139.48C124.719 140.233 124.178 140.861 123.475 141.253L107.166 150.251C106.469 150.632 105.66 150.759 104.88 150.608C104.1 150.457 103.398 150.038 102.894 149.424L90.1557 133.606C86.0581 134.552 81.8872 135.038 77.6431 135.063L68.7175 153.246C68.363 153.958 67.7707 154.524 67.043 154.845C66.3154 155.167 65.4983 155.223 64.7332 155.006L46.8335 149.841C46.0663 149.616 45.403 149.127 44.9594 148.462C44.5158 147.797 44.3203 146.997 44.407 146.202L46.7303 126.205C43.1683 123.948 39.861 121.311 36.8665 118.342L17.814 124.866C17.0602 125.122 16.2403 125.107 15.4968 124.822C14.7532 124.537 14.1329 124.001 13.7434 123.306L4.73892 106.984C4.35774 106.281 4.23628 105.465 4.39582 104.681C4.55537 103.897 4.98574 103.194 5.61154 102.695L21.3311 90.2632C20.3983 86.1223 19.9195 81.8922 19.9031 77.6476L1.88981 68.8014C1.17922 68.4477 0.614357 67.857 0.292664 67.1314C-0.029029 66.4057 -0.08738 65.5906 0.127681 64.8265L5.29224 46.9267C5.75119 45.3361 7.29355 44.3114 8.93175 44.5002L28.8388 46.818C31.1142 43.2175 33.7563 39.9153 36.765 36.9115L30.2543 17.8831C30.0016 17.1301 30.0198 16.3125 30.3058 15.5715C30.5918 14.8305 31.1276 14.2126 31.8206 13.8246L48.1212 4.82408C49.568 4.02521 51.389 4.38845 52.413 5.68734L64.8929 21.4512C69.0037 20.5466 73.2002 20.0888 77.4094 20.0858L86.0219 1.93411C86.3697 1.20912 86.9627 0.630467 87.696 0.300432C88.4293 -0.0296022 89.2556 -0.0897587 90.0289 0.130596L107.929 5.29515C109.519 5.75411 110.537 7.28441 110.361 8.91595L108.193 29.0387C111.758 31.2971 115.032 33.9209 118.014 36.9099L137.05 30.1277C137.809 29.8592 138.638 29.8678 139.391 30.1518C140.143 30.4357 140.771 30.9769 141.164 31.6794L150.164 47.98C150.963 49.4268 150.605 51.2291 149.325 52.2585L133.48 65.0191C134.397 69.1015 134.868 73.2411 134.875 77.4326ZM54.742 71.0362C53.8788 74.0283 53.6133 77.1611 53.9607 80.2557C54.3081 83.3504 55.2617 86.3463 56.767 89.0724C58.2722 91.7986 60.2997 94.2015 62.7336 96.1441C65.1676 98.0867 67.9603 99.5308 70.9523 100.394C73.9444 101.257 77.0771 101.523 80.1718 101.175C83.2665 100.828 86.2624 99.8745 88.9885 98.3692C91.7147 96.8639 94.1176 94.8365 96.0602 92.4025C98.0028 89.9686 99.4469 87.1759 100.31 84.1838C102.054 78.1411 101.325 71.6533 98.2853 66.1476C95.2453 60.642 90.1427 56.5694 84.0999 54.8259C78.0572 53.0825 71.5694 53.8109 66.0637 56.8509C60.5581 59.8909 56.4855 64.9935 54.742 71.0362Z" fill="white" fill-opacity="0.6"/>
+</svg>
+    <svg class="fig-vector-1-2888" aria-hidden="true" width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M56.6763 28.3816L64.7011 29.8561C65.0188 29.9149 65.3053 30.0848 65.5094 30.3353C65.7135 30.5859 65.8219 30.9008 65.8152 31.2239L65.6677 38.7147C65.6612 39.0353 65.5419 39.3433 65.3308 39.5845C65.1196 39.8257 64.8301 39.9848 64.5133 40.0336L56.4222 41.2912C55.9251 42.903 55.2555 44.4376 54.4132 45.895L59.0498 52.6066C59.2347 52.873 59.3185 53.1966 59.2861 53.5193C59.2537 53.8419 59.1072 54.1425 58.8731 54.3668L53.4713 59.56C53.2405 59.7828 52.9385 59.917 52.6185 59.939C52.2985 59.961 51.981 59.8694 51.7219 59.6802L45.1297 54.8569C43.6334 55.6496 42.054 56.2745 40.4204 56.7202L38.8419 64.7179C38.7797 65.0325 38.6084 65.3151 38.3582 65.5158C38.1081 65.7165 37.7952 65.8226 37.4745 65.8153L29.9878 65.6679C29.6659 65.6619 29.3565 65.5417 29.1149 65.3287C28.8734 65.1157 28.7154 64.8238 28.6691 64.5051L27.4936 56.495C25.872 55.9907 24.3113 55.3082 22.8401 54.46L16.1141 58.9793C15.8478 59.1581 15.5269 59.2372 15.208 59.2026C14.8891 59.1681 14.5927 59.0221 14.3708 58.7903L9.17342 53.3885C8.95278 53.1545 8.82085 52.8508 8.80046 52.5298C8.78007 52.2089 8.87249 51.8909 9.06174 51.6309L13.8826 45.164C13.0842 43.6534 12.4567 42.0584 12.0118 40.4086L4.09747 38.8443C3.78357 38.7822 3.50156 38.6115 3.30089 38.3623C3.10022 38.113 2.99371 37.8011 3.00003 37.4811L3.14749 29.9902C3.16065 29.3218 3.65228 28.7631 4.31452 28.6674L12.2827 27.4994C12.7969 25.8656 13.4823 24.3076 14.339 22.8254L9.83205 16.1081C9.65437 15.8422 9.57592 15.5222 9.61045 15.2042C9.64498 14.8862 9.79029 14.5906 10.0209 14.369L15.4268 9.18001C15.6592 8.95637 15.9633 8.82241 16.2851 8.80196C16.607 8.78151 16.9256 8.87589 17.1844 9.06833L23.672 13.8979C25.1725 13.1139 26.7462 12.504 28.3932 12.0683L29.8537 4.11429C29.9125 3.79654 30.0824 3.51005 30.3329 3.30597C30.5835 3.10189 30.8984 2.99352 31.2215 3.00022L38.7123 3.14768C39.3766 3.16075 39.9312 3.64813 40.0354 4.30217L41.2812 12.3513C42.9013 12.854 44.4483 13.5323 45.9222 14.3861L52.6082 9.774C52.8741 9.58858 53.1975 9.50409 53.5202 9.53573C53.8428 9.56736 54.1436 9.71303 54.3685 9.94657L59.5617 15.3484C59.7839 15.5796 59.9173 15.8819 59.9385 16.2019C59.9598 16.5219 59.8674 16.8391 59.6778 17.0977L54.8458 23.7022C55.6245 25.1943 56.2347 26.7527 56.6764 28.3775L56.6763 28.3816ZM24.8643 34.2211C24.8145 36.7507 25.7716 39.1965 27.5251 41.0204C29.2787 42.8444 31.6849 43.897 34.2145 43.9468C36.7442 43.9966 39.19 43.0395 41.0139 41.286C42.8379 39.5325 43.8905 37.1262 43.9403 34.5966C43.9901 32.0669 43.033 29.6211 41.2795 27.7972C39.526 25.9732 37.1197 24.9206 34.5901 24.8708C32.0604 24.821 29.6146 25.7781 27.7907 27.5316C25.9667 29.2852 24.9141 31.6914 24.8643 34.2211Z" stroke="white" stroke-opacity="0.8" stroke-width="6"/>
+</svg>
+    <footer class="fig-final-footer-1-2889">
+      <button type="button" class="fig-rectangle-106-I1-2889;60:109"></button>
+      <h1 class="fig-stay-in-the-loop-stay-in-the-loop-stay-in-the-loop-I1-2889;60:110">STAY IN THE LOOP • STAY IN THE LOOP • STAY IN THE LOOP • </h1>
+      <div class="fig-group-187-I1-2889;60:111">
+        <div class="fig-logo-I1-2889;60:112">
+          <div class="fig-group-186-I1-2889;60:112;60:86">
+            <svg class="fig-vector-I1-2889;60:112;60:87" aria-hidden="true" width="28" height="43" viewBox="0 0 28 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.9931 39.9176L10.5028 30.3706L2.22474 24.328L12.6683 12.9181L18.5595 19.3332L25.7198 18.2155M16.3241 5.01263C16.4229 5.64564 16.7691 6.21347 17.2866 6.5912C17.8041 6.96894 18.4504 7.12563 19.0834 7.02682C19.7164 6.92801 20.2843 6.58178 20.662 6.0643C21.0397 5.54682 21.1964 4.90049 21.0976 4.26748C20.9988 3.63447 20.6526 3.06664 20.1351 2.68891C19.6176 2.31117 18.9713 2.15448 18.3383 2.25329C17.7052 2.3521 17.1374 2.69833 16.7597 3.21581C16.3819 3.73328 16.2253 4.37962 16.3241 5.01263Z" stroke="white" stroke-width="4.44912" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+            <svg class="fig-vector-I1-2889;60:112;60:88" aria-hidden="true" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.3769 8.21716L19.9755 8.69452C20.0779 8.71413 20.1702 8.76919 20.2361 8.85005C20.302 8.93091 20.3373 9.0324 20.3359 9.1367L20.2881 11.5624C20.2854 11.6659 20.2465 11.7652 20.1782 11.843C20.11 11.9209 20.0167 11.9725 19.9144 11.9888L17.2959 12.3965C17.1347 12.9158 16.9164 13.4156 16.645 13.8868L18.1459 16.06C18.2052 16.1464 18.232 16.251 18.2216 16.3553C18.2112 16.4595 18.1643 16.5568 18.0891 16.6297L16.3397 18.3103C16.2649 18.3817 16.1675 18.4248 16.0643 18.432C15.961 18.4392 15.8586 18.4102 15.7745 18.3499L13.6399 16.7882C13.1562 17.0451 12.6479 17.2465 12.1148 17.3925L11.6034 19.9802C11.5827 20.0817 11.5272 20.1728 11.4465 20.2377C11.3657 20.3026 11.2649 20.3372 11.1613 20.3356L8.73564 20.2878C8.63154 20.2852 8.53166 20.2461 8.45348 20.1773C8.3753 20.1085 8.32379 20.0145 8.30796 19.9115L7.92774 17.3176C7.40368 17.1534 6.89893 16.933 6.42232 16.6601L4.24476 18.1217C4.15855 18.1793 4.05488 18.2049 3.95175 18.194C3.84863 18.1832 3.75255 18.1366 3.68019 18.0623L1.99841 16.3117C1.92679 16.236 1.88409 16.1375 1.87779 16.0335C1.87149 15.9295 1.90199 15.8266 1.96394 15.7428L3.5235 13.65C3.26688 13.1605 3.06437 12.6444 2.91956 12.1109L0.355814 11.6038C0.254519 11.5832 0.16359 11.5279 0.098713 11.4474C0.0338362 11.3669 -0.000920158 11.2664 0.000439591 11.163L0.0481883 8.73734C0.0524315 8.52179 0.212012 8.341 0.424464 8.30966L3.0069 7.93176C3.17208 7.40225 3.39342 6.89795 3.67092 6.41886L2.21186 4.24388C2.15474 4.15764 2.12954 4.05417 2.14059 3.95132C2.15165 3.84848 2.19828 3.75273 2.27242 3.6806L4.02048 2.00004C4.17563 1.85087 4.41694 1.83533 4.58946 1.9643L6.68971 3.52781C7.17646 3.27575 7.68902 3.07702 8.21847 2.93509L8.69153 0.36179C8.71091 0.258881 8.76605 0.166138 8.8472 0.0999553C8.92836 0.0337726 9.0303 -0.00158701 9.135 0.000126598L11.5606 0.0478753C11.7762 0.0521185 11.9557 0.210407 11.9884 0.421615L12.3925 3.02613C12.9169 3.19036 13.417 3.41035 13.8928 3.6861L16.0596 2.19263C16.146 2.13334 16.2505 2.10654 16.3548 2.11695C16.4591 2.12736 16.5563 2.17431 16.6293 2.24951L18.3098 3.99756C18.459 4.15272 18.4746 4.3915 18.3481 4.56406L16.7839 6.70235C17.0365 7.18512 17.235 7.69007 17.3769 8.21716ZM7.08026 10.1075C7.07228 10.5129 7.14424 10.916 7.29203 11.2936C7.43982 11.6713 7.66055 12.0161 7.94161 12.3085C8.22267 12.6008 8.55856 12.8349 8.9301 12.9975C9.30164 13.16 9.70156 13.2478 10.107 13.2558C10.5125 13.2637 10.9155 13.1918 11.2932 13.044C11.6708 12.8962 12.0157 12.6755 12.308 12.3944C12.6004 12.1134 12.8345 11.7775 12.997 11.4059C13.1596 11.0344 13.2473 10.6345 13.2553 10.229C13.2714 9.41015 12.9616 8.61842 12.394 8.02799C11.8264 7.43757 11.0474 7.09682 10.2286 7.0807C9.40971 7.06458 8.61798 7.37441 8.02756 7.94204C7.43714 8.50967 7.09638 9.28859 7.08026 10.1075Z" fill="white"/>
+</svg>
+            <svg class="fig-vector-I1-2889;60:112;60:89" aria-hidden="true" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.9984 8.83859L20.5963 9.31593C20.6992 9.33497 20.7919 9.38995 20.858 9.47106C20.924 9.55217 20.9591 9.65412 20.957 9.75871L20.9092 12.1838C20.9071 12.2875 20.8685 12.3872 20.8002 12.4653C20.7318 12.5434 20.6381 12.5949 20.5355 12.6107L17.9161 13.0178C17.7552 13.5397 17.5384 14.0365 17.2657 14.5083L18.7668 16.681C18.8266 16.7673 18.8538 16.8721 18.8433 16.9765C18.8328 17.081 18.7854 17.1783 18.7096 17.2509L16.9608 18.9321C16.8861 19.0042 16.7883 19.0477 16.6847 19.0548C16.5811 19.0619 16.4784 19.0323 16.3945 18.971L14.2604 17.4096C13.7759 17.6662 13.2647 17.8685 12.7358 18.0128L12.2248 20.6019C12.2046 20.7037 12.1492 20.7952 12.0682 20.8602C11.9872 20.9252 11.8859 20.9595 11.7821 20.9571L9.35842 20.9094C9.25419 20.9075 9.15403 20.8686 9.07583 20.7996C8.99763 20.7307 8.94648 20.6362 8.93151 20.533L8.55094 17.9399C8.02597 17.7766 7.52073 17.5556 7.04444 17.281L4.86702 18.7441C4.7808 18.802 4.67693 18.8276 4.57369 18.8164C4.47045 18.8052 4.37447 18.7579 4.30266 18.6829L2.62008 16.9342C2.54865 16.8584 2.50594 16.7601 2.49934 16.6562C2.49273 16.5523 2.52265 16.4493 2.58392 16.3652L4.14459 14.2716C3.88612 13.7826 3.68299 13.2662 3.53897 12.7321L0.976816 12.2257C0.875194 12.2056 0.783898 12.1504 0.718935 12.0697C0.653973 11.989 0.619491 11.888 0.621537 11.7844L0.669274 9.35935C0.673534 9.14295 0.832693 8.96206 1.04708 8.93111L3.62665 8.55297C3.79311 8.02405 4.01502 7.51968 4.29236 7.03985L2.8333 4.86521C2.77578 4.77912 2.75038 4.67553 2.76156 4.5726C2.77274 4.46966 2.81978 4.37394 2.89444 4.3022L4.64452 2.62235C4.71973 2.54995 4.81819 2.50659 4.92238 2.49997C5.02657 2.49335 5.12973 2.5239 5.2135 2.5862L7.31376 4.14971C7.79953 3.89588 8.30901 3.69844 8.84217 3.5574L9.31501 0.982405C9.33404 0.87954 9.38903 0.786792 9.47013 0.720725C9.55124 0.654658 9.6532 0.619575 9.75779 0.621742L12.1828 0.669479C12.3979 0.673712 12.5774 0.831493 12.6112 1.04323L13.0145 3.649C13.539 3.81177 14.0398 4.03135 14.5169 4.30774L16.6814 2.81465C16.7675 2.75462 16.8722 2.72727 16.9766 2.73751C17.0811 2.74775 17.1785 2.79491 17.2513 2.87052L18.9325 4.61926C19.0044 4.69414 19.0476 4.79198 19.0545 4.89557C19.0614 4.99916 19.0315 5.10186 18.9701 5.18557L17.4058 7.3237C17.6579 7.80673 17.8554 8.31124 17.9984 8.83723L17.9984 8.83859ZM7.69975 10.729C7.68363 11.5479 7.99349 12.3397 8.56116 12.9302C9.12884 13.5207 9.90782 13.8615 10.7268 13.8776C11.5457 13.8937 12.3375 13.5838 12.928 13.0162C13.5184 12.4485 13.8592 11.6695 13.8753 10.8506C13.8914 10.0316 13.5816 9.23984 13.0139 8.64937C12.4462 8.0589 11.6673 7.71812 10.8483 7.702C10.0294 7.68588 9.23759 7.99574 8.64712 8.56341C8.05665 9.13109 7.71587 9.91007 7.69975 10.729Z" stroke="white" stroke-width="1.24297"/>
+</svg>
+          </div>
+        </div>
+        <div class="fig-group-186-I1-2889;60:113">
+          <div class="fig-frame-89-I1-2889;60:114">
+            <p class="fig-bike-I1-2889;60:115">Bike</p>
+            <p class="fig-builders-I1-2889;60:116">Builders</p>
+            <p class="fig-of-berkeley-I1-2889;60:117">of Berkeley</p>
+          </div>
+        </div>
+      </div>
+      <div class="fig-frame-142-I1-2889;60:118">
+        <div class="fig-frame-140-I1-2889;60:119">
+          <p class="fig-about-us-I1-2889;60:120">About Us</p>
+          <p class="fig-projects-I1-2889;60:121">Projects</p>
+          <p class="fig-members-I1-2889;60:122">Members</p>
+        </div>
+        <div class="fig-frame-139-I1-2889;60:123">
+          <p class="fig-sponsors-I1-2889;60:124">Sponsors</p>
+          <p class="fig-contact-us-I1-2889;60:125">Contact Us</p>
+          <p class="fig-apply-now-I1-2889;60:126">Apply Now</p>
+        </div>
+        <div class="fig-frame-138-I1-2889;60:127">
+          <div class="fig-frame-134-I1-2889;60:128">
+            <p class="fig-linkedin-I1-2889;60:129">LinkedIn</p>
+            <svg class="fig-vector-I1-2889;60:130" aria-hidden="true" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.99338 2.00189C5.72791 2.00189 5.47332 1.89644 5.2856 1.70872C5.09789 1.52101 4.99243 1.26641 4.99243 1.00095C4.99243 0.735479 5.09789 0.480884 5.2856 0.29317C5.47332 0.105456 5.72791 0 5.99338 0H11.9991C12.2645 0 12.5191 0.105456 12.7068 0.29317C12.8945 0.480884 13 0.735479 13 1.00095V7.00662C13 7.27209 12.8945 7.52669 12.7068 7.7144C12.5191 7.90211 12.2645 8.00757 11.9991 8.00757C11.7336 8.00757 11.479 7.90211 11.2913 7.7144C11.1036 7.52669 10.9981 7.27209 10.9981 7.00662V3.41723L1.69631 12.719C1.50753 12.9014 1.25469 13.0022 0.992249 13C0.729804 12.9977 0.478754 12.8924 0.29317 12.7068C0.107586 12.5212 0.00231841 12.2702 3.78385e-05 12.0078C-0.00224274 11.7453 0.0986468 11.4925 0.280977 11.3037L9.58277 2.00189H5.99338Z" fill="white"/>
+</svg>
+          </div>
+          <div class="fig-frame-135-I1-2889;60:131">
+            <p class="fig-instagram-I1-2889;60:132">Instagram</p>
+            <svg class="fig-vector-I1-2889;60:133" aria-hidden="true" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.99338 2.00189C5.72791 2.00189 5.47332 1.89644 5.2856 1.70872C5.09789 1.52101 4.99243 1.26641 4.99243 1.00095C4.99243 0.735479 5.09789 0.480884 5.2856 0.29317C5.47332 0.105456 5.72791 0 5.99338 0H11.9991C12.2645 0 12.5191 0.105456 12.7068 0.29317C12.8945 0.480884 13 0.735479 13 1.00095V7.00662C13 7.27209 12.8945 7.52669 12.7068 7.7144C12.5191 7.90211 12.2645 8.00757 11.9991 8.00757C11.7336 8.00757 11.479 7.90211 11.2913 7.7144C11.1036 7.52669 10.9981 7.27209 10.9981 7.00662V3.41723L1.69631 12.719C1.50753 12.9014 1.25469 13.0022 0.992249 13C0.729804 12.9977 0.478754 12.8924 0.29317 12.7068C0.107586 12.5212 0.00231841 12.2702 3.78385e-05 12.0078C-0.00224274 11.7453 0.0986468 11.4925 0.280977 11.3037L9.58277 2.00189H5.99338Z" fill="white"/>
+</svg>
+          </div>
+          <div class="fig-frame-136-I1-2889;60:134">
+            <p class="fig-facebook-I1-2889;60:135">Facebook</p>
+            <svg class="fig-vector-I1-2889;60:136" aria-hidden="true" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.99338 2.00189C5.72791 2.00189 5.47332 1.89644 5.2856 1.70872C5.09789 1.52101 4.99243 1.26641 4.99243 1.00095C4.99243 0.735479 5.09789 0.480884 5.2856 0.29317C5.47332 0.105456 5.72791 0 5.99338 0H11.9991C12.2645 0 12.5191 0.105456 12.7068 0.29317C12.8945 0.480884 13 0.735479 13 1.00095V7.00662C13 7.27209 12.8945 7.52669 12.7068 7.7144C12.5191 7.90211 12.2645 8.00757 11.9991 8.00757C11.7336 8.00757 11.479 7.90211 11.2913 7.7144C11.1036 7.52669 10.9981 7.27209 10.9981 7.00662V3.41723L1.69631 12.719C1.50753 12.9014 1.25469 13.0022 0.992249 13C0.729804 12.9977 0.478754 12.8924 0.29317 12.7068C0.107586 12.5212 0.00231841 12.2702 3.78385e-05 12.0078C-0.00224274 11.7453 0.0986468 11.4925 0.280977 11.3037L9.58277 2.00189H5.99338Z" fill="white"/>
+</svg>
+          </div>
+          <div class="fig-frame-137-I1-2889;60:137">
+            <p class="fig-github-I1-2889;60:138">Github</p>
+            <svg class="fig-vector-I1-2889;60:139" aria-hidden="true" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.99338 2.00189C5.72791 2.00189 5.47332 1.89644 5.2856 1.70872C5.09789 1.52101 4.99243 1.26641 4.99243 1.00095C4.99243 0.735479 5.09789 0.480884 5.2856 0.29317C5.47332 0.105456 5.72791 0 5.99338 0H11.9991C12.2645 0 12.5191 0.105456 12.7068 0.29317C12.8945 0.480884 13 0.735479 13 1.00095V7.00662C13 7.27209 12.8945 7.52669 12.7068 7.7144C12.5191 7.90211 12.2645 8.00757 11.9991 8.00757C11.7336 8.00757 11.479 7.90211 11.2913 7.7144C11.1036 7.52669 10.9981 7.27209 10.9981 7.00662V3.41723L1.69631 12.719C1.50753 12.9014 1.25469 13.0022 0.992249 13C0.729804 12.9977 0.478754 12.8924 0.29317 12.7068C0.107586 12.5212 0.00231841 12.2702 3.78385e-05 12.0078C-0.00224274 11.7453 0.0986468 11.4925 0.280977 11.3037L9.58277 2.00189H5.99338Z" fill="white"/>
+</svg>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="fig-group-206-1-2890">
+      <div class="fig-group-205-1-2891">
+        <h1 class="fig-sponsors-1-2892">Sponsors</h1>
+        <h3 class="fig-we-are-eternally-grateful-for-the-people-and-companies-that-support-us-in-our-quest-if-you-would-like-to-sponsor-us-we-would-be-happy-to-add-you-to-the-list-on-our-page-put-your-logo-on-our-jersey-and-or-put-your-logo-on-our-frame-s-1-2893">We are eternally grateful for the people and companies that support us in our quest. If you would like to sponsor us, we would be happy to add you to the list on our page, put your logo on our jersey, and/ or put your logo on our frame(s)!</h3>
+      </div>
+    </div>
+    <div class="fig-group-211-1-2894">
+      <h3 class="fig-please-refer-to-our-gofundme-for-any-cash-sponsorships-for-any-other-types-of-donations-from-tools-and-components-to-mentorships-please-email-us-contact-bikebuilders-berkeley-edu-1-2895">Please refer to our GoFundMe for any cash sponsorships. For any other types of donations, from tools and components to mentorships, please email us:
+
+contact@bikebuilders.berkeley.edu</h3>
+      <div class="fig-group-210-1-2896">
+        <div class="fig-frame-203-1-2897">
+          <div class="fig-frame-92-1-2898">
+            <div class="fig-frame-120-1-4215">
+              <p class="fig-donations-appreciated-1-4216">Donations Appreciated</p>
+            </div>
+            <div class="fig-scroll-wrapper" style="width: 100%; overflow-x: auto;">
+    <div style="min-width: 417px; width: 100%;">
+<svg class="fig-vector-20-1-2902" aria-hidden="true" width="100%" height="auto" viewBox="0 0 417 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.5 0.5L416.5 1.375" stroke="white" stroke-linecap="round"/>
+</svg>
+            
+    </div>
+  </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=606&auto=format&fit=crop&q=80" width="606" height="405" class="fig-img-4763-1-1-2903" alt="IMG_4763 1" />
+    <div class="fig-group-217-1-2904">
+      <nav class="fig-final-nav-bar-1-2905">
+        <div class="fig-frame-133-I1-2905;60:91">
+          <div class="fig-frame-83-I1-2905;60:92">
+            <div class="fig-frame-86-I1-2905;60:93">
+              <svg class="fig-union-I1-2905;60:94" aria-hidden="true" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.04494 14.4264C5.13893 14.4283 5.21723 14.4973 5.23146 14.5895L5.40822 15.7262C5.63691 15.7978 5.85505 15.894 6.06251 16.0143L7.00783 15.3619C7.04548 15.3361 7.09129 15.3242 7.13673 15.3287C7.18223 15.3333 7.22501 15.3545 7.25685 15.3873L7.99025 16.15C8.05514 16.2177 8.06194 16.3218 8.00685 16.3971L7.32423 17.3297C7.43443 17.5403 7.52113 17.7609 7.58302 17.9908L8.71681 18.1998C8.76152 18.2084 8.80231 18.2319 8.83107 18.2672C8.85971 18.3024 8.8746 18.3468 8.87404 18.3922L8.85353 19.4508C8.85232 19.496 8.83546 19.5398 8.80568 19.5738C8.77594 19.6078 8.73498 19.6302 8.69044 19.6373L7.54787 19.815C7.47752 20.0417 7.38211 20.2598 7.26369 20.4654L7.91896 21.4137C7.94475 21.4513 7.95572 21.4972 7.95119 21.5426C7.94663 21.5881 7.92637 21.6309 7.89357 21.6627L7.1299 22.3961C7.09729 22.427 7.05463 22.4457 7.00978 22.4488C6.96484 22.4519 6.92041 22.439 6.8838 22.4127L5.95216 21.7311C5.74109 21.8431 5.51878 21.931 5.28615 21.9947L5.06349 23.1246C5.05446 23.1688 5.03029 23.2086 4.99513 23.2369C4.9599 23.2652 4.91533 23.2806 4.87013 23.2799L3.81154 23.2584C3.76627 23.2572 3.7225 23.2405 3.68849 23.2105C3.65446 23.1805 3.63191 23.1392 3.62501 23.0943L3.459 21.9625C3.23049 21.8909 3.01058 21.7944 2.80275 21.6754L1.85255 22.3131C1.81501 22.3382 1.76953 22.35 1.72462 22.3453C1.67962 22.3406 1.63706 22.3201 1.60548 22.2877L0.872084 21.524C0.84083 21.491 0.8221 21.4473 0.81935 21.402C0.816651 21.3566 0.829477 21.3115 0.856459 21.275L1.53712 20.3619C1.4252 20.1483 1.33662 19.9227 1.27345 19.69L0.155287 19.4693C0.111125 19.4604 0.0712887 19.436 0.0429826 19.401C0.0147188 19.3659 -0.000525697 19.322 1.38461e-05 19.277L0.0205217 18.2184C0.0223733 18.1243 0.0928499 18.0455 0.185561 18.0318L1.31251 17.8668C1.38457 17.6358 1.48055 17.4156 1.60158 17.2066L0.964858 16.2574C0.939952 16.2198 0.928784 16.1744 0.933608 16.1295C0.938454 16.0847 0.958932 16.0428 0.991225 16.0113L1.75392 15.2779C1.82163 15.2128 1.92766 15.206 2.00294 15.2623L2.91896 15.9449C3.13128 15.835 3.35501 15.7481 3.58595 15.6861L3.79298 14.5631C3.80146 14.5183 3.82506 14.4777 3.86037 14.4488C3.89578 14.4199 3.94065 14.4051 3.98634 14.4059L5.04494 14.4264ZM20.8067 11.0162C21.0141 11.0206 21.191 11.1548 21.2568 11.3434L21.2783 11.4283V11.4293L21.4258 12.3893C21.5536 12.4365 21.6783 12.4914 21.7998 12.5533L22.5957 12.0045C22.6906 11.9388 22.806 11.9092 22.9209 11.9205L23.0059 11.9371C23.0882 11.9604 23.1635 12.0047 23.2236 12.067L23.958 12.8307C24.0175 12.8926 24.0588 12.969 24.0791 13.0514L24.0928 13.1363L24.0908 13.2213C24.0816 13.3057 24.0499 13.3874 23.999 13.4566L23.9981 13.4557L23.4209 14.2438C23.4768 14.3656 23.5265 14.4904 23.5684 14.6178L24.5244 14.7945C24.6094 14.8103 24.6891 14.8483 24.7539 14.9039L24.8145 14.9664L24.8633 15.0377C24.9046 15.1124 24.9256 15.1975 24.9238 15.2838L24.9024 16.3424C24.8999 16.4566 24.8574 16.5659 24.7822 16.652C24.7068 16.7381 24.6034 16.7956 24.4902 16.8131L23.5225 16.9635C23.4762 17.089 23.4228 17.2114 23.3623 17.3307L23.916 18.1305H23.9151C23.9811 18.2257 24.0106 18.3414 23.999 18.4566C23.9875 18.5717 23.9349 18.6783 23.8516 18.7584L23.0889 19.4928C23.0065 19.572 22.8992 19.6206 22.7852 19.6285C22.6709 19.6363 22.5564 19.6033 22.4639 19.5357V19.5348L21.6768 18.9586C21.5528 19.0161 21.4257 19.0671 21.2959 19.11L21.1074 20.066L21.1065 20.067C21.0841 20.179 21.0236 20.2796 20.9346 20.3512C20.8454 20.4227 20.7334 20.461 20.6192 20.4586L19.5625 20.4381C19.4473 20.4359 19.3355 20.3932 19.249 20.317C19.1629 20.2409 19.1065 20.1358 19.0899 20.0221L18.9492 19.067C18.8214 19.0196 18.6958 18.9657 18.5742 18.9039L17.7715 19.4439C17.6765 19.5075 17.5619 19.5353 17.4483 19.523C17.3344 19.5107 17.2287 19.4582 17.1494 19.3756V19.3766L16.4131 18.6109C16.3349 18.528 16.2876 18.42 16.2803 18.3063C16.2731 18.1925 16.306 18.0791 16.3731 17.9869L16.375 17.984L16.9483 17.2154C16.8902 17.0899 16.8398 16.9602 16.7969 16.8287L15.8526 16.6432V16.6422C15.7407 16.6199 15.64 16.56 15.5684 16.4713C15.4966 16.3822 15.4577 16.2693 15.46 16.1549L15.4805 15.0982C15.4852 14.8602 15.6617 14.6589 15.8985 14.6246L16.8457 14.4859C16.8939 14.3565 16.9499 14.23 17.0127 14.107L16.4756 13.3063V13.3053C16.4122 13.2104 16.3833 13.0965 16.3955 12.983C16.4079 12.8694 16.4596 12.7624 16.542 12.6832H16.543L17.3067 11.9508C17.3896 11.8712 17.4986 11.8233 17.6133 11.816L17.6992 11.8189C17.7557 11.8254 17.8105 11.8414 17.8613 11.8668L17.9346 11.9107L18.708 12.4859C18.8307 12.43 18.9564 12.3809 19.085 12.3395L19.2588 11.3941L19.2822 11.3111C19.3124 11.2311 19.3636 11.1597 19.4307 11.1051L19.502 11.0572C19.5768 11.0157 19.6615 10.9939 19.7481 10.9957L20.8067 11.0162ZM4.46388 17.4957C4.10664 17.4887 3.76057 17.6231 3.50294 17.8707C3.24531 18.1184 3.09692 18.4587 3.08986 18.816C3.08638 18.9929 3.11723 19.1689 3.18165 19.3336C3.24615 19.4984 3.34318 19.6494 3.46583 19.777C3.58838 19.9043 3.73456 20.0069 3.8965 20.0777C4.05856 20.1486 4.23332 20.1865 4.41017 20.19C4.58705 20.1935 4.76299 20.1617 4.92775 20.0973C5.09255 20.0328 5.24353 19.9367 5.37111 19.8141C5.49863 19.6914 5.60098 19.5445 5.67189 19.3824C5.74271 19.2204 5.78071 19.0456 5.78419 18.8688C5.79112 18.5116 5.65583 18.1663 5.40822 17.9088C5.16061 17.6513 4.82105 17.5028 4.46388 17.4957ZM19.6318 12.6246L19.5977 12.8082L19.417 12.8561C19.2059 12.912 19.0045 12.9902 18.8125 13.0904L18.6485 13.1764L18.499 13.066L17.6524 12.4352L17.0117 13.0494L17.6006 13.9273L17.7031 14.0797L17.6113 14.2379C17.5012 14.4285 17.4138 14.6293 17.3477 14.8395L17.291 15.0162L17.1094 15.0426L16.0693 15.1939L16.0518 16.0816L17.085 16.2857L17.2647 16.3219L17.3125 16.4986C17.3697 16.7104 17.4502 16.916 17.5527 17.11L17.6397 17.273L17.5283 17.4225L16.8985 18.2662L17.5137 18.9059L18.3936 18.316L18.5459 18.2135L18.7041 18.3053C18.8457 18.3869 18.9946 18.4562 19.1475 18.5133L19.3027 18.566L19.4795 18.6217L19.5068 18.8043L19.6602 19.8512L20.5459 19.8688L20.752 18.8229L20.7881 18.6432L20.9639 18.5953C21.1737 18.5381 21.3772 18.4579 21.5693 18.3561L21.7324 18.2691L21.8809 18.3785L22.7422 19.0094L23.3818 18.3932L22.7754 17.5172L22.6699 17.3639L22.7637 17.2027C22.8715 17.0162 22.9568 16.8193 23.0205 16.6129L23.0752 16.4371L23.2568 16.4088L24.3154 16.2447L24.333 15.358L23.2852 15.1656L23.0391 15.1207L23.043 14.9156C22.9871 14.7201 22.9125 14.5316 22.8184 14.3512L22.7334 14.1891L22.8418 14.0416L23.4736 13.1764L22.8604 12.5387L21.9854 13.1412L21.832 13.2467L21.6709 13.1539C21.4819 13.0444 21.2837 12.9576 21.0762 12.8932L20.9004 12.8375L20.8721 12.6568L20.709 11.6041L19.8233 11.5865L19.6318 12.6246ZM12.3613 4.9332C12.6648 4.93032 12.9532 5.05886 13.1514 5.28672L15.3447 7.81113L17.8965 7.39024C18.4708 7.29565 19.0047 7.68557 19.0899 8.26133C19.1749 8.83718 18.7784 9.38125 18.2041 9.47617L15.0801 9.9918C14.7234 10.0506 14.3632 9.92177 14.1279 9.65098L12.3447 7.59824L9.32228 11.0875L12.0586 13.1979C12.2704 13.3614 12.4098 13.6018 12.4492 13.8688L13.0996 18.2721C13.1846 18.848 12.7882 19.3911 12.2139 19.4859C11.6397 19.5806 11.1048 19.1914 11.0195 18.6158L10.4307 14.6256L7.14845 12.0953C6.92074 11.9195 6.77649 11.655 6.75001 11.3658C6.72372 11.0767 6.81744 10.7871 7.0088 10.566L11.5664 5.30235L11.6465 5.22031C11.8407 5.0392 12.0958 4.93595 12.3613 4.9332ZM20.2236 14.0855C20.659 14.0942 21.0732 14.2756 21.375 14.5895C21.6768 14.9034 21.8416 15.3249 21.833 15.7604C21.8243 16.1956 21.643 16.61 21.3291 16.9117C21.0153 17.2133 20.5944 17.3772 20.1592 17.3688C19.7239 17.3601 19.3096 17.1796 19.0078 16.8658C18.706 16.5519 18.5403 16.1303 18.5488 15.6949C18.5575 15.2597 18.739 14.8453 19.0527 14.5436C19.3667 14.2418 19.7882 14.077 20.2236 14.0855ZM20.2119 14.6744C19.9328 14.669 19.6632 14.775 19.4619 14.9684C19.2607 15.1619 19.1443 15.4275 19.1387 15.7066C19.1333 15.9858 19.2392 16.2554 19.4326 16.4566C19.6262 16.6579 19.8917 16.7744 20.1709 16.7799C20.45 16.7853 20.7206 16.6794 20.9219 16.4859C21.1227 16.2925 21.2395 16.0274 21.2451 15.7486C21.2506 15.4695 21.1445 15.199 20.9512 14.9977C20.7576 14.7963 20.4912 14.6799 20.2119 14.6744ZM14.8887 0.00351723C15.386 -0.0257288 15.8717 0.128391 16.2617 0.429298C16.7053 0.771657 16.9918 1.27665 17.0733 1.82774C17.1545 2.37883 17.0269 2.95157 16.7031 3.42051C16.3778 3.89166 15.8788 4.22084 15.3086 4.31504C14.7383 4.40915 14.1665 4.25669 13.7207 3.9127C13.2775 3.57043 12.9917 3.06598 12.9102 2.51524C12.8288 1.9641 12.9556 1.3905 13.2793 0.921486C13.6047 0.450369 14.1047 0.12215 14.6748 0.0279313L14.8887 0.00351723ZM14.9902 2.17149C14.9907 2.17415 14.9917 2.17682 14.9922 2.1793C14.992 2.17681 14.9935 2.17411 14.9932 2.17149C14.9927 2.16858 14.9899 2.16538 14.9893 2.1627C14.9895 2.16534 14.9899 2.16867 14.9902 2.17149Z" fill="white"/>
+</svg>
+              <h3 class="fig-bike-builder-of-berkeley-I1-2905;60:98">Bike Builder of Berkeley</h3>
+            </div>
+            <p class="fig-about-us-I1-2905;60:99">About Us</p>
+            <p class="fig-projects-I1-2905;60:100">Projects</p>
+            <p class="fig-members-I1-2905;60:101">Members</p>
+            <p class="fig-sponsors-I1-2905;60:102">Sponsors</p>
+          </div>
+          <div class="fig-frame-85-I1-2905;60:103">
+            <div class="fig-frame-25-I1-2905;60:104">
+              <p class="fig-contact-us-I1-2905;60:105">Contact Us</p>
+            </div>
+            <div class="fig-frame-120-I1-2905;60:106">
+              <p class="fig-apply-now-I1-2905;60:107">Apply Now</p>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="fig-group-234-1-2906">
+      <div class="fig-group-216-1-2907">
+        <p class="fig-sea-otter-classic-is-an-annual-bike-exhibition-where-industry-professionals-and-organizations-like-bbb-participate-to-show-off-bike-related-projects-and-products-and-hold-bike-races-several-university-teams-are-attending-the-expo-alongside-us-including-cal-poly-uc-irvine-university-of-victoria-and-penn-state-one-of-our-goals-for-sea-otter-2026-is-to-showcase-our-completed-mtb-with-bike-building-teams-from-other-universities-and-race-it-in-one-of-the-courses-1-2908">Sea Otter Classic is an annual bike exhibition where industry professionals and organizations (like BBB) participate to show off bike-related projects and products, and hold bike races. Several university teams are attending the expo alongside us, including Cal Poly, UC Irvine, University of Victoria, and Penn State. One of our goals for Sea Otter 2026 is to showcase our completed MTB with bike building teams from other universities and race it in one of the courses! </p>
+      </div>
+      <div class="fig-frame-217-1-2909">
+        <p class="fig-notable-participating-companies-and-bike-brands-include-specialized-marin-canyon-brompton-cannondale-continental-bosch-and-mips-for-more-information-on-sea-otter-classic-visit-the-website-seaotterclassic-com-1-2910">Notable participating companies and bike brands include Specialized, Marin, Canyon, Brompton, Cannondale, Continental, Bosch, and Mips. For more information on Sea Otter Classic, visit the website: seaotterclassic.com</p>
+      </div>
+      <div class="fig-group-216-1-2911">
+        <h1 class="fig-sea-otter-classic-collegiate-bike-building-showcase-1-2912">Sea Otter Classic & Collegiate Bike Building Showcase</h1>
+      </div>
+      <div class="fig-group-237-1-2913">
+        <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=430&auto=format&fit=crop&q=80" width="430" height="322" class="fig-seaotter1-1-2914" alt="seaotter1" />
+        <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=431&auto=format&fit=crop&q=80" width="431" height="323" class="fig-img-0473-2-1-1-2915" alt="IMG_0473 2 1" />
+        <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=430&auto=format&fit=crop&q=80" width="430" height="322" class="fig-img-0520-2-1-1-2916" alt="IMG_0520 2 1" />
+      </div>
+    </div>
+    <div class="fig-group-236-1-2917">
+      <div class="fig-banners-1-2918">
+        <div class="fig-scroll-wrapper" style="width: 100%; overflow-x: auto;">
+    <div style="min-width: 600px; width: 100%;">
+<svg class="fig-vector-1-2919" aria-hidden="true" width="100%" height="auto" viewBox="0 0 1512 716" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M-126.31 699.127C-39.8802 547.805 257.785 295.201 757.009 495.355C1256.23 695.509 1554.88 255.876 1641.8 11.0403" stroke="#3C19FF" stroke-width="66"/>
+</svg>
+        
+    </div>
+  </div>
+      </div>
+      <div class="fig-banners-1-2920">
+        <div class="fig-engineering-business-community-biking-compsci-engineering-business-community-biking-compsci-1-2921"></div>
+      </div>
+    </div>
+    <div class="fig-group-192-1-2922">
+      <div class="fig-frame-191-1-2923">
+        <h1 class="fig-current-1-2924">Current </h1>
+        <h1 class="fig-sponsors-1-2925">Sponsors</h1>
+      </div>
+    </div>
+    <button type="button" class="fig-rectangle-443-1-2926"></button>
+    <button type="button" class="fig-rectangle-444-1-2927"></button>
+    <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=251&auto=format&fit=crop&q=80" width="251" height="212" class="fig-pnw-logo-files-1-1-2928" alt="PNW_Logo_Files 1" />
+    <div class="fig-group-214-1-2929">
+      <div class="fig-group-197-1-2930">
+        <div class="fig-frame-26-1-2931">
+          <p class="fig-2024-2025-1-2932">2024-2025</p>
+        </div>
+      </div>
+      <div class="fig-frame-25-1-2933">
+        <p class="fig-2023-2024-1-2934">2023-2024</p>
+      </div>
+      <div class="fig-frame-26-1-2935">
+        <p class="fig-2022-2023-1-2936">2022-2023</p>
+      </div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=380&auto=format&fit=crop&q=80" width="380" height="380" class="fig-sram-5-logo-png-transparent-1-1-2937" alt="sram-5-logo-png-transparent 1" />
+    <svg class="fig-vector-1-2938" aria-hidden="true" width="339" height="416" viewBox="0 0 339 416" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.6" fill-rule="evenodd" clip-rule="evenodd" d="M284.538 207.191L333.586 230.455C335.516 231.388 337.056 232.971 337.935 234.926C338.814 236.88 338.977 239.082 338.394 241.145L324.575 289.041C323.971 291.081 322.672 292.845 320.904 294.029C319.136 295.213 317.01 295.741 314.894 295.523L260.753 289.72C254.797 299.172 247.812 307.936 239.925 315.849L258.186 366.952C258.905 368.982 258.882 371.2 258.122 373.215C257.362 375.229 255.914 376.91 254.034 377.959L210.393 402.035C208.528 403.056 206.366 403.394 204.278 402.99C202.191 402.586 200.311 401.465 198.962 399.822L164.879 357.497C153.914 360.029 142.754 361.329 131.398 361.397L107.515 410.05C106.566 411.956 104.981 413.47 103.034 414.329C101.087 415.189 98.9011 415.341 96.854 414.758L48.9584 400.939C46.9058 400.335 45.1308 399.029 43.9439 397.249C42.757 395.469 42.2338 393.328 42.4657 391.201L48.6825 337.694C39.1512 331.654 30.3019 324.6 22.2891 316.654L-28.6908 334.111C-30.7079 334.797 -32.9015 334.755 -34.8911 333.993C-36.8807 333.231 -38.5406 331.796 -39.5827 329.938L-63.6766 286.264C-64.6965 284.381 -65.0215 282.2 -64.5946 280.101C-64.1677 278.003 -63.0162 276.122 -61.3417 274.787L-19.2799 241.522C-21.7758 230.443 -23.057 219.124 -23.1009 207.766L-71.3001 184.096C-73.2015 183.149 -74.713 181.569 -75.5737 179.627C-76.4345 177.686 -76.5906 175.504 -76.0152 173.46L-62.196 125.564C-60.968 121.308 -56.841 118.566 -52.4576 119.072L0.808955 125.273C6.89746 115.639 13.967 106.803 22.0176 98.766L4.59663 47.8506C3.92047 45.8357 3.96918 43.648 4.73439 41.6652C5.49959 39.6824 6.93322 38.0292 8.78767 36.9909L52.4041 12.9076C56.2754 10.7701 61.148 11.742 63.8879 15.2175L97.2813 57.3978C108.281 54.9772 119.51 53.7523 130.772 53.7443L153.817 5.17475C154.748 3.23486 156.335 1.68651 158.297 0.803417C160.259 -0.0796765 162.47 -0.240639 164.539 0.348973L212.435 14.1681C216.691 15.3962 219.415 19.4909 218.942 23.8565L213.143 77.7004C222.682 83.7433 231.442 90.7637 239.422 98.7617L290.357 80.6141C292.387 79.8958 294.605 79.9186 296.619 80.6785C298.634 81.4384 300.314 82.8863 301.364 84.7662L325.447 128.383C327.585 132.254 326.627 137.076 323.202 139.831L280.805 173.975C283.258 184.899 284.519 195.975 284.538 207.191ZM70.1199 190.076C67.81 198.082 67.0995 206.464 68.0292 214.745C68.9589 223.025 71.5104 231.042 75.5381 238.336C79.5659 245.631 84.9909 252.061 91.5035 257.258C98.0161 262.456 105.489 266.321 113.495 268.63C121.501 270.94 129.883 271.651 138.164 270.721C146.445 269.792 154.461 267.24 161.755 263.212C169.05 259.184 175.48 253.759 180.678 247.247C185.875 240.734 189.74 233.262 192.05 225.256C196.715 209.087 194.766 191.727 186.631 176.995C178.497 162.263 164.844 151.366 148.675 146.701C132.506 142.036 115.146 143.985 100.414 152.119C85.6822 160.253 74.7851 173.907 70.1199 190.076Z" fill="white"/>
+</svg>
+    <svg class="fig-vector-1-2939" aria-hidden="true" width="164" height="164" viewBox="0 0 164 164" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.8" d="M133.817 61.4496L153.554 63.0113C154.336 63.0742 155.069 63.4128 155.624 63.9668C156.179 64.5207 156.519 65.2539 156.584 66.0354L158.092 84.1534C158.156 84.9287 157.945 85.7018 157.495 86.3366C157.046 86.9715 156.387 87.4274 155.634 87.6242L136.417 92.6735C135.618 96.6879 134.384 100.559 132.713 104.286L145.576 119.332C146.088 119.929 146.371 120.69 146.373 121.477C146.375 122.263 146.097 123.025 145.587 123.625L133.841 137.505C133.34 138.1 132.644 138.499 131.877 138.632C131.11 138.765 130.321 138.622 129.649 138.23L112.536 128.229C109.121 130.515 105.465 132.416 101.633 133.898L99.8131 153.596C99.7411 154.371 99.398 155.095 98.8442 155.642C98.2904 156.189 97.5615 156.523 96.7857 156.585L78.6779 158.093C77.8992 158.158 77.1225 157.945 76.4864 157.491C75.8504 157.037 75.3963 156.372 75.2054 155.614L70.3741 136.572C66.3344 135.759 62.3974 134.5 58.6352 132.818L43.5251 145.401C42.9268 145.899 42.172 146.17 41.3936 146.166C40.6153 146.162 39.8633 145.883 39.2702 145.379L25.3803 133.634C24.7895 133.124 24.3955 132.424 24.2664 131.654C24.1373 130.884 24.2812 130.094 24.6733 129.419L34.7001 112.61C32.3969 109.162 30.4854 105.468 29.0009 101.597L9.50813 99.791C8.73497 99.7191 8.01178 99.3774 7.46538 98.8257C6.91898 98.2739 6.58424 97.5475 6.51986 96.7737L5.01132 78.6557C4.8767 77.0389 5.92433 75.5679 7.49901 75.1723L26.4416 70.3696C27.2761 66.298 28.5428 62.3668 30.2418 58.576L17.6911 43.4836C17.196 42.8859 16.927 42.1331 16.9312 41.357C16.9354 40.5809 17.2125 39.8311 17.7141 39.2388L29.4711 25.3683C29.9763 24.7706 30.677 24.3716 31.4488 24.2421C32.2205 24.1127 33.0132 24.2612 33.6857 24.6613L50.5473 34.704C53.9741 32.438 57.6209 30.5742 61.4878 29.1127L63.0335 9.54996C63.0963 8.76836 63.435 8.03456 63.9889 7.4796C64.5429 6.92464 65.2761 6.58468 66.0576 6.52043L84.1755 5.01188C85.7822 4.8781 87.2422 5.91647 87.6564 7.46926L92.667 26.5878C96.7027 27.3982 100.606 28.6503 104.376 30.3443L119.366 17.5476C119.962 17.0339 120.721 16.7495 121.508 16.7455C122.295 16.7415 123.057 17.0183 123.658 17.526L137.538 29.2721C138.132 29.7751 138.529 30.4714 138.66 31.2385C138.791 32.0056 138.647 32.7942 138.253 33.4656L128.234 50.6102C130.485 54.0179 132.346 57.6277 133.816 61.4395L133.817 61.4496ZM58.4837 83.4626C58.9931 89.581 61.9122 95.2464 66.5987 99.2125C71.2853 103.179 77.3554 105.121 83.4738 104.611C89.5922 104.102 95.2576 101.183 99.2237 96.496C103.19 91.8095 105.132 85.7393 104.622 79.621C104.113 73.5026 101.194 67.8372 96.5072 63.8711C91.8207 59.905 85.7505 57.9631 79.6322 58.4725C73.5138 58.9819 67.8484 61.901 63.8823 66.5875C59.9162 71.2741 57.9743 77.3442 58.4837 83.4626Z" stroke="white" stroke-width="10"/>
+</svg>
+    <div class="fig-frame-192-1-2940">
+      <h1 class="fig-past-1-2941">Past</h1>
+      <h1 class="fig-sponsors-1-2942">Sponsors</h1>
+    </div>
+    <div class="fig-frame-90-1-2943">
+      <div class="fig-frame-21-1-2944">
+        <p class="fig-sram-1-2945">SRAM</p>
+      </div>
+    </div>
+    <div class="fig-frame-239-1-2946">
+      <div class="fig-frame-21-1-2947">
+        <p class="fig-pnw-components-1-2948">PNW Components</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
