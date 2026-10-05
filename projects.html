@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects · Bike Builders of Berkeley</title>
+  <meta name="description" content="Frames, components, tooling, and electronics designed and built by Bike Builders of Berkeley.">
+  <meta name="theme-color" content="#003262">
+  <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-header="dark">
+  <div data-site-header></div>
+
+  <main id="main">
+    <!-- ===== Featured project (the one marked featured: true in data.js) ===== -->
+    <section class="container proj-hero" data-project-featured></section>
+
+    <!-- ===== All other projects ===== -->
+    <section class="section">
+      <div class="container">
+        <h2 class="h2 rule-heading text-navy" style="margin-bottom:2rem">More Projects</h2>
+        <div class="proj-grid" data-projects></div>
+      </div>
+    </section>
+  </main>
+
+  <div data-site-footer></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
