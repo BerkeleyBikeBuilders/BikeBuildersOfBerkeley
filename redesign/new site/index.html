@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bike Builders of Berkeley</title>
+  <meta name="description" content="Bike Builders of Berkeley is a UC Berkeley student engineering club that designs, builds, tests, and rides bicycles, from frames built from scratch to custom components.">
+  <meta name="theme-color" content="#003262">
+  <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-header="light">
+  <div data-site-header></div>
+
+  <main id="main">
+    <!-- ===== Hero ===== -->
+    <section class="hero hero--home">
+      <div class="hero__media"><img src="assets/img/hero-home.jpg" alt="A Bike Builders member riding through the trees" fetchpriority="high"></div>
+      <div class="ribbon ribbon--hero" data-ribbon="Engineering • Business • Community • Biking • Composites"></div>
+      <div class="container hero__content">
+        <h1 class="title">Bike<br>Builders<br>of Berkeley</h1>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="apply.html" data-apply-link>Apply</a>
+          <a class="btn btn--ghost" href="members.html">Members</a>
+          <a class="btn btn--ghost" href="about.html#competition" data-competition-link data-fallback="about.html#competition">Competition</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Who are we ===== -->
+    <section class="section bg-primary">
+      <div class="container split">
+        <div class="stack reveal" style="max-width:34rem">
+          <h2 class="h1">Who are we?</h2>
+          <p>Founded in Fall 2021, we are a <strong>student engineering club</strong> pioneering the bike building field among universities. We design, build, test, and ride bikes, fabricating the frame from scratch and even <strong>making our own composites.</strong></p>
+          <p>We have open enrollment and <strong>encourage all majors</strong> and people to join our wonderful community! There is every type of work imaginable, from business to fabrication.</p>
+          <p>We design, build, and test all things bikes with a focus on frames <strong>from scratch</strong>.</p>
+          <div class="btn-row" style="margin-top:1.75rem"><a class="btn btn--white" href="about.html">Learn More</a></div>
+        </div>
+        <div class="who__photos reveal">
+          <div class="frame"><img src="assets/img/who-team.jpg" alt="Members with the finished mountain bike on campus" loading="lazy"></div>
+          <div class="frame"><img src="assets/img/seaotter-headbadge.jpg" alt="The B3 head badge on our mountain bike frame" loading="lazy" style="object-position:46% 45%"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Our Work ===== -->
+    <section class="section our-work on-dark">
+      <div class="our-work__bg"><img src="assets/img/bg-our-work.jpg" alt="" loading="lazy"></div>
+      <div class="container split">
+        <div class="stack reveal" style="max-width:34rem">
+          <h2 class="h1">Our Work.</h2>
+          <p>Past projects showcase our commitment to building, testing, and <strong>refining real systems</strong>. By working on complete bicycle platforms and subsystems, members gain <strong>hands-on experience</strong> transforming ideas into functional, rideable outcomes.</p>
+          <p>Our past projects highlight a <strong>student-driven approach</strong> to engineering, where curiosity and iteration lead the way. From early prototypes to finished builds, we take pride in creating thoughtful, well-engineered solutions that reflect both <strong>technical rigor and creativity.</strong></p>
+          <div class="btn-row" style="margin-top:1.5rem"><a class="btn btn--primary" href="projects.html">Our Projects</a></div>
+        </div>
+        <div class="work-showcase reveal" data-render="work-showcase"></div>
+      </div>
+    </section>
+
+    <!-- ===== Member spotlight ===== -->
+    <section class="section">
+      <h2 class="h2 text-center" style="margin-bottom:1.75rem">Member Spotlight</h2>
+      <div class="spotlight" id="spotlight" data-render="spotlight" tabindex="0" aria-label="Member spotlight, scroll horizontally"></div>
+      <div class="carousel-controls" data-carousel="#spotlight">
+        <button class="icon-btn" type="button" data-dir="-1" aria-label="Previous"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <button class="icon-btn" type="button" data-dir="1" aria-label="Next"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      </div>
+      <div class="container container--narrow text-center" style="margin-top:2.5rem">
+        <p class="lead">We are a team of undergraduate students at UC Berkeley. Everyone plays an integral role in building a bike, from organizing the business side of things to making custom components. Our community is open to everyone!</p>
+        <div class="btn-row" style="justify-content:center;margin-top:1.5rem">
+          <a class="btn btn--primary" href="apply.html">Join Us</a>
+          <a class="btn btn--action" href="members.html">Learn More</a>
+        </div>
+      </div>
+    </section>
+    <!-- ===== Sponsors ===== -->
+    <section class="section text-center" style="padding-top:1rem">
+      <div class="container reveal">
+        <h2 class="h1">Sponsors</h2>
+        <p class="lead" style="margin-top:.75rem">We are grateful for the people and companies that make our journey possible!</p>
+      </div>
+      <div class="marquee logo-marquee" style="margin-top:3rem;--marquee-duration:45s" data-render="logo-marquee"></div>
+      <p style="margin-top:2.5rem"><a class="btn btn--primary" href="sponsors.html">Sponsor Us</a></p>
+    </section>
+  </main>
+
+  <div data-site-footer data-newsletter></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
