@@ -336,8 +336,6 @@ BBB.sponsors = {
     { name: "Autodesk Fusion 360", logo: "assets/img/sponsors/autodesk-fusion.png" },
     { name: "Sportful", logo: "assets/img/sponsors/sportful.png" },
     { name: "Hopper Adventures", logo: "assets/img/sponsors/hopper.png" },
-    { name: "Airgas", logo: "", wide: true },                       // TODO: logo file
-    { name: "Bicycle Fabrication Supply", logo: "", wide: true },   // TODO: logo file
   ],
 };
 

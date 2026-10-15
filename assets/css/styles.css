@@ -188,7 +188,9 @@ body[data-header="primary"] .site-header.is-scrolled .btn--apply { background: v
 .hero--about { display: block; min-height: 0; background: var(--tan-100); color: var(--primary); }
 .hero--about .hero__content { padding-bottom: clamp(1.5rem, 3vw, 2.5rem); }
 .hero--about .hero__media { position: relative; inset: auto; z-index: 0; aspect-ratio: 16 / 7; min-height: 280px; }
-.hero--about .hero__media::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, var(--tan-100) 0%, rgba(244,241,228,0) 12%); }
+.hero--about .hero__media::before { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  /* eased fade from the cream page color (#f7f3e8) into the photo, so there is no visible band */
+  background: linear-gradient(180deg, rgb(247,243,232) 0%, rgba(247,243,232,.82) 4%, rgba(247,243,232,.55) 9%, rgba(247,243,232,.3) 14%, rgba(247,243,232,.12) 19%, rgba(247,243,232,.03) 23%, rgba(247,243,232,0) 26%); }
 .hero--about .hero__content { text-align: center; padding-top: calc(var(--header-h) + clamp(2.5rem, 7vw, 5.5rem)); }
 .hero--about .h1, .hero--about .title { color: var(--primary); }
 .hero--about p { color: var(--primary-600); max-width: 620px; margin: 1rem auto 0; }
@@ -306,11 +308,11 @@ body[data-header="primary"] .site-header.is-scrolled .btn--apply { background: v
 .spot-card__body { padding: clamp(1.75rem, 4.5vw, 4rem); display: flex; flex-direction: column; justify-content: center; }
 .spot-card__body h3 { font-size: clamp(1.8rem, 2.4vw + .8rem, 3rem); text-transform: uppercase; letter-spacing: -0.01em; line-height: 1.02; }
 .spot-card__role { margin-top: .6rem; font-family: var(--font-display); font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: var(--gold); font-size: clamp(.9rem, .3vw + .85rem, 1.1rem); }
-.spot-card__facts { display: grid; gap: .45rem; margin: clamp(1.25rem, 2.5vw, 2rem) 0 0; font-size: clamp(1rem, .3vw + .92rem, 1.15rem); }
+.spot-card__facts { display: grid; gap: .75rem; margin: clamp(1.25rem, 2.5vw, 2rem) 0 0; font-size: clamp(1rem, .3vw + .92rem, 1.15rem); line-height: 1.5; }
 .spot-card__facts div { display: flex; gap: .75rem; }
 .spot-card__facts dt { color: var(--gold); font-weight: 600; min-width: 4.5rem; }
 .spot-card__facts dd { margin: 0; }
-.spot-card__fact { margin-top: 1rem; font-size: clamp(1rem, .3vw + .92rem, 1.15rem); line-height: 1.5; max-width: 34ch; }
+.spot-card__fact { margin-top: .75rem; font-size: clamp(1rem, .3vw + .92rem, 1.15rem); line-height: 1.5; max-width: 34ch; }
 .spot-card__fact b { color: var(--gold); font-weight: 600; }
 .spot-card__blank { display: inline-block; width: 9em; max-width: 60%; border-bottom: 1.5px solid currentColor; vertical-align: -0.15em; }
 .spot-card__photo { position: relative; min-height: 100%; }
@@ -658,3 +660,15 @@ body[data-header="dark"] .site-header:not(.is-scrolled) .header-cta .btn--ghost 
 .members-backdrop::after { content: ""; position: absolute; inset: 0;
   background:
     linear-gradient(180deg, var(--primary) 0, rgba(0,50,98,.55) calc(var(--header-h) + 3rem), rgba(0,50,98,.35) 45%, var(--primary) 100%); }
+
+/* Phones: keep the rider in the home banner photo in frame instead of the trees on the right */
+@media (max-width: 760px) { .hero--home .hero__media img { object-position: 30% center; } }
+
+/* About hero: title sits over the top of the (softened) team photo instead of on a separate cream band */
+.hero--about { position: relative; min-height: clamp(560px, 60vw, 1150px); background: var(--tan-100); overflow: hidden; }
+.hero--about .hero__media { position: absolute; inset: 0; z-index: 0; aspect-ratio: auto; min-height: 0; }
+.hero--about .hero__media img { object-position: center top; }
+.hero--about .hero__media::before {
+  background: linear-gradient(180deg, rgba(247,243,232,.9) 0%, rgba(247,243,232,.78) 28%, rgba(247,243,232,.38) 55%, rgba(247,243,232,.12) 80%, rgba(247,243,232,.05) 100%); }
+.hero--about .hero__content { position: relative; z-index: 2; padding-top: calc(var(--header-h) + clamp(1.25rem, 3vw, 2.5rem)); padding-bottom: 2rem; }
+@media (max-width: 700px) { .hero--about { min-height: 620px; } .hero--about .hero__media { top: 120px; } }
