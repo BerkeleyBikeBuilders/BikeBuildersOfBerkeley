@@ -60,6 +60,7 @@ BBB.members = [
 
   // EECS
   { name: "Lachlan Watts-Tobin", team: "EECS", role: "Lead Electrical Engineer", photo: "assets/img/members/lachlan-watts-tobin.jpg", link: "https://lachlanwt.com" },
+  { name: "Donald Aingworth IV",  team: "EECS", role: "Electrical Engineer", photo: "assets/img/members/donald-aingworth.jpg", link: "https://www.linkedin.com/in/donald-aingworth-iv-24396a218/" },
   { name: "Richard Cao",         team: "EECS", role: "Electrical Engineer", photo: "assets/img/members/richard-cao.jpg" },
   { name: "Yifan Liu",           team: "EECS", role: "Electrical Engineer", photo: "assets/img/members/yifan-liu.jpg" },
 

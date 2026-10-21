@@ -391,7 +391,8 @@
   function byLeadThenName(a, b) {
     const isLead = (m) => /^(lead\b|president\b)/i.test(m.role || "");
     if (isLead(a) !== isLead(b)) return isLead(a) ? -1 : 1;
-    const last = (m) => m.name.trim().split(/\s+/).slice(-1)[0];
+    // Last name for sorting, skipping suffixes like "Jr." or "IV"
+    const last = (m) => m.name.trim().split(/\s+/).filter((w, i, a) => i === 0 || !/^(jr\.?|sr\.?|ii|iii|iv|v)$/i.test(w)).slice(-1)[0];
     return last(a).localeCompare(last(b)) || a.name.localeCompare(b.name);
   }
   function defaultBlurb(m) {
