@@ -54,7 +54,6 @@ BBB.members = [
   { name: "Jacob Stutz",         team: "Suspension", role: "Suspension Engineer", photo: "assets/img/members/jacob-stutz.jpg", link: "https://www.linkedin.com/in/jacob-stutz/" },
   { name: "Livia Yang",          team: "Suspension", role: "Suspension Engineer", photo: "assets/img/members/livia-yang.jpg" },
   { name: "Luke Hollingsworth",  team: "Suspension", role: "Suspension Engineer", photo: "assets/img/members/luke-hollingsworth.jpg", link: "https://www.linkedin.com/in/luke-hollingsworth-02a44a233" },
-  { name: "Myles Heller",        team: "Suspension", role: "Suspension Engineer", photo: "assets/img/members/myles-heller.jpg", link: "https://www.linkedin.com/in/myles-heller/" },
 
   // Composites
   { name: "Pranav Amarnath",     team: "Composites", role: "Lead Composites Engineer", photo: "assets/img/members/pranav-amarnath.jpg", link: "https://pranavamarnath.myportfolio.com/" },
