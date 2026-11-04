@@ -285,13 +285,13 @@ BBB.projects = [
     id: "tube-winder-2026",
     title: "Tube Winder",
     year: "2026",
-    cover: "assets/img/projects/tw2-cover.jpg",
+    cover: "assets/img/projects/tw2-render.jpg",
     summary: "Our second-generation carbon fiber filament winder, which wound the tubes for the Modal Trail Bike.",
     description: [
       "The winder wraps carbon tow under tension around removable mandrels. The wound tubes are then cured and finished into structural tubes that are bonded to 3D-printed aluminum lugs.",
       "This version added a new tow head and carbon routing, sectioned mandrels, a repeatable resin process, and a vacuum and heat-shrink post-processing setup for a better tube finish.",
     ],
-    heroImages: ["assets/img/projects/tw2-cover.jpg", "assets/img/projects/tw2-winding2.jpg", "assets/img/projects/tw2-mandrel3.jpg", "assets/img/projects/tw2-final-tubes.jpg"],
+    heroImages: ["assets/img/projects/tw2-render.jpg", "assets/img/projects/tw2-winding2.jpg", "assets/img/projects/tw2-mandrel3.jpg", "assets/img/projects/tw2-final-tubes.jpg"],
     links: [{ label: "Read Lachlan's full design report", url: "https://lachlanwt.github.io/projects/carbon-fiber-winder" }],
     overview: {
       sections: [
